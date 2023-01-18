@@ -1,0 +1,51 @@
+{
+  "id": "3866918",
+  "name": "组件库",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8668114",
+      "name": "设置-线性",
+      "font_class": "shezhi-xianxing",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "8704091",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "8706377",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "33078801",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "33078802",
+      "name": "编辑修改",
+      "font_class": "bianjixiugai",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "33078805",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}
