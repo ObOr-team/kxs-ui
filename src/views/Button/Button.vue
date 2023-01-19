@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     //引入KButton组件
-    import KButton from "../components/kbutton/KButton.vue"
+    import KButton from "../../components/kbutton/KButton.vue"
 </script>
 <template>
 <div>
