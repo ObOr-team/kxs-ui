@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     //defineProps 宏来接收父组件传递的数据
-    import {defineProps,computed,toRef} from 'vue'
+    import {computed,toRef} from 'vue'
     const props = defineProps({
         type:{
             type:String,
