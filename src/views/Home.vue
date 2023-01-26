@@ -9,8 +9,12 @@
         <aside>
             <h2>侧边栏位置</h2>
             <RouterLink to="/button">Button按钮</RouterLink><br/>
+<<<<<<< HEAD
             <RouterLink to="/form">Form表单</RouterLink><br/>
             <RouterLink to="/dialog">Dialog对话框</RouterLink><br/>
+=======
+            <RouterLink to="/form">Form表单</RouterLink>
+>>>>>>> 68b6815484faba167a41faac8886c92de41125f0
          </aside>
         <article>
             <h2>内容展示</h2>
