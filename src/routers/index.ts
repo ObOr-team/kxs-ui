@@ -19,6 +19,11 @@ const router = createRouter({
                     //form
                     path:'form',
                     component:()=>import ("../views/Form/Form.md") 
+                },
+                {
+                    //dialog
+                    path:'dialog',
+                    component:()=>import ("../views/Dialog/Dialog.md") 
                 }
             ]
         },
