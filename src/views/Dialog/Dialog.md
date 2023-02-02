@@ -3,8 +3,23 @@
 </script>
 
 <dia/>  
+<style>
+    table{
+        width: 100%; 
+    }
+    th {
+        height: 50px;
+    }
+    td {
+        height: 35px;
+    }
+    table, th, td {
+        border: 1px solid var(--default-border-color);
+        border-collapse: collapse;
+    }
+</style>
 
-## API
+## Diolog Attributes
 |      **参数**      | 说明                                               |   类型   | 默认值  | 举例                                           |
 | :----------------: | -------------------------------------------------- | :------: | :-----: | ---------------------------------------------- |
 |      **type**      | 提示框类型：info、confirm、warning、error          |  string  | "info"  | `<k-dialog type = "error"></k-dialog>`         |
