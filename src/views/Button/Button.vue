@@ -1,13 +1,11 @@
 <script lang="ts" setup>
-    //引入KButton组件
-<<<<<<< HEAD
-    import KButton from "../../components/kbutton/KButton.vue"
-=======
+    //引入KButton组
     import KButton from "@/components/kbutton/KButton.vue"
->>>>>>> 68b6815484faba167a41faac8886c92de41125f0
+    import perview from '@/components/preview.vue'
 </script>
 <template>
 <div>
+    <perview compName="kbutton" demoName="KButton"/>
     <div>
         <h3>●  基础</h3>
         <k-button type="default">Default</k-button>

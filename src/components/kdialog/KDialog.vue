@@ -93,7 +93,7 @@
     })
     // 背景颜色的css
     const bgColorCss = computed(() => {
-        return {background: themeColor};
+        return {background: themeColor.value};
     })
     // 是否展示底部确认按钮
     const isConfirmBtnShow = computed(() => {

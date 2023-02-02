@@ -30,7 +30,11 @@
 body{
   margin: 50px;
 }
-
+/*按钮内容样式*/
+.kbcontent{
+  border: solid 1px #c9c6c6;
+  border-radius: 10px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
