@@ -28,7 +28,6 @@
              <RouterView></RouterView> 
         </article>
     </section>
-
 </template>
 <style scoped>
 header{

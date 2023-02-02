@@ -1,7 +1,6 @@
 <script lang="ts" setup>
     //引入KButton组
     import KButton from "@/components/kbutton/KButton.vue"
-    import perview from '@/components/preview.vue'
 </script>
 <template>
 <div>
