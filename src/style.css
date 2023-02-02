@@ -25,12 +25,18 @@
   --btn-color-warming-lighter:#f7e2c4;
   --btn-color-danger:#e98383;
   --btn-color-danger-lighter:#f7cbcb;
+  /*默认边框颜色变量*/
+  --default-border-color:#c9c6c6;
 }
 
 body{
   margin: 50px;
 }
-
+/*按钮内容样式*/
+.kbcontent{
+  border: solid 1px var(--default-border-color);
+  border-radius: 10px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

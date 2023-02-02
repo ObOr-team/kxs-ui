@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-    //引入KButton组件
+    //引入KButton组
     import KButton from "@/components/kbutton/KButton.vue"
 </script>
 <template>
 <div>
+    <perview compName="kbutton" demoName="KButton"/>
     <div>
         <h3>●  基础</h3>
         <k-button type="default">Default</k-button>

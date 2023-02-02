@@ -1,6 +1,20 @@
+<template>
+        <button
+        :disabled="disabled"
+        class="btn" 
+        :class="[type,isPlain,isRound,isDisabled,size]"
+        :style="[blockCss]"
+        >
+        <i :class="icon" ></i>
+        <i :class="front" ></i>
+            <slot></slot>
+        <i :class="post" ></i>
+        </button>
+</template>
 <script lang="ts" setup>
     //defineProps 宏来接收父组件传递的数据
-    import {computed,toRef} from 'vue'
+    import { Console } from 'console';
+import {defineProps,computed,toRef} from 'vue'
     const props = defineProps({
         type:{
             type:String,
@@ -63,21 +77,6 @@
         return props.icon? `iconfont icon-${props.icon}`:""
     })
 </script>
-<template>
-        <button
-        :disabled="disabled"
-        class="btn" 
-        :class="[type,isPlain,isRound,isDisabled,size]"
-        :style="[blockCss]"
-        >
-        <i :class="icon" ></i>
-        <i :class="front" ></i>
-            <slot></slot>
-        <i :class="post" ></i>
-    
-        </button>
-</template>
-
 <style lang="scss" scoped>
 .btn{
     padding: 10px 15px;
