@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     //引入KButton组
-    import KButton from "@/components/kbutton/KButton4.vue"
+    import KButton from "@/components/kbutton/KButton.vue"
     import perview from '@/components/preview.vue'
 </script>
 <template>
@@ -10,6 +10,6 @@
         <k-button type="default" size="">Size</k-button>
         <k-button type="default" size="large">Size</k-button>
         </div>
-        <perview compName="kbutton" demoName="KButton4"/>
+        <perview compName="Button" demoName="Preview_Button4"/>
     </div>
 </template>

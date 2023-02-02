@@ -47,12 +47,12 @@
         if (isDev){
             sourceCode.value =(
                 await import(
-                     `/src/components/${props.compName}/${props.demoName}.vue?raw`
+                     `/src/views/${props.compName}/${props.demoName}.vue?raw`
                     )
                 ).default;
         }else{
             sourceCode.value = await fetch(
-                `/src/components/${props.compName}/${props.demoName}.vue`
+                `/src/views/${props.compName}/${props.demoName}.vue`
                 ).then((res) => res.text());
         }   
     }

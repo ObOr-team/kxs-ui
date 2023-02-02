@@ -1,11 +1,5 @@
-<script lang="ts" setup>
-    //引入KButton组
-    import KButton from "@/components/kbutton/KButton.vue"
-    import perview from '@/components/preview.vue'
-</script>
 <template>
-    <div class="kbcontent">
-        <div>
+    <div>
         <k-button type="default" frontIcon="sousuo">FrontIcon</k-button>
         <k-button type="default" frontIcon="tianjia">FrontIcon</k-button>
         <k-button type="default" frontIcon="shezhi-xianxing">FrontIcon</k-button>
@@ -28,7 +22,5 @@
         <k-button type="default" icon="xiazai"></k-button>
         <k-button type="default" icon="bianjixiugai"></k-button>
         <k-button type="default" icon="shanchu"></k-button>
-        </div>
-        <perview compName="Button" demoName="Preview_Button6"/>
     </div>
 </template>
