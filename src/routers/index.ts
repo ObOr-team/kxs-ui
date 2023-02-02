@@ -12,13 +12,18 @@ const router = createRouter({
                 {
                     //button
                     path:'button',
-                    component:()=>import ("../views/Button/Button.md") 
+                    component:()=>import ("../views/Button/Button.vue") 
 
                 },
                 {
                     //form
                     path:'form',
-                    component:()=>import ("../views/Form/Form.md") 
+                    component:()=>import ("../views/Form/Form.vue") 
+                },
+                {
+                    //carousel
+                    path:'carousel',
+                    component:()=>import ("../views/Carousel/Carousel.vue") 
                 }
             ]
         },
