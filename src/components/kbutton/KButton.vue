@@ -1,6 +1,5 @@
 <template>
         <button
-        :disabled="disabled"
         class="btn" 
         :class="[type,isPlain,isRound,isDisabled,size]"
         :style="[blockCss]"
@@ -13,7 +12,6 @@
 </template>
 <script lang="ts" setup>
     //defineProps 宏来接收父组件传递的数据
-    import { Console } from 'console';
 import {defineProps,computed,toRef} from 'vue'
     const props = defineProps({
         type:{
