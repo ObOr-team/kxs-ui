@@ -1,32 +1,32 @@
 <script lang="ts" setup>
     // import dia from './Dialog.vue'
-    import diaType from './DialogType.vue'
-    import diaSize from './DialogSize.vue'
-    import diaThemeColor from './DialogThemeColor.vue'
-    import diaLocation from './DialogLocation.vue'
-    import diaButton from './DialogButton.vue'
-    import diaClick from './DialogClick.vue'
+    import typ from './DialogType.vue'
+    import size from './DialogSize.vue'
+    import themecolor from './DialogThemeColor.vue'
+    import location from './DialogLocation.vue'
+    import btn from './DialogButton.vue'
+    import click from './DialogClick.vue'
 </script>
 
 <!-- <dia/>   -->
 
 ### ● 类型
-<diaType/>
+<typ/>
 
 ### ● 自定义大小
-<diaSize/>
+<size/>
 
 ### ● 自定义主题颜色
-<diaThemeColor/>
+<themecolor/>
 
 ### ● 位置
-<diaLocation/>
+<location/>
 
 ### ● 按钮
-<diaButton/>
+<btn/>
 
 ### ● 点击事件
-<diaClick/>
+<click/>
 
 <style>
     table{
