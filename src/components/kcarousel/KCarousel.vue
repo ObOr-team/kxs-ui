@@ -1,7 +1,13 @@
 <template>
 
-    <div class="carousel">
-        <label :class="isHorizontal===true ? 'label_left':'label_up'" @click="previousBtn"></label>
+    <div class="carousel" :style='{
+            width: carouselW + "px",
+            height: carouselH + "px"
+        }'>
+        <label :class="isHorizontal===true ? 'label_left':'label_up'" @click="previousBtn" @mousemove="mouseover" @mouseout="mouseout">
+            <svg v-if="isHorizontal===true ? true : false" t="1675488886083" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1875" width="30" height="30"><path d="M731.6992 909.131776c8.660992 7.86432 8.660992 21.25824 0 29.12256-7.878656 8.6528-21.245952 8.6528-29.126656 0L290.922496 526.600192c-7.878656-7.86432-7.878656-21.260288 0-29.124608L702.57664 85.819392c7.880704-7.86432 21.248-7.86432 29.126656 0 8.660992 7.86432 8.660992 21.260288 0 29.124608L334.999552 512.444416 731.6992 909.131776z" p-id="1876"></path></svg>
+            <svg v-if="isHorizontal===false ? true : false" t="1675488740890" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1608" width="30" height="30"><path d="M908.406784 732.42624c7.86432 8.66304 21.25824 8.66304 29.12256 0 8.650752-7.876608 8.650752-21.245952 0-29.124608L525.873152 291.647488c-7.86432-7.878656-21.260288-7.878656-29.124608 0L85.0944 703.301632c-7.86432 7.878656-7.86432 21.248 0 29.124608 7.86432 8.66304 21.260288 8.66304 29.124608 0l397.500416-396.699648L908.406784 732.42624z" p-id="1609"></path></svg>
+        </label>
         <!--水平样式-->
         <ul :style='{
             width: ul_w + "px",
@@ -9,8 +15,18 @@
         }'
         v-if="isHorizontal===true ? true : false"
         >
-            <li v-for="(i, id) in imgData">
-                <img :src="i.url" alt="">
+            <li v-for="(i, id) in imgData"
+                :style='{
+                width: carouselW + "px",
+                height: carouselH + "px"
+                }'
+            >
+                <img :src="i.url" 
+                    :style='{
+                    width: carouselW + "px",
+                    height: carouselH + "px"
+                    }'
+                >
             </li>
         </ul>
         <!--垂直样式-->
@@ -21,14 +37,29 @@
         class="ulVertical"
         v-if="isHorizontal===true ? false : true"
         >
-            <li v-for="(i, id) in imgData">
-                <img :src="i.url" alt="">
+            <li v-for="(i, id) in imgData"
+                :style='{
+                width: carouselW + "px",
+                height: carouselH + "px"
+                }'
+            >
+                <img :src="i.url" 
+                    :style='{
+                    width: carouselW+"px",
+                    height: carouselH + "px"
+                    }'
+                >
+               
             </li>
         </ul>
-        <label :class="isHorizontal===true ? 'label_right':'label_down'"  @click="nextBtn"></label>
+        <label :class="isHorizontal===true ? 'label_right':'label_down'"  @click="nextBtn" @mousemove="mouseover" @mouseout="mouseout">
+            <svg v-if="isHorizontal===true ? true : false" t="1675488923875" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2046" width="30" height="30"><path d="M688.211968 512.444416 291.510272 114.944c-8.660992-7.86432-8.660992-21.260288 0-29.124608 7.878656-7.86432 21.245952-7.86432 29.126656 0l411.654144 411.656192c7.878656 7.86432 7.878656 21.260288 0 29.124608L320.638976 938.254336c-7.880704 8.6528-21.248 8.6528-29.126656 0-8.660992-7.86432-8.660992-21.25824 0-29.12256L688.211968 512.444416z" p-id="2047"></path></svg>
+            <svg v-if="isHorizontal===false ? true : false" t="1675488945436" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2217" width="30" height="30"><path d="M908.406784 292.237312c7.86432-8.66304 21.25824-8.66304 29.12256 0 8.650752 7.876608 8.650752 21.245952 0 29.124608L525.873152 733.016064c-7.86432 7.878656-21.260288 7.878656-29.124608 0L85.0944 321.36192c-7.86432-7.878656-7.86432-21.248 0-29.124608 7.86432-8.66304 21.260288-8.66304 29.124608 0l397.500416 396.699648L908.406784 292.237312z" p-id="2218"></path></svg>
+        </label>
 
 
-        <div class="pointerBtnHorizontal" 
+        <div class="pointerBtnHorizontal"
+        @mousemove="mouseover" @mouseout="mouseout"
         v-if="isHorizontal===true"
         :style='{
             width: pointerLength + "px"
@@ -39,7 +70,8 @@
             </p>
         </div>
 
-        <div class="pointerBtnVertical" 
+        <div class="pointerBtnVertical"
+        @mousemove="mouseover" @mouseout="mouseout" 
         v-if="isHorizontal===false"
         v-show="showPointer"
         >
@@ -54,6 +86,14 @@
 <script lang="ts" setup>
 import { ref, toRef, watch } from "vue"
 const props = defineProps({
+    carouselW:{
+        type:Number,
+        default:671
+    },
+    carouselH:{
+        type:Number,
+        default:300
+    },
     autoplay:{
         type:Number,
         default:2000
@@ -71,15 +111,17 @@ const props = defineProps({
         default:"true"
     }
 })
+const carouselW =toRef(props,"carouselW");
+const carouselH =toRef(props,"carouselH");
 const autoplay =toRef(props,"autoplay");
 const imgData=toRef(props,"imgData")
 const showPointer=toRef(props,"showPointer")
 const isHorizontal=toRef(props,"isHorizontal")
 let lock = true;//锁
 //根据图片数量计算ul宽度或高度
-let ul_w = ref(imgData.value.length * 800)
+let ul_w = ref(imgData.value.length * carouselW.value)
 let ul_left = ref(1)
-let ul_h = ref(imgData.value.length * 494)
+let ul_h = ref(imgData.value.length * carouselH.value)
 let ul_top = ref(1)
 //当前轮播图索引
 let index = ref(0)
@@ -101,8 +143,8 @@ const nextBtn = function () {
     } else {
         index.value = 0
     }
-    ul_left.value = -(index.value) * 800
-    ul_top.value = -(index.value) * 494
+    ul_left.value = -(index.value) * carouselW.value
+    ul_top.value = -(index.value) * carouselH.value
     clearTimeout(ulMove)//清除定时器
     setTimeout(function () {
             lock = true;
@@ -117,8 +159,8 @@ const previousBtn = function () {
     } else {
         index.value = imgData.value.length - 1
     }
-    ul_left.value = -(index.value) * 800
-    ul_top.value = -(index.value) * 494
+    ul_left.value = -(index.value) * carouselW.value
+    ul_top.value = -(index.value) * carouselH.value
     clearTimeout(ulMove)
     setTimeout(function () {
             lock = true;
@@ -127,8 +169,8 @@ const previousBtn = function () {
 //指示点事件
 const pEventBtn = function (id: number) {
     index.value = id;
-    ul_left.value = -(index.value) * 800
-    ul_top.value = -(index.value) * 494
+    ul_left.value = -(index.value) * carouselW.value
+    ul_top.value = -(index.value) * carouselH.value
     clearTimeout(ulMove)
 }
 //自动播放
@@ -138,10 +180,23 @@ let ulMove =setInterval(()=>{
     } else {
         index.value = 0
     }
-    ul_left.value = -(index.value) * 800
-    ul_top.value = -(index.value) * 494
+    ul_left.value = -(index.value) * carouselW.value
+    ul_top.value = -(index.value) * carouselH.value
 },autoplay.value)
-
+const mouseover=function(){
+    clearTimeout(ulMove)
+}
+const mouseout=function(){
+    ulMove =setInterval(()=>{
+    if (index.value < imgData.value.length - 1) {
+        ++index.value
+    } else {
+        index.value = 0
+    }
+    ul_left.value = -(index.value) * carouselW.value
+    ul_top.value = -(index.value) * carouselH.value
+},autoplay.value)
+}
 </script>
 
 <style lang="scss" scoped>
@@ -152,35 +207,23 @@ let ulMove =setInterval(()=>{
 }
 
 .carousel {
-    width: 800px;
-    height: 494px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
-
     ul {
         display: block;
-        height: 494px;
         position: absolute;
         top: 0;
         left: 0;
         transition: left 1s;/*过渡*/ 
         li {
             float: left;
-            width: 800px;
-            height: 494px;
-
-            img {
-                width: 800px;
-                height: 494px;
-            }
         }
     }
 }
 .carousel ul.ulVertical{
     display: block;
-    height: 494px;
     position: absolute;
     top: 0;
     left: 0;
@@ -192,10 +235,11 @@ let ulMove =setInterval(()=>{
     display: block;
     position: absolute;
     z-index: 10;
-    background-color: rgba(230, 12, 12, 0.932);
-    border-radius: 10px;
+    border-radius: 20px;
 }
-
+.carousel label:hover{
+    background-color: #999999;
+}
 .carousel .label_left {
     left: 0px;
     top: 50%;

@@ -27,10 +27,20 @@
       >
       </k-carousel>
     </div>
+    <div>
+      <h3>● 卡片式轮播图</h3>
+      <k-carouselcard  
+        :imgData="imgData"
+        :autoplay="2000"
+        :showPointer="true"
+      >
+      </k-carouselcard>
+    </div>
 </template>
 
 <script lang="ts" setup>
 import KCarousel from "../../components/kcarousel/KCarousel.vue"
+import KCarouselcard from "../../components/kcarousel/KCarouselcard.vue"
 let imgData = [
     {
         url: "https://img-blog.csdnimg.cn/bc3292108e9c4f3ab289d32ff8fba599.jpg",
