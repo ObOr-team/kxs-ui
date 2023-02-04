@@ -63,7 +63,17 @@ const autoplay =toRef(props,"autoplay");
 const imgData=toRef(props,"imgData")
 const showPointer=toRef(props,"showPointer")
 let imgdom =ref(null)
-let idArr = ["first", "second", "right", "left", "last"];
+let idArr: string[]=[]
+if(imgData.value.length>=5){
+    idArr[0]="first";idArr[1]="second";idArr[2]="right"
+    for(let i=3;i<imgData.value.length-2;i++){
+        idArr[i]="left"
+    }
+    idArr[imgData.value.length-1]="last"
+}else{
+    if(imgData.value.length==3){idArr = ["first", "second","last"];}
+    if(imgData.value.length==4)idArr = ["first", "second", "right", "last"];
+}
 onMounted(()=>{
     initialize()
   })
