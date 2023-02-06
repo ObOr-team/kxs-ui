@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3866918 */
-  src: url('iconfont.woff2?t=1674014279550') format('woff2'),
-       url('iconfont.woff?t=1674014279550') format('woff'),
-       url('iconfont.ttf?t=1674014279550') format('truetype');
+  src: url('iconfont.woff2?t=1675656049579') format('woff2'),
+       url('iconfont.woff?t=1675656049579') format('woff'),
+       url('iconfont.ttf?t=1675656049579') format('truetype');
 }
 
 .iconfont {
@@ -13,6 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-jiazai:before {
+  content: "\e607";
+  
+}
+.icon-jiazai{
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);/*从0度开始*/
+	}
+	100%{
+		transform: rotateZ(360deg);/*360度结束*/
+	}
+}
 .icon-shezhi-xianxing:before {
   content: "\e621";
 }

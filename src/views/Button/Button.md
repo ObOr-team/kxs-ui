@@ -5,6 +5,7 @@
     import button4 from './Button4.vue'
     import button5 from './Button5.vue'
     import button6 from './Button6.vue'
+    import button7 from './Button7.vue'
 </script>
 ### ● 基础  
 <button1/>  
@@ -23,6 +24,9 @@
 
 ### ● 图标
 <button6/>
+
+### ● 加载
+<button7/>
 
 <style>
     table{
@@ -49,3 +53,4 @@
 |  **round**         | 是否圆角按钮                           |  boolean  | —| false|
 |   **disabled**     | 是否禁用状态                           |  boolean  |   —    | false 
 |  **icon**          | 图标类名                               |  string   | — | 	—   |
+|  **loading**       | 是否加载                               |  boolean   | — | false |

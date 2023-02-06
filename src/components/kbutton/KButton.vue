@@ -1,19 +1,16 @@
 <template>
         <button
         :disabled="disabled"
-        class="btn" 
-        :class="[type,isPlain,isRound,isDisabled,size]"
+        :class="classObj"
         :style="[blockCss]"
         >
-        <i :class="icon" ></i>
-        <i :class="front" ></i>
+        <div :class="icon" ></div>
             <slot></slot>
         <i :class="post" ></i>
         </button>
 </template>
 <script lang="ts" setup>
     //defineProps 宏来接收父组件传递的数据
-    import { Console } from 'console';
 import {defineProps,computed,toRef} from 'vue'
     const props = defineProps({
         type:{
@@ -52,29 +49,32 @@ import {defineProps,computed,toRef} from 'vue'
             type:String,
             default:""
         },
+        loading:{
+            type:Boolean,
+            default:false
+        },
     })
     //可以通过toRef处理响应式数据
     const round =toRef(props,"round");
-    const isPlain = computed(()=>{
-        return props.plain? "isPlain":""
-    })
-    const isRound = computed(()=>{
-        return round.value? "isRound":""
-    })
-    const isDisabled = computed(()=>{
-        return props.disabled? "isDisabled":""
-    })
     const blockCss = computed(()=>{
         return props.block? {display:"block",width:"40%" }:""
-    })
-    const front = computed(()=>{
-        return props.frontIcon? `iconfont icon-${props.frontIcon}`:""
     })
     const post = computed(()=>{
         return props.postIcon? `iconfont icon-${props.postIcon}`:""
     })
     const icon = computed(()=>{
         return props.icon? `iconfont icon-${props.icon}`:""
+    })
+    const classObj = computed(()=>{
+        return [
+            'btn',
+            `${props.type}`,
+            props.plain? "isPlain":"",
+            round.value? "isRound":"",
+            props.disabled? "isDisabled":"",
+            props.loading? "isLoading":"",
+            `${props.size}`
+        ]
     })
 </script>
 <style lang="scss" scoped>
@@ -190,6 +190,10 @@ import {defineProps,computed,toRef} from 'vue'
     opacity: 0.5;
     cursor: no-drop;
 }
+.isLoading{
+    opacity: 0.5;
+    pointer-events: none;
+}
 .small{
     padding: 5px 8px;
     font-size: 7px;
@@ -197,5 +201,8 @@ import {defineProps,computed,toRef} from 'vue'
 .large{
     padding: 12px 21px;
     font-size: 21px;
+}
+div{
+    display: inline-block;
 }
 </style>
