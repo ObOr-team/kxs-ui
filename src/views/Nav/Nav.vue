@@ -5,7 +5,7 @@
    <div>
     <h3>横向导航栏</h3>
       <k-menu Perpendicular>
-              <k-nav index="1">横向导航栏1</k-nav>
+            <k-nav index="1">横向导航栏1</k-nav>
             <k-nav index="2">横向导航栏2</k-nav>
             <k-nav index="3">横向导航栏3</k-nav>
             <k-nav index="4" disabled>横向导航栏4</k-nav>
