@@ -35,29 +35,29 @@ header{
 }
 section{
     display: flex;
-}
-aside{
-    width: 20%;
-    height: auto;
-    overflow-y: scroll; 
-}    
-li{
-    list-style: none;
-    line-height:40px;
-    padding:0 10px;
-    box-sizing:border-box;
-    cursor: pointer;
-} 
-li.active{
-    border-right: 4px solid #0e80eb;
-    color: #0e80eb;
-    background: rgba(14, 125,235,.1);
-}
-article{
-    flex: 1;
-    height: auto;
-    overflow-y: scroll;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
+    aside{
+        width: 20%;
+        height: auto;
+        overflow-y: scroll; 
+        li{
+            list-style: none;
+            line-height:40px;
+            padding:0 10px;
+            box-sizing:border-box;
+            cursor: pointer;
+            &.active{
+                border-right: 4px solid #0e80eb;
+                color: #0e80eb;
+                background: rgba(14, 125,235,.1);
+            }
+        } 
+    }
+    article{
+        flex: 1;
+        height: auto;
+        overflow-y: scroll;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}   
 </style>
