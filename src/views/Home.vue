@@ -29,7 +29,7 @@
         </article>
     </section>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 header{
     border: 1px solid gray;
 }

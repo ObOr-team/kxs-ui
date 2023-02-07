@@ -9,6 +9,10 @@ import "highlight.js/styles/color-brewer.css"
 const app =createApp(App)
 //应用路由
 app.use(router)
+//在views中全局注册组件
+import Component from '@/views'
+app.use(Component)
+
 app.mount('#app')
 //自定义指令
 app.directive("highlight",function(el){

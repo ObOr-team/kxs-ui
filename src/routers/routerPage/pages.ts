@@ -20,6 +20,12 @@ export default[{
             path:'dialog',
             name:"Dialog 对话框",
             component:()=>import ("@/views/Dialog/Dialog.md") 
+        },
+        {
+            //textarea
+            path:'textarea',
+            name:"Textarea 文本域",
+            component:()=>import ("@/views/Textarea/doc/doc.md") 
         }
     ]
 }]

@@ -15,6 +15,11 @@
         <textarea id="inputCopy"/>
     </div>
 </template>
+<script lang="ts">
+export default {
+    name:"kPreview"
+}
+</script>
 <script lang="ts" setup>
     import { onMounted,ref,defineProps} from "vue"
     const props = defineProps({
@@ -29,8 +34,6 @@
             require: true,
         },
     });
-    console.log(props.compName)
-    console.log(props.demoName)
     const showCode = ref(false);
     const border = ref( "1px solid rgba(0,0,0,.06)");
     const showOrhideCode = ()=>{

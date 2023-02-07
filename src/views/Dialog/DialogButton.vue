@@ -3,8 +3,6 @@
     import KDialog from "@/components/kdialog/KDialog.vue"
     // 引入Button组件
     import KButton from "@/components/kbutton/KButton.vue"
-    // 引入代码预览模块
-    import perview from '@/components/preview.vue'
     // 引入ref处理响应式数据
     import { ref } from 'vue'
 
@@ -48,6 +46,6 @@
         footerBtn="null"
         ></k-dialog>
 
-        <perview compName="Dialog" demoName="DialogButton"/>
+        <k-preview compName="Dialog" demoName="DialogButton"/>
     </div>
 </template>

@@ -25,8 +25,11 @@
   --btn-color-warming-lighter:#f7e2c4;
   --btn-color-danger:#e98383;
   --btn-color-danger-lighter:#f7cbcb;
-  /*默认边框颜色变量*/
+  /*边框颜色变量*/
   --default-border-color:#c9c6c6;
+  --active-border-color:#3863ee;
+  /*默认字体颜色*/
+  --default-text-color:#5c5757;
   /*按钮内容样式*/
 .kbcontent{
     border: solid 1px var(--default-border-color);

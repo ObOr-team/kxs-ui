@@ -1,7 +1,6 @@
 <script lang="ts" setup>
     //引入KButton组
     import KButton from "@/components/kbutton/KButton.vue"
-    import perview from '@/components/preview.vue'
 </script>
 <template>
     <div class="kbcontent">
@@ -13,6 +12,6 @@
         <k-button type="warming"  icon="jiazai" loading>Warming</k-button>
         <k-button type="danger" icon="jiazai" loading>Danger</k-button>
         </div>
-        <perview compName="Button" demoName="Preview_Button7"/>
+        <k-preview compName="Button" demoName="Preview_Button7"/>
     </div>
 </template>
