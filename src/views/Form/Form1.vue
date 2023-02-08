@@ -33,16 +33,14 @@
             <svg t="1675233831297" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1920" width="40" height="40"><path d="M568.888889 213.333333a56.888889 56.888889 0 0 1 56.888889 56.888889v99.555556h-56.888889v-99.555556H312.888889v312.888889h71.111111v56.888889h-71.111111a56.888889 56.888889 0 0 1-56.888889-56.888889V270.222222a56.888889 56.888889 0 0 1 56.888889-56.888889h256z" fill="#8a8a8a" p-id="1921"></path><path d="M725.333333 398.222222a56.888889 56.888889 0 0 1 56.888889 56.888889v312.888889a56.888889 56.888889 0 0 1-56.888889 56.888889H469.333333a56.888889 56.888889 0 0 1-56.888889-56.888889V455.111111a56.888889 56.888889 0 0 1 56.888889-56.888889h256z m0 56.888889H469.333333v312.888889h256V455.111111z" fill="#8a8a8a" p-id="1922" class="custom-cursor-on-hover"></path><path d="M526.222222 540.444444m14.222222 0l113.777778 0q14.222222 0 14.222222 14.222223l0 14.222222q0 14.222222-14.222222 14.222222l-113.777778 0q-14.222222 0-14.222222-14.222222l0-14.222222q0-14.222222 14.222222-14.222223Z" fill="#8a8a8a" p-id="1923"></path><path d="M526.222222 611.555556m14.222222 0l42.666667 0q14.222222 0 14.222222 14.222222l0 14.222222q0 14.222222-14.222222 14.222222l-42.666667 0q-14.222222 0-14.222222-14.222222l0-14.222222q0-14.222222 14.222222-14.222222Z" fill="#8a8a8a" p-id="1924"></path></svg>
             <div id="copy">复制代码<k-preview compName="Form1" demoName="preview_form1"/></div>  
         </a>  -->
-        <preview compName="Form" demoName="preview_form1"/>
         </div>
+        <br/>
+        <k-preview compName="Form" demoName="preview_form1"/>
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
-import { Vue, Component } from 'vue-property-decorator';
-import preview from '@/components/Preview/preview.vue'
-
 interface formDemo{
     account:string;
     password:string;

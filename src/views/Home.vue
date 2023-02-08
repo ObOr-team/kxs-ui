@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-    import {RouterLink} from "vue-router"
     import menuList from "@/routers/routerPage/pages"
     import { ref } from "vue"
     import { useRouter } from "vue-router"
@@ -14,31 +13,63 @@
 </script>
 <template>
     <header>
-        <h2>标题位置：面向对象队，Kxxx-UI组件库开发</h2>
+        <div class="head_container">
+            <img src="../assets/Kxx-UI-logo.png" alt=""/> 
+        </div>
     </header>
+    <hr/>
     <section>
-        <aside>
-            <li v-for="(item,index) in menuList[0].children" :key="index"
-            :class="{active:activeIndex==index}"
-            @click="switchMenu(item,index)">
-                {{ item.name }}
-            </li>
-        </aside>
-        <article>
-             <RouterView></RouterView> 
-        </article>
+           <div class="page_container">
+            <aside>
+                <li v-for="(item,index) in menuList[0].children" :key="index"
+                :class="{active:activeIndex==index}"
+                @click="switchMenu(item,index)">
+                    {{ item.name }}
+                </li>
+            </aside>
+            <article>
+                <RouterView></RouterView> 
+            </article>
+            </div>
     </section>
+ 
 </template>
 <style lang="scss" scoped>
 header{
-    border: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    // left: 0;
+    top: 0;
+    // z-index: 1500;
+    .head_container{
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 1140px;
+        margin:auto;
+    }
+    img{
+        width: 200px;
+        height: 60px;
+        margin-left:30px;
+    }
+}
+hr{
+    width: 1140px;
+    border: 2px solid var(--default-border-color);
+    border-radius: 5px;
+    margin-top: 80px;
 }
 section{
+   .page_container{
     display: flex;
+    width: 1140px;
+    margin:auto;
     aside{
-        width: 20%;
+        width: 15%;
         height: auto;
-        overflow-y: scroll; 
+        overflow-y: auto; 
         li{
             list-style: none;
             line-height:40px;
@@ -55,9 +86,12 @@ section{
     article{
         flex: 1;
         height: auto;
-        overflow-y: scroll;
+        overflow-y:auto;
         padding: 0 15px;
+        border: 4px solid var(--default-border-color);
         box-sizing: border-box;
     }
-}  
+}   
+}
+ 
 </style>
