@@ -59,5 +59,5 @@ section{
         padding: 0 15px;
         box-sizing: border-box;
     }
-}   
+}  
 </style>
