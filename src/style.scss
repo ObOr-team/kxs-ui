@@ -40,7 +40,14 @@
 body{
   margin: 50px;
 }
-
+code {
+  margin: 0 1px;
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  border-radius: 3px;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

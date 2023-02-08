@@ -92,7 +92,7 @@ section{
         flex: 1;
         height: auto;
         overflow-y:auto;
-        padding: 0 15px;
+        padding: 15px 30px;
         border: 4px solid var(--default-border-color);
         box-sizing: border-box;
     }
