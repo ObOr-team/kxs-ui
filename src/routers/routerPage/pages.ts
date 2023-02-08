@@ -26,6 +26,11 @@ export default[{
             path:'textarea',
             name:"Textarea 文本域",
             component:()=>import ("@/views/Textarea/doc/doc.md") 
+        },
+        {
+            path:'select',
+            name:"Select 下拉栏",
+            component:()=>import("@/views/Select/Select.md")
         }
     ]
 }]
