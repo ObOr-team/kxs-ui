@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-    import KButton from "../kbutton/KButton.vue"
-    import {defineProps, computed, ref} from 'vue'
+    import {computed, ref} from 'vue'
     const props = defineProps({
         // 提示框类型：info（默认）、confirm、warning、error
         type: {

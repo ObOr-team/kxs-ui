@@ -9,6 +9,11 @@
         <i :class="post" ></i>
         </button>
 </template>
+<script lang="ts">
+    export default {
+         name:"kButton",
+    }
+</script>
 <script lang="ts" setup>
     //defineProps 宏来接收父组件传递的数据
 import {defineProps,computed,toRef} from 'vue'

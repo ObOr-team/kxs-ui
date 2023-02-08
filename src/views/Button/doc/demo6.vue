@@ -1,7 +1,3 @@
-<script lang="ts" setup>
-    //引入KButton组
-    import KButton from "@/components/kbutton/KButton.vue"
-</script>
 <template>
     <div class="kbcontent">
         <div>
@@ -28,6 +24,6 @@
         <k-button type="default" icon="bianjixiugai"></k-button>
         <k-button type="default" icon="shanchu"></k-button>
         </div>
-        <k-preview compName="Button" demoName="Preview_Button6"/>
+        <k-preview compName="Button/doc" demoName="demo6"/>
     </div>
 </template>

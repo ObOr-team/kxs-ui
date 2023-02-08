@@ -7,7 +7,7 @@ export default[{
             //button
             path:'button',
             name:"Button 按钮",
-            component:()=>import ("@/views/Button/Button.md") 
+            component:()=>import ("@/views/Button//doc/doc.md") 
         },
         {
             //form
@@ -26,6 +26,13 @@ export default[{
             path:'textarea',
             name:"Textarea 文本域",
             component:()=>import ("@/views/Textarea/doc/doc.md") 
+        }
+        ,
+        {
+            //space
+            path:'space',
+            name:"Space 间距",
+            component:()=>import ("@/views/Space/doc/doc.md") 
         }
     ]
 }]

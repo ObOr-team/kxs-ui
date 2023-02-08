@@ -68,7 +68,7 @@ section{
     width: 1140px;
     margin:auto;
     aside{
-        width: 15%;
+        width: 18%;
         height: auto;
         overflow-y: auto; 
         li{
@@ -77,6 +77,10 @@ section{
             padding:0 10px;
             box-sizing:border-box;
             cursor: pointer;
+            font-size: 14px;
+            // font-family: "Times New Roman", Times, serif;
+            // font-family: Arial, Helvetica, sans-serif;
+            // font-family: "Lucida Console", "Courier New", monospace;
             &.active{
                 border-right: 4px solid #0e80eb;
                 color: #0e80eb;

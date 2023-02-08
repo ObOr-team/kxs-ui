@@ -18,7 +18,7 @@
 ### 验证表单#
 <Form3/>
 
-<style>
+<style scoped>
     h3{
         /* color:#00a8ff; */
        color:#45aaf2;

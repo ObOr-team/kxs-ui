@@ -21,7 +21,7 @@ export default {
 }
 </script>
 <script lang="ts" setup>
-    import { onMounted,ref,defineProps} from "vue"
+    import { onMounted,ref} from "vue"
     const props = defineProps({
         compName:{
             type: String,
