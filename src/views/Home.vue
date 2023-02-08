@@ -34,5 +34,6 @@ article{
     flex: 1;
     height: auto;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 </style>
