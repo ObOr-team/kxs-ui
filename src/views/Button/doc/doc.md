@@ -1,32 +1,32 @@
 <script lang="ts" setup>
-    import button1 from './Button1.vue'
-    import button2 from './Button2.vue'
-    import button3 from './Button3.vue'
-    import button4 from './Button4.vue'
-    import button5 from './Button5.vue'
-    import button6 from './Button6.vue'
-    import button7 from './Button7.vue'
+    import demo1 from './demo1.vue' 
+    import demo2 from './demo2.vue' 
+    import demo3 from './demo3.vue'
+    import demo4 from './demo4.vue'
+    import demo5 from './demo5.vue'
+    import demo6 from './demo6.vue'
+    import demo7 from './demo7.vue'
 </script>
 ### ● 基础  
-<button1/>  
+<demo1/>  
 
 ### ● 反色  
-<button2/>  
+<demo2/>   
 
 ### ● 禁用
-<button3/>
+<demo3/> 
 
 ### ● 大小
-<button4/>
+<demo4/> 
 
 ### ● 块级
-<button5/>
+<demo5/> 
 
 ### ● 图标
-<button6/>
+<demo6/> 
 
 ### ● 加载
-<button7/>
+<demo7/> 
 
 <style>
     table{

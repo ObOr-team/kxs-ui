@@ -7,7 +7,7 @@ export default[{
             //button
             path:'button',
             name:"Button 按钮",
-            component:()=>import ("@/views/Button/Button.md") 
+            component:()=>import ("@/views/Button//doc/doc.md") 
         },
         {
             //form
@@ -31,6 +31,13 @@ export default[{
             path:'select',
             name:"Select 下拉栏",
             component:()=>import("@/views/Select/Select.md")
+        }
+        ,
+        {
+            //space
+            path:'space',
+            name:"Space 间距",
+            component:()=>import ("@/views/Space/doc/doc.md") 
         }
     ]
 }]
