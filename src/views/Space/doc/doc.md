@@ -20,8 +20,3 @@
 ### ● 间距大小 
 <p>通过添加<code>wrap</code>属性来设置自动换行。</p>
 <demo4/>
-<style scoped>
-    p{
-        font-size:3px;
-    }
-</style>
