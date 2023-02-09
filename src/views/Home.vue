@@ -87,6 +87,7 @@ section{
         flex: 1;
         height: auto;
         overflow-y:auto;
+        overflow-x: hidden;
         padding: 0 15px;
         border: 4px solid var(--default-border-color);
         box-sizing: border-box;

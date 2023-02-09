@@ -64,8 +64,6 @@
               <button name="submit" type="submit">提交</button>
               </form-item></div><br/>
           </form>
-          <br/>
-        <k-preview compName="Form" demoName="preview_form2"/>
     </div>
   </template>
   
@@ -106,50 +104,3 @@
       },
   });
   </script>
-  
-  <style>
-    #total{
-      margin-top: 50px;
-  }
-  #basic2{
-      width:100% ;
-      margin: auto;
-      border: 1px solid #b2bec3;
-      text-align: center;
-      border-radius: 8px;
-  }
-  #account{
-      margin-top: 50px;
-  }
-  #sex{
-      margin-left: -120px;
-  }
-  #hobby{
-      margin-left: -12px;
-  }
-  #location{
-      margin-left: -114px;
-  }
-  #mes{
-      margin-right: -75px;
-  }
-  a{
-      text-decoration: none;
-      color:#00a8ff ;
-  }
-  button:hover{
-      background-color:#00a8ff ;
-      color: white;
-      border:white ;
-  }
-  a.detail{
-      position: absolute;
-      top:10px;
-      margin-left: 380px;
-  }
-  a.copy{
-      position: absolute;
-      top:10px;
-      margin-left: 280px;
-  }
-  </style>
