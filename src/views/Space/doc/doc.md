@@ -17,11 +17,6 @@
 <p>通过设置<code>size</code>的值来规定间距的大小。</p>
 <demo3/>
 
-### ● 间距大小 
+### ● 自动换行 
 <p>通过添加<code>wrap</code>属性来设置自动换行。</p>
 <demo4/>
-<style scoped>
-    p{
-        font-size:3px;
-    }
-</style>

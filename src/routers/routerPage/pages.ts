@@ -33,6 +33,12 @@ export default[{
             path:'space',
             name:"Space 间距",
             component:()=>import ("@/views/Space/doc/doc.md") 
+        },
+        {
+            //radio
+            path:'radio',
+            name:"Radio 单选",
+            component:()=>import ("@/views/Radio/doc/doc.md") 
         }
     ]
 }]
