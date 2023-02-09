@@ -52,10 +52,10 @@
             default: "both"
         },
         // TODO: 确定按钮loading（异步确认关闭）
-        // confirmLoading: {
-        //     type: Boolean,
-        //     default: false
-        // },
+        confirmLoading: {
+            type: Boolean,
+            default: false
+        },
         // 对话框整体宽度
         width: {
             type: String,
@@ -143,12 +143,22 @@
         return {top: '50%'};
     });
 
+    // 确认按钮图标
+    let confirmIcon:any = ref("");
+    // 确认按钮是否异步
+    let isLoading:any = ref(false);
     //是否渲染dialog组件
     let isShow: any = ref(true);
     // 点击确定按钮
     let confirmClick = () => {
+        if(props.confirmLoading) {
+            isLoading.value = true;
+            confirmIcon.value = "jiazai";
+        } else {
+            
+            isShow.value = false;
+        }
         props.confirmClick();
-        isShow.value = false;
     };
     // 点击取消按钮
     let cancelClick = () => {
@@ -195,7 +205,7 @@
                 </div>
                 <!-- 底部按钮 -->
                 <div class="footerBox" v-if="!(props.footerBtn === 'null')">
-                    <k-button class="footerBtn confirmBtn" v-if = "isConfirmBtnShow" :style="[bgColorCss]" :onclick="confirmClick">{{ props.confirmBtnText }}</k-button>
+                    <k-button class="footerBtn confirmBtn" v-if = "isConfirmBtnShow" :style="[bgColorCss]" :onclick="confirmClick" :icon="confirmIcon" :loading="isLoading">{{ props.confirmBtnText }}</k-button>
                     <k-button class="footerBtn cancelBtn" v-if = "isCancelBtnShow" :onclick="cancelClick">{{ props.cancelBtnText }}</k-button>
                 </div>
             </div>
