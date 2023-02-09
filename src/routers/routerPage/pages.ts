@@ -34,5 +34,12 @@ export default[{
             name:"Space 间距",
             component:()=>import ("@/views/Space/doc/doc.md") 
         }
+        ,
+        {
+            //space
+            path:'input',
+            name:"input 输入框",
+            component:()=>import ("@/views/Input/doc/doc.md") 
+        }
     ]
 }]
