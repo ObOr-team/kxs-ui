@@ -79,7 +79,6 @@
   
   <script lang="ts">
   import { defineComponent, reactive } from 'vue';
-  import { Vue, Component } from 'vue-property-decorator';
   
   interface formDemo{
       account:string;

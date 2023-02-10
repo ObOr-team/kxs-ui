@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-    import {RouterLink} from "vue-router"
     import menuList from "@/routers/routerPage/pages"
     import { ref } from "vue"
     import { useRouter } from "vue-router"
@@ -11,8 +10,8 @@
             name:item.name
         })
     }
-    const preface = menuList[0].children.slice(0, 3) //快速上手
-    const components = menuList[0].children.slice(3) //组件
+    const preface = menuList[0].children[0].children.slice(0, 3) //快速上手
+    const components = menuList[0].children[0].children.slice(3) //组件
 </script>
 <template>
     <header>
