@@ -23,7 +23,7 @@
     </div>
     <div>
       <h3>● 垂直轮播图</h3>
-      <span>&nbsp&nbsp&nbsp&nbsp默认情况下 isHorizontal 为 true,显示为水平轮播图。 可以通过设置 isHorizontal 为 false 来让轮播图在垂直方向上显示。</span>
+      <span>&nbsp&nbsp&nbsp&nbsp默认情况下 isHorizontal 为 true，显示为水平轮播图。 可以通过设置 isHorizontal 为 false 来让轮播图在垂直方向上显示。</span>
       <k-carousel
         :imgData="imgData"
         :autoplay="2000"
