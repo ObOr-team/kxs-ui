@@ -50,12 +50,12 @@ export default {
         if (isDev){
             sourceCode.value =(
                 await import(
-                     `./src/views/${props.compName}/${props.demoName}.vue?raw`
+                     `/src/views/${props.compName}/${props.demoName}.vue?raw`
                     )
                 ).default;
         }else{
             sourceCode.value = await fetch(
-                `./src/views/${props.compName}/${props.demoName}.vue`
+                `/src/views/${props.compName}/${props.demoName}.vue`
                 ).then((res) => res.text());
         }   
     }
