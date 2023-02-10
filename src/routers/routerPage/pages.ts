@@ -56,6 +56,12 @@ export default[{
             path:'radio',
             name:"Radio 单选",
             component:()=>import ("@/views/Radio/doc/doc.md") 
+        },
+        {
+            //tree
+            path:'tree',
+            name:"Tree 树形控件",
+            component:()=>import ("@/views/Tree/doc/doc.md") 
         }
     ]
 }]
