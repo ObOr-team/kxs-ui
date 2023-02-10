@@ -22,7 +22,7 @@
                 <a href="">首页</a>
                 <a href="">组件</a>
                 <a href="">更新日志</a>
-                <a href="">问题反馈</a>
+                <a href="https://github.com/5th-Youth-Training-OOT/Kxxx-UI/issues" target="_blank">问题反馈</a>
             </div>
         </div>      
     </header>
@@ -74,7 +74,7 @@ header{
         min-width: 500px;
         margin: auto;
         border-bottom: 1px solid var(--default-border-color);
-        
+        box-shadow: 0 5px 6px rgba(200, 200, 200, 0.15);
     }
     img{
         width: 200px;
