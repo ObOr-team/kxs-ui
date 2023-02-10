@@ -1,6 +1,7 @@
 <template>
     <div>
         <k-radio :options="options"></k-radio>
+        <k-preview compName="Radio/doc" demoName="demo2"/>
     </div>
 </template>
 

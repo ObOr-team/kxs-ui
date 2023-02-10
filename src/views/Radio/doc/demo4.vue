@@ -4,6 +4,7 @@
         <k-radio :options="options" customColor="#C1FFC1"></k-radio>
         <k-radio :options="options" customColor="#87CEFA"></k-radio>
         <k-radio :options="options" customColor="#EEC591"></k-radio>
+        <k-preview compName="Radio/doc" demoName="demo4"/>
     </div>
 </template>
 

@@ -3,6 +3,23 @@ export default[{
     path:'/',
     component:()=>import ("@/views/Home.vue") ,
     children:[
+        // 快速上手
+        {
+            path:'/',
+            name:"参与贡献",
+            component:()=>import ("@/views/preface/contribute.md") 
+        },
+        {
+            path:'log',
+            name:"更新日志",
+            component:()=>import ("@/views/preface/log.md") 
+        },
+        {
+            path:'install',
+            name:"安装使用",
+            component:()=>import ("@/views/preface/install.md") 
+        },
+        // 组件
         {
             //button
             path:'button',

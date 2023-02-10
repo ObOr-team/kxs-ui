@@ -1,5 +1,6 @@
 <template>
   <k-tree :options="treeOptions"></k-tree>
+  <k-preview compName="Tree/doc" demoName="demo1"/>
 </template>
 
 <script setup>

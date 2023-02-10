@@ -6,5 +6,6 @@
             <k-button icon="sousuo"></k-button>
             <k-button type="warming"  icon="jiazai" loading></k-button>
         </k-space>
+        <k-preview compName="Space/doc" demoName="demo1"/>
     </div>
 </template>

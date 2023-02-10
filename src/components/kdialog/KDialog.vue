@@ -1,83 +1,67 @@
 <script lang="ts" setup>
     import {computed, ref} from 'vue'
     const props = defineProps({
-        // 提示框类型：info（默认）、confirm、warning、error
-        type: {
+        type: { // 提示框类型：info（默认）、confirm、warning、error
             type: String,
             default: "info"
         },
-        // 主题颜色：头部背景颜色、图标颜色、确认按钮颜色
-        themeColor: {
+        themeColor: { // 主题颜色：头部背景颜色、图标颜色、确认按钮颜色
             type: String,
             default: ""
         },
-        // 标题文字颜色
-        titleColor: {
+        titleColor: { // 标题文字颜色
             type: String,
             default: "white"
         },
-        // 提示框内容文字颜色
-        contentColor: {
+        contentColor: { // 提示框内容文字颜色
             type: String,
             default: "black"
         },
-        // 标题文本
-        titleText: {
+        titleText: { // 标题文本
             type: String,
             default: ""
         },
-        // 提示框内容文本
-        contentText: {
+        contentText: { // 提示框内容文本
             type: String,
             default: ""
         },
-        // 确认按钮文本
-        confirmBtnText: {
+        confirmBtnText: { // 确认按钮文本
             type: String,
             default: "确认"
         },
-        // 取消按钮文本
-        cancelBtnText: {
+        cancelBtnText: { // 取消按钮文本
             type: String,
             default: "取消"
         },
-        // 是否显示右上角的关闭按钮
-        closable: {
+        closable: { // 是否显示右上角的关闭按钮
             type: Boolean,
             default: true
         },
-        // 底部按钮：both、confirm、cancel、null
-        footerBtn: {
+        footerBtn: { // 底部按钮：both、confirm、cancel、null
             type: String,
             default: "both"
         },
-        // TODO: 确定按钮loading（异步确认关闭）
-        // confirmLoading: {
-        //     type: Boolean,
-        //     default: false
-        // },
-        // 对话框整体宽度
-        width: {
+        confirmLoading: { // 确定按钮loading（异步确认关闭）
+            type: Boolean,
+            default: false
+        },
+        width: { // 对话框整体宽度
             type: String,
             default: "500px"
         },
-        // 对话框整体高度
-        height: {
+        height: { // 对话框整体高度
             type: String,
             default: "200px"
         },
-        // 位置：top、center
-        location: {
+        location: { // 位置：top、center
             type: String,
             default: "top"
         },
-        // 确定按钮点击事件
-        confirmClick: {
+        confirmClick: { // 确定按钮点击事件
             type: Function,
             default: function () {}
         },
-        // 取消按钮点击事件
-        cancelClick: {
+        cancelClick: { // 取消按钮点击事件
             type: Function,
             default: function () {}
         }
@@ -143,12 +127,22 @@
         return {top: '50%'};
     });
 
+    // 确认按钮图标
+    let confirmIcon:any = ref("");
+    // 确认按钮是否异步
+    let isLoading:any = ref(false);
     //是否渲染dialog组件
     let isShow: any = ref(true);
     // 点击确定按钮
     let confirmClick = () => {
+        if(props.confirmLoading) {
+            isLoading.value = true;
+            confirmIcon.value = "jiazai";
+        } else {
+            
+            isShow.value = false;
+        }
         props.confirmClick();
-        isShow.value = false;
     };
     // 点击取消按钮
     let cancelClick = () => {
@@ -195,7 +189,7 @@
                 </div>
                 <!-- 底部按钮 -->
                 <div class="footerBox" v-if="!(props.footerBtn === 'null')">
-                    <k-button class="footerBtn confirmBtn" v-if = "isConfirmBtnShow" :style="[bgColorCss]" :onclick="confirmClick">{{ props.confirmBtnText }}</k-button>
+                    <k-button class="footerBtn confirmBtn" v-if = "isConfirmBtnShow" :style="[bgColorCss]" :onclick="confirmClick" :icon="confirmIcon" :loading="isLoading">{{ props.confirmBtnText }}</k-button>
                     <k-button class="footerBtn cancelBtn" v-if = "isCancelBtnShow" :onclick="cancelClick">{{ props.cancelBtnText }}</k-button>
                 </div>
             </div>
@@ -264,7 +258,6 @@
         .icon-box {
             flex: 1;
             padding: 10px;
-
             .icon {
                 width:25px;
                 height: 25px;
