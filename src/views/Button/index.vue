@@ -88,7 +88,7 @@ import {defineProps,computed,toRef} from 'vue'
     font-size: 14px;
     color: var(--btn-color-gray);
     background-color: var(--btn-color-white);
-    border: solid 1px var(--btn-color-default);
+    border: solid 1px var(--default);
     border-radius: 8px;
     cursor: pointer;
     margin: 10px;
@@ -96,95 +96,95 @@ import {defineProps,computed,toRef} from 'vue'
 .default{
     color: var(--btn-color-gray);
     background-color: var(--btn-color-white);
-    border: solid 1px var(--btn-color-default);
+    border: solid 1px var(--default);
     &:not(.isDisabled):hover{
         background-color: var(--btn-color-default-lighter);
     }
     &.isPlain{
         &:hover{
-        color: var(--btn-color-primary);
-        border: solid 1px var(--btn-color-primary);
+        color: var(--primary);
+        border: solid 1px var(--primary);
         }
     }
 }
 .primary{
     color: var(--btn-color-white);
-    background-color: var(--btn-color-primary);
-    border-color: var(--btn-color-primary);
+    background-color: var(--primary);
+    border-color: var(--primary);
     &:not(.isDisabled):hover{
         background-color: var(--btn-color-primary-lighter);
     }
     &.isPlain{
         background-color: var(--btn-color-primary-lighter);
-        color: var(--btn-color-primary);
+        color: var(--primary);
         &:hover{
             color: var(--btn-color-white);
-            background-color: var(--btn-color-primary);
+            background-color: var(--primary);
         }
     }
 }
 .success{
     color: var(--btn-color-white);
-    background-color: var(--btn-color-success);
-    border-color: var(--btn-color-success);
+    background-color: var(--success);
+    border-color: var(--success);
     &:not(.isDisabled):hover{
         background-color: var(--btn-color-success-lighter);
     }
     &.isPlain{
         background-color: var(--btn-color-success-lighter);
-        color: var(--btn-color-success);
+        color: var(--success);
         &:hover{
             color: var(--btn-color-white);
-            background-color: var(--btn-color-success);
+            background-color: var(--success);
         }
     }
     
 }
 .info{
     color: var(--btn-color-white);
-    background-color: var(--btn-color-info);
-    border-color: var(--btn-color-info);
+    background-color: var(--info);
+    border-color: var(--info);
     &:not(.isDisabled):hover{
         background-color: var(--btn-color-info-lighter);
     }
     &.isPlain{
         background-color: var(--btn-color-info-lighter);
-        color: var(--btn-color-info);
+        color: var(--info);
         &:hover{
             color: var(--btn-color-white);
-            background-color: var(--btn-color-info);
+            background-color: var(--info);
         }
     }
 }
 .warming{
     color: var(--btn-color-white);
-    background-color: var(--btn-color-warming);
-    border-color: var(--btn-color-warming);
+    background-color: var(--warming);
+    border-color: var(--warming);
     &:not(.isDisabled):hover{
         background-color: var(--btn-color-warming-lighter);
     }
     &.isPlain{
         background-color: var(--btn-color-warming-lighter);
-        color: var(--btn-color-warming);
+        color: var(--warming);
         &:hover{
             color: var(--btn-color-white);
-            background-color: var(--btn-color-warming);
+            background-color: var(--warming);
         }
     }
 }
 .danger{
     color: var(--btn-color-white);
-    background-color: var(--btn-color-danger);
-    border-color: var(--btn-color-danger);
+    background-color: var(--danger);
+    border-color: var(--danger);
     &:not(.isDisabled):hover{
         background-color: var(--btn-color-danger-lighter);
     }
     &.isPlain{
         background-color: var(--btn-color-danger-lighter);
-        color: var(--btn-color-danger);
+        color: var(--danger);
         &:hover{
             color: var(--btn-color-white);
-            background-color: var(--btn-color-danger);
+            background-color: var(--danger);
         }
     }
 }

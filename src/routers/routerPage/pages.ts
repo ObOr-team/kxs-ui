@@ -3,6 +3,23 @@ export default[{
     path:'/',
     component:()=>import ("@/views/Home.vue") ,
     children:[
+        // 快速上手
+        {
+            path:'/',
+            name:"参与贡献",
+            component:()=>import ("@/views/preface/contribute.md") 
+        },
+        {
+            path:'log',
+            name:"更新日志",
+            component:()=>import ("@/views/preface/log.md") 
+        },
+        {
+            path:'install',
+            name:"安装使用",
+            component:()=>import ("@/views/preface/install.md") 
+        },
+        // 组件
         {
             //button
             path:'button',
@@ -33,6 +50,12 @@ export default[{
             path:'space',
             name:"Space 间距",
             component:()=>import ("@/views/Space/doc/doc.md") 
+        },
+        {
+            //radio
+            path:'radio',
+            name:"Radio 单选",
+            component:()=>import ("@/views/Radio/doc/doc.md") 
         }
     ]
 }]
