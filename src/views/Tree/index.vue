@@ -38,6 +38,13 @@ const isOpen = (item:any)=>{
 
 li{
         cursor: pointer;
+        // list-style: none;
+        &:hover{
+               background: #f0f0f0;
+        }
+     
+        // list-style-image:url(../../assets/right-deltoid.png) ;
+        // line-height: 40px;
 }
 .k-tree-item-box{
       width: 100%;

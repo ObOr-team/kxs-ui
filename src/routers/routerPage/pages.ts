@@ -45,6 +45,18 @@ export default[{
             path:'tree',
             name:"Tree 树形控件",
             component:()=>import ("@/views/Tree/doc/doc.md") 
+        },
+        {
+            //select
+            path:'select',
+            name:"Select 下拉框",
+            component:()=>import ("@/views/Select/doc/doc.md") 
+        },
+        {
+            //optfile
+            path:'optfile',
+            name:"OptFile 文件选择",
+            component:()=>import ("@/views/OptFile/doc/doc.md") 
         }
     ]
 }]

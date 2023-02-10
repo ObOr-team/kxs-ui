@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-    import {RouterLink} from "vue-router"
     import menuList from "@/routers/routerPage/pages"
     import { ref } from "vue"
     import { useRouter } from "vue-router"
