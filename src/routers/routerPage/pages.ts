@@ -1,11 +1,17 @@
 export default[{
     //首页路径
     path:'/',
-    component:()=>import ("@/views/Home.vue") ,
-    children:[
+    name:"首页",
+    component:()=>import ("@/views/PreHome.vue") ,
+    children:[{
+        //主页路劲
+        path:'/home',
+        name:"主页",
+        component:()=>import ("@/views/Home.vue") ,
+        children:[
         // 快速上手
         {
-            path:'/',
+            path:'/home',
             name:"参与贡献",
             component:()=>import ("@/views/preface/contribute.md") 
         },
@@ -75,5 +81,7 @@ export default[{
             name:"OptFile 文件选择",
             component:()=>import ("@/views/OptFile/doc/doc.md") 
         }
-    ]
+        ]
+    }]
+
 }]
