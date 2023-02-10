@@ -100,6 +100,7 @@ const nextBtn = function () {
     } else {
       index.value++;
     }
+    clearTimeout(ulMove)
     setTimeout(function () {
             lock = true;
         }, 700);
@@ -115,14 +116,13 @@ const previousBtn = function () {
     } else {
       index.value--;
     }
+    clearTimeout(ulMove)
     setTimeout(function () {
             lock = true;
         }, 700);
 }
 //指示点事件
 const pEventBtn = function (id: number) {
-
-    
       //这里需要判断用户点击的小方块与当前图片的索引之差，如果
       //大于0，则表明用户需要更换的是后面的图片，反之，表明用户
       //需要更换之前也就是前面的图片

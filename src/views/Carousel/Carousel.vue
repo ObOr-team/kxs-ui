@@ -3,6 +3,8 @@
       <h3>● 基础轮播图</h3>
       <span>&nbsp&nbsp&nbsp&nbsp在有限空间内，循环播放同一类型的图片、文字等内容</span>
       <k-carousel  
+        :carouselW="671"
+        :carouselH="300"
         :imgData="imgData"
         :autoplay="2000"
         :showPointer="true"
@@ -11,7 +13,7 @@
       </k-carousel>
       <h3>● 指示点</h3>
       <span>&nbsp&nbsp&nbsp&nbsp showPointer 属性定义了是否显示指示器。 默认情况下设置为 true ，设置为 false 则不会显示指示器。</span>
-      <k-carousel  
+      <k-carousel
         :imgData="imgData"
         :autoplay="2000"
         :showPointer="false"
@@ -22,7 +24,7 @@
     <div>
       <h3>● 垂直轮播图</h3>
       <span>&nbsp&nbsp&nbsp&nbsp默认情况下 isHorizontal 为 true,显示为水平轮播图。 可以通过设置 isHorizontal 为 false 来让轮播图在垂直方向上显示。</span>
-      <k-carousel  
+      <k-carousel
         :imgData="imgData"
         :autoplay="2000"
         :showPointer="true"
