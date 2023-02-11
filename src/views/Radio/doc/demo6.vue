@@ -1,7 +1,6 @@
 <template>
     <div class="borderBox">
         <k-radio :options="options" @change="change"></k-radio>
-        <k-preview compName="Radio/doc" demoName="demo6"/>
     </div>
 </template>
 

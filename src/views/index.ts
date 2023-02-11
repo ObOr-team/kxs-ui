@@ -7,8 +7,9 @@ import kTree from "./Tree/index";
 import KSelect from "./Select/index";
 import kOptfile from "./Optfile/index";
 import kInput from "./Optfile/index";
+import kDialog from "./Dialog/index";
 
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput];
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kDialog];
 const install =(app:any)=>{
     component.forEach((item)=>{
         app.use(item);
@@ -17,5 +18,5 @@ const install =(app:any)=>{
  const TUI = {
     install,
  }
- export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput};
+ export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kDialog};
  export default TUI;

@@ -33,16 +33,10 @@ export default[{
             component:()=>import ("@/views/Button//doc/doc.md") 
         },
         {
-            //form
-            path:'form',
-            name:"From 表单",
-            component:()=>import ("@/views/Form/Form.md") 
-        },
-        {
             //dialog
             path:'dialog',
             name:"Dialog 对话框",
-            component:()=>import ("@/views/Dialog/Dialog.md") 
+            component:()=>import ("@/views/Dialog/doc/doc.md") 
         },
         {
             //textarea
@@ -64,12 +58,6 @@ export default[{
             component:()=>import ("@/views/Radio/doc/doc.md") 
         },
         {
-            //tree
-            path:'tree',
-            name:"Tree 树形控件",
-            component:()=>import ("@/views/Tree/doc/doc.md") 
-        },
-        {
             //select
             path:'select',
             name:"Select 下拉框",
@@ -86,7 +74,19 @@ export default[{
             path:'input',
             name:"Input 输入框",
             component:()=>import ("@/views/Input/doc/doc.md") 
-        }
+        },
+        {
+            //form
+            path:'form',
+            name:"From 表单",
+            component:()=>import ("@/views/Form/Form.md") 
+        },
+        {
+            //tree
+            path:'tree',
+            name:"Tree 树形控件",
+            component:()=>import ("@/views/Tree/doc/doc.md") 
+        },
         ]
     }]
 

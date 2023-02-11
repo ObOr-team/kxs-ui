@@ -1,7 +1,6 @@
 <template>
     <div class="container borderBox">
         <k-textarea v-model="textVal" :maxlength="20"></k-textarea>
-        <k-preview compName="Textarea/doc" demoName="demo5"/>
     </div>
     
 </template>

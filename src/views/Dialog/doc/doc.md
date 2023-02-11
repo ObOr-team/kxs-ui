@@ -12,31 +12,39 @@
 ### ● 类型
 <p>通过<code>type</code>属性来设置对话框的类型</P>
 <typ/>
+<k-preview  compname="Dialog" demoname="DialogType"/>
 
 ### ● 自定义大小
 <p>通过<code>width</code>和<code>height</code>属性来设置对话框的整体宽度和高度</P>
 <size/>
+<k-preview  compname="Dialog" demoname="DialogSize"/>
 
 ### ● 自定义主题颜色
 <p>通过<code>themeColor</code>属性来设置对话框的主题颜色</P>
 <themecolor/>
+<k-preview  compname="Dialog" demoname="DialogThemeColor"/>
 
 ### ● 位置
 <p>通过<code>location</code>属性来设置对话框的位置</P>
 <location/>
+<k-preview  compname="Dialog" demoname="DialogLocation"/>
 
 ### ● 按钮
 <p>通过<code>closable</code>属性来设置是否展示对话框的关闭按钮</P>
 <p>通过<code>footerBtn</code>属性来设置对话框的底部按钮的展示情况</P>
 <btn/>
+<k-preview compname="Dialog" demoname="DialogButton"/>
+
 
 ### ● 点击事件
 <p>通过<code>confirmClick</code>和<code>cancelClick</code>属性来注册对话框的确认按钮和取消按钮的点击事件</P>
 <click/>
+<k-preview  compname="Dialog" demoname="DialogClick"/>
 
 ### ● 异步确认
 <p>通过<code>confirmLoading</code>属性来设置异步确认按钮</P>
 <loading/>
+<k-preview  compname="Dialog" demoname="DialogLoading"/>
 
 
 

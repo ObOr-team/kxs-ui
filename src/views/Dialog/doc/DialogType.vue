@@ -1,20 +1,3 @@
-<script lang="ts" setup>
-    //引入KDialog组件
-    import KDialog from "@/components/kdialog/KDialog.vue"
-    // 引入ref处理响应式数据
-    import { ref } from 'vue'
-
-    // 是否展示对话框组件
-    let isShow: any = ref([false, false, false, false]);
-    // 点击按钮显示对应对话框
-    let clickToShow = (i:number) => {
-        // TODO: BUG：连续点击一个按钮，响应式数据失效，对话框不显示
-        isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
-        isShow.value[i] = true;
-    }
-
-</script>
-
 <template>
     <!-- 类型：info、confirm、warning、error -->
     <div class="borderBox">
@@ -44,7 +27,18 @@
         contentText = "It needs to be updated online. Please confirm that your network connection is normal and try again."
         type="error"
         ></k-dialog>
-
-        <k-preview  compName="Dialog" demoName="DialogType"/>
     </div>
 </template>
+<script lang="ts" setup>
+    // 引入ref处理响应式数据
+    import { ref } from 'vue'
+    // 是否展示对话框组件
+    let isShow: any = ref([false, false, false, false]);
+    // 点击按钮显示对应对话框
+    let clickToShow = (i:number) => {
+        // TODO: BUG：连续点击一个按钮，响应式数据失效，对话框不显示
+        isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
+        isShow.value[i] = true;
+    }
+
+</script>
