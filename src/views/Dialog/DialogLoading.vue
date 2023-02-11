@@ -24,7 +24,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="borderBox">
         <k-button :onclick = "() => {clickToShow()}">异步确认</k-button>
         <k-dialog v-if = "isShow"
         titleText = "对话框标题"

@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="borderBox">
         <k-button :onclick = "() => {clickToShow(0)}">themeColor = "#1ABC9C"</k-button>
         <k-dialog v-if = "isShow[0]"
         titleText = "对话框标题"

@@ -16,7 +16,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="borderBox">
         <k-button :onclick = "() => {clickToShow(0)}">600×200</k-button>
         <k-dialog v-if = "isShow[0]"
         titleText = "对话框标题"

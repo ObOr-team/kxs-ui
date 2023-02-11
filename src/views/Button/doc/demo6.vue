@@ -1,5 +1,5 @@
 <template>
-    <div class="kbcontent">
+    <div class="borderBox">
         <div>
         <k-button type="default" icon="sousuo">FrontIcon</k-button>
         <k-button type="default" icon="tianjia">FrontIcon</k-button>

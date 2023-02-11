@@ -27,7 +27,7 @@
 <template>
     <div>
         <!-- 类型：info、confirm、warning、error -->
-        <div>
+        <div class="borderBox">
             <h3>●  类型</h3>
             <k-button :onclick = "() => {clickToShow(0)}">info</k-button>
             <k-dialog v-if = "isShow[0]"
@@ -157,3 +157,9 @@
         </div>
     </div>
 </template>
+<style lang="scss" scoped>
+.borderBox{
+    border:solid 1px var(--default-border-color);
+    padding-top: 10px;
+}
+</style>

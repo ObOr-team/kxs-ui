@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="borderBox">
         <k-radio :options="options" customColor="#FFE4E1"></k-radio>
         <k-radio :options="options" customColor="#C1FFC1"></k-radio>
         <k-radio :options="options" customColor="#87CEFA"></k-radio>

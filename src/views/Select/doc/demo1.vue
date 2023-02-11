@@ -1,10 +1,13 @@
 <template>
-  <k-select
+  <div class="borderBox">
+    <k-select
     :options="selOptions"
     @change="selchange"
     v-model="selVal"
   >
   </k-select>
+  </div>
+  
 </template>
 
 <script lang="ts" setup>
