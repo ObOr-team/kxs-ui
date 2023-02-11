@@ -86,6 +86,12 @@ export default[{
             path:'carousel',
             name:"Carousel 轮播图",
             component:()=>import ("@/views/Carousel/doc/doc.md") 
+        },
+        {
+             //input
+             path:'input',
+             name:"Input 输入框",
+             component:()=>import ("@/views/Input/doc/doc.md") 
         }
         ]
     }]
