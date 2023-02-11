@@ -7,7 +7,6 @@
         :isHorizontal="false"
       >
       </k-carousel>
-        <k-preview compName="Carousel/doc" demoName="demo3"/>
     </div>
 </template>
 <script lang="ts" setup>

@@ -52,6 +52,12 @@ export default[{
             component:()=>import ("@/views/Space/doc/doc.md") 
         },
         {
+            //carousel
+             path:'carousel',
+             name:"Carousel 轮播图",
+             component:()=>import ("@/views/Carousel/doc/doc.md") 
+         },
+        {
             //radio
             path:'radio',
             name:"Radio 单选",
@@ -80,12 +86,6 @@ export default[{
             path:'tree',
             name:"Tree 树形控件",
             component:()=>import ("@/views/Tree/doc/doc.md") 
-        },
-        {
-           //carousel
-            path:'carousel',
-            name:"Carousel 轮播图",
-            component:()=>import ("@/views/Carousel/doc/doc.md") 
         },
         {
              //input

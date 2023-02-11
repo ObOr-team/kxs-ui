@@ -6,7 +6,6 @@
         :showPointer="true"
       >
       </k-carouselcard>
-        <k-preview compName="Carousel/doc" demoName="demo4"/>
     </div>
 </template>
 <script lang="ts" setup>
