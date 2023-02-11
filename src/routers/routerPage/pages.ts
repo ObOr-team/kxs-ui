@@ -30,7 +30,7 @@ export default[{
             //button
             path:'button',
             name:"Button 按钮",
-            component:()=>import ("@/views/Button//doc/doc.md") 
+            component:()=>import ("@/views/Button/doc/doc.md") 
         },
         {
             //dialog
@@ -70,12 +70,6 @@ export default[{
             component:()=>import ("@/views/OptFile/doc/doc.md") 
         },
         {
-            //input
-            path:'input',
-            name:"Input 输入框",
-            component:()=>import ("@/views/Input/doc/doc.md") 
-        },
-        {
             //form
             path:'form',
             name:"From 表单",
@@ -87,6 +81,19 @@ export default[{
             name:"Tree 树形控件",
             component:()=>import ("@/views/Tree/doc/doc.md") 
         },
+        {
+           //carousel
+            path:'carousel',
+            name:"Carousel 轮播图",
+            component:()=>import ("@/views/Carousel/doc/doc.md") 
+        },
+        {
+             //input
+             path:'input',
+             name:"Input 输入框",
+             component:()=>import ("@/views/Input/doc/doc.md") 
+        }
+
         ]
     }]
 
