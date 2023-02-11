@@ -8,24 +8,34 @@
     import demo7 from './demo7.vue'
 </script>
 ### ● 基础  
+<p>使用<code>type</code>属性指定按钮类型</p>
+<p>使用<code>round</code>属性指定是否为圆角按钮</p>
 <demo1/>  
 
 ### ● 反色  
+<p>使用<code>plain</code>属性指定是否为朴素按钮</p>
 <demo2/>   
 
 ### ● 禁用
+<p>使用<code>disabled</code>属性指定按钮是否被禁用</p>
 <demo3/> 
 
 ### ● 大小
+<p>使用<code>size</code>属性指定按钮的大小</p>
 <demo4/> 
 
 ### ● 块级
+<p>使用<code>block</code>属性指定是否为块级按钮</p>
 <demo5/> 
 
 ### ● 图标
+<p>使用<code>FrontIcon</code>属性指定按钮文字前面的图标</p>
+<p>使用<code>postIcon</code>属性指定按钮文字后面的图标</p>
+<p>使用<code>icon</code>属性指定无按钮文字的图标</p>
 <demo6/> 
 
 ### ● 加载
+<p>使用<code>icon="jiazai" loading</code>指定按钮的加载状态</p>
 <demo7/> 
 
 <style>

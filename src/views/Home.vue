@@ -72,8 +72,7 @@ header{
         width: 86%;
         min-width: 500px;
         margin: auto;
-        border-bottom: 1px solid var(--default-border-color);
-        box-shadow: 0 5px 6px rgba(200, 200, 200, 0.15);
+        box-shadow: 0 2px 8px rgba(230, 230, 230, 0.5);
     }
     img{
         width: 200px;

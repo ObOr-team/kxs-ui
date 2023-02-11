@@ -35,7 +35,7 @@
         </a>  -->
         </div>
         <br/>
-        <k-preview compName="Form" demoName="preview_form1"/>
+        <k-preview compName="Form" demoName="Form1"/>
     </div>
 </template>
 

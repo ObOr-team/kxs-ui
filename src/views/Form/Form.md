@@ -25,20 +25,6 @@
         margin-left:20px;
         margin-top:80px;
     }
-    table{
-        width: 98%;       
-        margin:0 auto;
-    }
-    th {
-        height: 50px;
-    }
-    td {
-        height: 35px;
-    }
-    table, th, td {
-        border: 1px solid #b2bec3;
-        border-collapse: collapse;
-    }
 </style>
 
 
