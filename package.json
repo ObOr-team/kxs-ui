@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "async-validator": "^4.2.5",
     "highlight.js": "^11.7.0",
     "vite-plugin-md": "^0.22.5",
     "vue": "^3.2.45",

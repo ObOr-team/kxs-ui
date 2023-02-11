@@ -1,10 +1,3 @@
-<!-- <script lang="ts" setup>
-    
-     import KForm from "@/components/kform/KForm.vue"
-    
-</script> -->
-
-
 <template>
     <div>
         <div id="state">
@@ -25,7 +18,7 @@
 </template>
 
 <script lang="ts">
-
+ import form from '@/components/kform/KForm.vue';
 
 
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div id="root1">
+    
          <form id="basic" :model="formDemo">
              <div id="account">
              账号：
@@ -23,7 +23,7 @@
              <a href="http://www.baidu.com"></a>《用户协议》
              <button>提交</button></div><br/>
          </form>
-     </div>
+
  </template>
  <script lang="ts">
  import { defineComponent, reactive } from 'vue';
