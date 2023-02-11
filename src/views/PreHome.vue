@@ -1,6 +1,10 @@
 <template>
-    <div v-if="router.currentRoute.value.path=='/'">
-         <k-button @click="IntoHome()" class="btn-position">起步上手</k-button>
+    <div v-if="router.currentRoute.value.path=='/'" class="home">
+        <img src="../assets/Kxx-UI-logo.png" alt=""/>
+        <div class="btn-position">
+            <k-button @click="IntoHome()">Start</k-button>
+            <a href="https://github.com/5th-Youth-Training-OOT/Kxxx-UI" target="_blank"><k-button>Github</k-button></a>
+        </div>
     </div>
     <RouterView></RouterView>
 </template>
@@ -18,13 +22,13 @@ import { useRouter } from "vue-router"
 // console.log(router.currentRoute.value.name)
 </script>
 <style lang="scss" scoped>
-div{
-    position: relative;
+.home {
+    img {
+        width: 380px;
+        height: 95px;
+    }
     .btn-position{
         background-color: rgb(223, 220, 218);
-        top: 406px;
-        left: 837px;
-        position: absolute;
     }
 }
 
