@@ -3,13 +3,22 @@
     import { ref } from "vue"
     import { useRouter } from "vue-router"
     const activeIndex = ref(0)
+    let navigationPointe =ref(1)
     const router = useRouter()
     const switchMenu = (item:any,index:any)=>{
+        if(index<3){
+            navigationPointe.value=1;
+        }else{
+            navigationPointe.value=2;
+        }
         activeIndex.value=index
         router.push({
             name:item.name
         })
     }
+    const changeNavigation=(value:number)=>{
+        navigationPointe.value=value;
+    }
     const preface = menuList[0].children[0].children.slice(0, 3) //快速上手
     const components = menuList[0].children[0].children.slice(3) //组件
 </script>
@@ -18,10 +27,10 @@
         <div class="head_container">
             <img src="../assets/Kxx-UI-logo.png" alt=""/>
             <div class="tools">
-                <a href="">首页</a>
-                <a href="">组件</a>
-                <a href="">更新日志</a>
-                <a href="">问题反馈</a>
+                <a href=""            :class="navigationPointe==0? 'aisactive': '' " @click="changeNavigation(0)">首页</a>
+                <a href="javascript:" :class="navigationPointe==1? 'aisactive': '' " @click="switchMenu(menuList[0].children[0].children[0],0)">快速上手</a>
+                <a href="javascript:" :class="navigationPointe==2? 'aisactive': '' " @click="switchMenu(menuList[0].children[0].children[3],3)">组件</a>
+                <a href="https://github.com/5th-Youth-Training-OOT/Kxxx-UI/issues" :class="navigationPointe==3? 'aisactive': '' " @click="changeNavigation(3)">问题反馈</a>
             </div>
         </div>      
     </header>
@@ -97,12 +106,19 @@ header{
             font-size: 18px;
             border-bottom: 2px solid rgba(0, 0, 0, 0); //去除抖动
         }
-        a:hover {
+        a:hover ,
+        a:active{
             color: #0e80eb;
             border-bottom: 2px solid #0e80eb;
         }
     } 
 }
+.aisactive{
+    display: block ;
+    border-bottom-color:#0e80eb !important;
+    color: #0e80eb !important;
+}
+
 // hr{
 //     width: 1140px;
 //     border: 1px solid var(--default-border-color);

@@ -11,9 +11,9 @@ export default[{
         children:[
         // 快速上手
         {
-            path:'/home',
-            name:"参与贡献",
-            component:()=>import ("@/views/preface/contribute.md") 
+            path:'install',
+            name:"安装使用",
+            component:()=>import ("@/views/preface/install.md") 
         },
         {
             path:'log',
@@ -21,9 +21,9 @@ export default[{
             component:()=>import ("@/views/preface/log.md") 
         },
         {
-            path:'install',
-            name:"安装使用",
-            component:()=>import ("@/views/preface/install.md") 
+            path:'/home',
+            name:"参与贡献",
+            component:()=>import ("@/views/preface/contribute.md") 
         },
         // 组件
         {
