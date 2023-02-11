@@ -7,6 +7,9 @@
     import demo6 from './demo6.vue'
     import demo7 from './demo7.vue'
 </script>
+
+## Button 按钮
+
 ### ● 基础  
 <p>使用<code>type</code>属性指定按钮类型</p>
 <p>使用<code>round</code>属性指定是否为圆角按钮</p> 
@@ -45,29 +48,13 @@
 <demo7/> 
 <k-preview compname="Button" demoname="demo7"/>
 
-<style>
-    table{
-        width: 100%; 
-    }
-    th {
-        height: 50px;
-    }
-    td {
-        height: 35px;
-    }
-    table, th, td {
-        border: 1px solid var(--default-border-color);
-        border-collapse: collapse;
-    }
-</style>
-
-## Button Attributes
-|      **参数**      | 说明                                   |   类型   | 可选值                                                    | 默认值 |
+### Button Attributes
+|      参数      | 说明                                   |   类型   | 可选值                                                    | 默认值 |
 | :----------------: | :---------------------------------:   | :------: | :------------------------------------------:            | :-------: |
-|      **size**      | 尺寸                                  |  string   | small / default / large  | default           |
-|   **type**         | 类型                                  |  string    |default/primary / success / warning / danger / info     | default   |
-|   **plain**        | 是否朴素按钮                           |  boolean  | —| false  |
-|  **round**         | 是否圆角按钮                           |  boolean  | —| false|
-|   **disabled**     | 是否禁用状态                           |  boolean  |   —    | false 
-|  **icon**          | 图标类名                               |  string   | — | 	—   |
-|  **loading**       | 是否加载                               |  boolean   | — | false |
+|      size      | 尺寸                                  |  string   | small / default / large  | default           |
+|   type         | 类型                                  |  string    |default/primary / success / warning / danger / info     | default   |
+|   plain        | 是否朴素按钮                           |  boolean  | —| false  |
+|  round         | 是否圆角按钮                           |  boolean  | —| false|
+|   disabled     | 是否禁用状态                           |  boolean  |   —    | false 
+|  icon          | 图标类名                               |  string   | — | 	—   |
+|  loading       | 是否加载                               |  boolean   | — | false |

@@ -72,28 +72,202 @@
     </div>
     <RouterView></RouterView>
 </template>
-<script lang="ts" setup>      
-import { useRouter } from "vue-router"
-      const router = useRouter()
-      const IntoHome = ()=>{
-        //路由跳转
-          router.push({
-              path:'home'
-          })
-  } 
-// 输出当前页面路由的路径和名字
-// console.log(router.currentRoute.value.path)
-// console.log(router.currentRoute.value.name)
-</script>
-<style lang="scss" scoped>
-.home {
-    img {
-        width: 380px;
-        height: 95px;
-    }
-    .btn-position{
-        background-color: rgb(223, 220, 218);
-    }
-}
 
-</style>
+<script lang="ts" setup>
+  import { useRouter } from "vue-router";
+  import { reactive } from "vue";
+  const router = useRouter();
+  const state = reactive({
+    devoteList: [
+      {
+        name: "Huangpeijin",
+        github: "https://github.com/Huangpeijin",
+        img: "https://avatars.githubusercontent.com/u/116870542?v=4",
+      },
+      {
+        name: "Neajue",
+        github: "https://github.com/Neajue",
+        img: "https://avatars.githubusercontent.com/u/87924593?v=4",
+      },
+      {
+        name: "zkeq",
+        github: "https://github.com/zkeq",
+        img: "https://avatars.githubusercontent.com/u/62864752?v=4",
+      },
+      {
+        name: "beginnierweb2",
+        github: "https://github.com/beginnierweb2",
+        img: "https://avatars.githubusercontent.com/u/87230594?v=4",
+      },
+      {
+        name: "ColdyNi",
+        github: "https://github.com/ColdyNi",
+        img: "https://avatars.githubusercontent.com/u/104876115?v=4",
+      },
+      {
+        name: "EnJoy77",
+        github: "https://github.com/EnJoy77",
+        img: "https://avatars.githubusercontent.com/u/108109256?v=4",
+      },
+      {
+        name: "KeepTheFear",
+        github: "https://github.com/KeepTheFear",
+        img: "https://avatars.githubusercontent.com/u/99188353?v=4",
+      },
+    ],
+  });
+  const toComponents = () => {
+    router.push("home");
+  };
+  const goGuthub = () => {
+    window.open("https://github.com/5th-Youth-Training-OOT/Kxxx-UI");
+  };
+  const goToNpm = () => {
+    window.open("https://www.npmjs.com/package/mzl-ui");
+  };
+  const verSion = () => {
+    router.push("/home/log");
+  };
+  const toDevoteGithub = (item:any) => {
+    window.open(item.github);
+  };
+  const { devoteList } = state;
+  sessionStorage.setItem("mIndex", "0-0");
+  sessionStorage.setItem("tabIndex", '0');
+  </script>
+  <style lang="scss" scoped>
+  .contentBox {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    min-height: calc(100vh - 64px);
+    background: rgba(9, 195, 190, 0.02);
+    .imgLogo {
+      margin: 0 auto;
+      display: block;
+      width: 12vw;
+      margin-top: 60px;
+      position: relative;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  
+    h3 {
+      text-align: center;
+      font-size: 2vw;
+      color: #4a5264;
+      margin: 16px 0 0 0;
+    }
+    .tiBox {
+      width: 70%;
+      height: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      p {
+        text-align: center;
+        color: #636e86;
+        font-size: 0.9vw;
+      }
+      .buttonGroups {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        overflow: hidden;
+        margin-top: 5vh;
+      }
+      .cardBox {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-top: 5vh;
+        li {
+          list-style: none;
+          width: 19%;
+          padding: 0 5px 25px 5px;
+          box-sizing: border-box;
+          float: left;
+          list-style: none;
+          background: #fff;
+          // border: 1px solid #eaeefb;
+          border-radius: 5px;
+          box-sizing: border-box;
+          transition: all 0.3s ease-in-out;
+          margin-right: 1%;
+          cursor: pointer;
+          &:hover {
+            background: rgba(9, 195, 190, 0.1);
+          }
+          p {
+            font-size: 18px;
+            color: #1f2f3d;
+            font-weight: 400;
+            padding: 0 14px;
+          }
+          div {
+            font-size: 14px;
+            color: #919cac;
+            padding: 0 0px;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+      .links {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 1vh;
+        li {
+          list-style: none;
+          display: inline-block;
+          font-size: 0.8vw;
+          font-weight: 550;
+          color: #0e80eb;
+          cursor: pointer;
+          margin: 0 0.5vw;
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4px;
+            img {
+              width: 1.2vw;
+              border-radius: 50%;
+              margin-right: 7px;
+            }
+            span {
+              margin: 0;
+            }
+            &:hover {
+              span {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        p {
+          font-size: 20px;
+          font-weight: 600;
+          color: #515a6e;
+          margin: 0;
+          line-height: 50px;
+        }
+        span {
+          display: inline-block;
+          line-height: 30px;
+          color: #0b6bc5;
+          font-size: 16px;
+          margin: 5px 10px 5px 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  </style>

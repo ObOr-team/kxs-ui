@@ -60,14 +60,18 @@ th {
 }
 td {
   height: 35px;
+  padding: 0.3em 0;
 }
 table, th, td {
   border: 1px solid var(--default-border-color);
   border-collapse: collapse;
 }
-table td:nth-child(3) {
-  color: #1f73ab;
+table td:nth-child(1) {
+  font-weight: bold;
 }
+// table td:nth-child(3) {
+//   color: #1f73ab;
+// }
 table tr:nth-child(odd) {
   background: #fff;
 }
@@ -76,10 +80,10 @@ table tr:nth-child(even) {
 }
 code {
   margin: 0 3px;
-  padding: 0.2em 0.4em;
+  padding: 0.2em;
   background: #f6f6f6;
   color: #0e7ade;
-  font-family: "Lucida Console";
+  font-family: "Consolas, 'Courier New', monospace";
   border: 0px;
   border-radius: 3px;
 }

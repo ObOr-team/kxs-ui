@@ -31,3 +31,30 @@
 ### ● 获取点击的数据
 <p>可以通过绑定<code>change</code>事件,获取点击的数据</p>
 <demo6/>
+
+### Attributes 参数
+
+|    参数     |        类型        |                 说明                 |         可选值         | 默认值  |
+| :---------: | :----------------: | :----------------------------------: | :--------------------: | :-----: |
+|   v-model   | String \|\| Number |              单选绑定值              |           ——           |   ——    |
+|    size     |       String       |               尺寸大小               | default / small / mini | default |
+|   options   |       Array        | 单选数据配置，具体见下方 options API |           ——           |   []    |
+|   inline    |      Boolean       |            是否为行内元素            |      true / false      |  true   |
+| labelFiled  |       String       |       自定义替换lable的字段名        |           ——           |  label  |
+| valueFiled  |       String       |       自定义替换value的字段名        |           ——           |  value  |
+| customColor |       String       |          自定义选中颜色色值          |           ——           |   ——    |
+| customClass |       String       |            自定义组件类名            |           ——           |   ——    |
+
+### options API
+
+|   参数   |  类型   |                             说明                             |    可选值    | 默认值 |
+| :------: | :-----: | :----------------------------------------------------------: | :----------: | :----: |
+|  label   | String  | 单选默认label展示字段名，<br />自定义请使用 labelFiled 属性重新关联lable字段 |      ——      | label  |
+|  value   | String  | 单选默认value选中值，<br />自定义请使用 valueFiled 属性重新关联value字段 |      ——      | value  |
+| disabled | Boolean |                         是否禁用选项                         | true / false | false  |
+
+### Event 事件
+
+| 事件名 |   说明   | 回调参数  |                     示例                      |
+| :----: | :------: | :-------: | :-------------------------------------------: |
+| change | 选中事件 | (value:e) | change = (e) =>{console.log(e.value,e.index)} |

@@ -24,3 +24,33 @@
 ### ● 匹配不同格式的数据 
 <p>默认 options 接收 label 和 value 作为显示和值绑定，你可以根据<code>labelFiled</code>和<code> valueFiled</code> 来重新确定字段的绑定，更方便的匹配不同格式的数据。</p>
 <demo4/>
+
+### Attributes 参数
+
+|    参数     |       类型        |                  说明                  |         可选值         | 默认值  |
+| :---------: | :---------------: | :------------------------------------: | :--------------------: | :-----: |
+|   v-model   | String \|\| Array |  下拉框绑定值，开启多选时类型为Array   |           ——           |   ——    |
+|    size     |      String       |                尺寸大小                | default / small / mini | default |
+| placeholder |      String       |             下拉框占位字符             |           ——           |   ——    |
+|   options   |       Array       | 下拉框数据配置，具体见下方 options API |           ——           |   []    |
+|  disabled   |      Boolean      |             是否为禁用状态             |      true / false      |  false  |
+|    width    |      String       |               自定义宽度               |           ——           |  260px  |
+|   height    |      String       |               自定义高度               |           ——           |   ——    |
+| searchable  |      Boolean      |            是否开启过滤搜索            |      true / false      |  false  |
+|  multiple   |      Boolean      |              是否开启多选              |      true / false      |  false  |
+| labelFiled  |      String       |        自定义替换lable的字段名         |           ——           |  label  |
+| valueFiled  |      String       |        自定义替换value的字段名         |           ——           |  value  |
+
+### options API
+
+|   参数   |  类型   |                             说明                             |    可选值    | 默认值 |
+| :------: | :-----: | :----------------------------------------------------------: | :----------: | :----: |
+|  label   | String  | 下拉框默认label展示字段名，<br />自定义请使用 labelFiled 属性重新关联lable字段 |      ——      | label  |
+|  value   | String  | 下拉框默认value选中值，<br />自定义请使用 valueFiled 属性重新关联value字段 |      ——      | value  |
+| disabled | Boolean |                         是否禁用选项                         | true / false | false  |
+
+### Event 事件
+
+| 事件名 |      说明      |   回调参数    |                 示例                  |
+| :----: | :------------: | :-----------: | :-----------------------------------: |
+| change | 下拉框选中事件 | (value: item) | change = (item) =>{console.log(item)} |
