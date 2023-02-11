@@ -1,7 +1,21 @@
+<template>
+    <div class="borderBox">
+        <k-button :onclick = "() => {clickToShow(0)}">确认按钮点击事件</k-button>
+        <k-dialog v-if = "isShow[0]"
+        titleText = "对话框标题"
+        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
+        :confirmClick="confirmClick"
+        ></k-dialog>
+
+        <k-button :onclick = "() => {clickToShow(1)}">取消按钮点击事件</k-button>
+        <k-dialog v-if = "isShow[1]"
+        titleText = "对话框标题"
+        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
+        :cancelClick="cancelClick"
+        ></k-dialog>
+    </div>
+</template>
 <script lang="ts" setup>
-    //引入KDialog组件
-    import KDialog from "../index.vue"
-    // 引入ref处理响应式数据
     import { ref } from 'vue'
 
     // 是否展示对话框组件
@@ -23,23 +37,3 @@
     }
 
 </script>
-
-<template>
-    <div class="borderBox">
-        <k-button :onclick = "() => {clickToShow(0)}">确认按钮点击事件</k-button>
-        <k-dialog v-if = "isShow[0]"
-        titleText = "对话框标题"
-        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        :confirmClick="confirmClick"
-        ></k-dialog>
-
-        <k-button :onclick = "() => {clickToShow(1)}">取消按钮点击事件</k-button>
-        <k-dialog v-if = "isShow[1]"
-        titleText = "对话框标题"
-        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        :cancelClick="cancelClick"
-        ></k-dialog>
-
-        <k-preview  compName="Dialog/doc" demoName="DialogClick"/>
-    </div>
-</template>

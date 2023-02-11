@@ -1,20 +1,3 @@
-<script lang="ts" setup>
-    //引入KDialog组件
-    import KDialog from "../index.vue"
-    // 引入ref处理响应式数据
-    import { ref } from 'vue'
-
-    // 是否展示对话框组件
-    let isShow: any = ref([false, false]);
-    // 点击按钮显示对应对话框
-    let clickToShow = (i:number) => {
-        // TODO: BUG：连续点击一个按钮，响应式数据失效，对话框不显示
-        isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
-        isShow.value[i] = true;
-    }
-
-</script>
-
 <template>
     <div class="borderBox">
         <k-button :onclick = "() => {clickToShow(0)}">600×200</k-button>
@@ -32,7 +15,19 @@
         width="400px"
         height="170px"
         ></k-dialog>
-
-        <k-preview  compName="Dialog/doc" demoName="DialogSize"/>
     </div>
 </template>
+<script lang="ts" setup>
+    // 引入ref处理响应式数据
+    import { ref } from 'vue'
+
+    // 是否展示对话框组件
+    let isShow: any = ref([false, false]);
+    // 点击按钮显示对应对话框
+    let clickToShow = (i:number) => {
+        // TODO: BUG：连续点击一个按钮，响应式数据失效，对话框不显示
+        isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
+        isShow.value[i] = true;
+    }
+
+</script>

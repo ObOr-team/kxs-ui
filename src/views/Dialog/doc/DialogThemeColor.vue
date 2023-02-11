@@ -1,6 +1,14 @@
+<template>
+    <div class="borderBox">
+        <k-button :onclick = "() => {clickToShow(0)}">themeColor = "#1ABC9C"</k-button>
+        <k-dialog v-if = "isShow[0]"
+        titleText = "对话框标题"
+        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
+        themeColor="#1ABC9C"
+        ></k-dialog>
+    </div>
+</template>
 <script lang="ts" setup>
-    //引入KDialog组件
-    import KDialog from "../index.vue"
     // 引入ref处理响应式数据
     import { ref } from 'vue'
 
@@ -14,16 +22,3 @@
     }
 
 </script>
-
-<template>
-    <div class="borderBox">
-        <k-button :onclick = "() => {clickToShow(0)}">themeColor = "#1ABC9C"</k-button>
-        <k-dialog v-if = "isShow[0]"
-        titleText = "对话框标题"
-        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        themeColor="#1ABC9C"
-        ></k-dialog>
-
-        <k-preview  compName="Dialog/doc" demoName="DialogThemeColor"/>
-    </div>
-</template>

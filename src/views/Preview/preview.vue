@@ -60,7 +60,7 @@ export default {
                 ).default;
         }else{
             sourceCode.value = await fetch(
-                `/src/views/${props.compname}/${props.demoname}.vue`
+                `/src/views/${props.compname}/doc/${props.demoname}.vue`
                 ).then((res) => res.text());
         }   
     }

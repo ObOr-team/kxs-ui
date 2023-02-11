@@ -72,8 +72,7 @@
     </div>
     <RouterView></RouterView>
 </template>
-
-<script lang="ts" setup>
+  <script lang="ts" setup >
   import { useRouter } from "vue-router";
   import { reactive } from "vue";
   const router = useRouter();
@@ -117,7 +116,7 @@
     ],
   });
   const toComponents = () => {
-    router.push("home");
+    router.push("home/install");
   };
   const goGuthub = () => {
     window.open("https://github.com/5th-Youth-Training-OOT/Kxxx-UI");
@@ -133,7 +132,7 @@
   };
   const { devoteList } = state;
   sessionStorage.setItem("mIndex", "0-0");
-  sessionStorage.setItem("tabIndex", '0');
+  sessionStorage.setItem("tabIndex", "0");
   </script>
   <style lang="scss" scoped>
   .contentBox {

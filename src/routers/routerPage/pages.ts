@@ -11,9 +11,9 @@ export default[{
         children:[
         // 快速上手
         {
-            path:'/home',
-            name:"参与贡献",
-            component:()=>import ("@/views/preface/contribute.md") 
+            path:'install',
+            name:"安装使用",
+            component:()=>import ("@/views/preface/install.md") 
         },
         {
             path:'log',
@@ -21,9 +21,9 @@ export default[{
             component:()=>import ("@/views/preface/log.md") 
         },
         {
-            path:'install',
-            name:"安装使用",
-            component:()=>import ("@/views/preface/install.md") 
+            path:'/home',
+            name:"参与贡献",
+            component:()=>import ("@/views/preface/contribute.md") 
         },
         // 组件
         {
@@ -31,12 +31,6 @@ export default[{
             path:'button',
             name:"Button 按钮",
             component:()=>import ("@/views/Button/doc/doc.md") 
-        },
-        {
-            //form
-            path:'form',
-            name:"Form 表单",
-            component:()=>import ("@/views/Form/Form.md") 
         },
         {
             //dialog
@@ -58,16 +52,16 @@ export default[{
             component:()=>import ("@/views/Space/doc/doc.md") 
         },
         {
+            //carousel
+             path:'carousel',
+             name:"Carousel 轮播图",
+             component:()=>import ("@/views/Carousel/doc/doc.md") 
+         },
+        {
             //radio
             path:'radio',
             name:"Radio 单选",
             component:()=>import ("@/views/Radio/doc/doc.md") 
-        },
-        {
-            //tree
-            path:'tree',
-            name:"Tree 树形控件",
-            component:()=>import ("@/views/Tree/doc/doc.md") 
         },
         {
             //select
@@ -82,10 +76,16 @@ export default[{
             component:()=>import ("@/views/OptFile/doc/doc.md") 
         },
         {
-            //carousel
-            path:'carousel',
-            name:"Carousel 轮播图",
-            component:()=>import ("@/views/Carousel/doc/doc.md") 
+            //form
+            path:'form',
+            name:"From 表单",
+            component:()=>import ("@/views/Form/Form.md") 
+        },
+        {
+            //tree
+            path:'tree',
+            name:"Tree 树形控件",
+            component:()=>import ("@/views/Tree/doc/doc.md") 
         },
         {
              //input
@@ -93,6 +93,7 @@ export default[{
              name:"Input 输入框",
              component:()=>import ("@/views/Input/doc/doc.md") 
         }
+
         ]
     }]
 

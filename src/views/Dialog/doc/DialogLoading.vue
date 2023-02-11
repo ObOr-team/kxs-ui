@@ -1,6 +1,15 @@
+<template>
+    <div class="borderBox">
+        <k-button :onclick = "() => {clickToShow()}">异步确认</k-button>
+        <k-dialog v-if = "isShow"
+        titleText = "对话框标题"
+        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
+        :confirmLoading = true
+        :confirmClick="confirmClick"
+        ></k-dialog>
+    </div>
+</template>
 <script lang="ts" setup>
-    // 引入KDialog组件
-    import KDialog from "../index.vue"
     // 引入ref处理响应式数据
     import { ref } from 'vue'
 
@@ -22,17 +31,3 @@
         })
     }
 </script>
-
-<template>
-    <div class="borderBox">
-        <k-button :onclick = "() => {clickToShow()}">异步确认</k-button>
-        <k-dialog v-if = "isShow"
-        titleText = "对话框标题"
-        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        :confirmLoading = true
-        :confirmClick="confirmClick"
-        ></k-dialog>
-
-        <k-preview  compName="Dialog/doc" demoName="DialogLoading"/>
-    </div>
-</template>
