@@ -80,6 +80,12 @@ export default[{
             path:'optfile',
             name:"OptFile 文件选择",
             component:()=>import ("@/views/OptFile/doc/doc.md") 
+        },
+        {
+            //input
+            path:'input',
+            name:"Input 输入框",
+            component:()=>import ("@/views/Input/doc/doc.md") 
         }
         ]
     }]
