@@ -10,7 +10,6 @@
     </div>
 </template>
 <script lang="ts" setup>
-import kCarousel from "../KCarousel.vue";
 let imgData = [
     {
         url: "https://img-blog.csdnimg.cn/bc3292108e9c4f3ab289d32ff8fba599.jpg",
