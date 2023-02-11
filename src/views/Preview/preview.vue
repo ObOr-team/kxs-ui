@@ -3,7 +3,7 @@
 
         <transition name="slide-fade">
             <pre
-                class="language-html"
+                class="out-language-html"
                 v-if="showCode"
                 v-highlight
             ><code class="language-html">{{sourceCode}}</code></pre>
@@ -89,6 +89,11 @@ export default {
     }
 }
 .language-html{
+    border-radius: 10px;
+    // border: solid 1px #c9c6c6;
+    background-color: rgb(247, 245, 245);
+}
+.out-language-html{
     border-radius: 10px;
     border: solid 1px #c9c6c6;
     background-color: rgb(247, 245, 245);
