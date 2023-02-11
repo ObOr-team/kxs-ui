@@ -17,3 +17,16 @@ export default defineConfig({
     },
   }
 })
+// module.exports = {
+//   //此部分configureWebpack被我改为了
+//   configureVite: {
+//     module: {
+//       rules: [
+//         {
+//           test: /\.md$/,
+//           use: ["text-loader"]
+//         }
+//       ]
+//     }
+//   }
+// };

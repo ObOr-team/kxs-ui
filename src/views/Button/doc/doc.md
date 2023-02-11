@@ -8,7 +8,9 @@
     import demo7 from './demo7.vue'
 </script>
 ### ● 基础  
-<demo1/>  
+<demo1/> 
+<!-- 测试md是否能传值过去preview.vue文件，但现在还没发实现传值 -->
+<!-- <k-preview compName="Button/doc" demoName="demo1"/>  -->
 
 ### ● 反色  
 <demo2/>   
