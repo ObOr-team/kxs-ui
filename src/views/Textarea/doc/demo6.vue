@@ -1,8 +1,9 @@
 <template>
-    <div class="container">
+    <div class="container borderBox">
         <k-textarea v-model="textVal" :resize="false"></k-textarea>
+        <k-preview compName="Textarea/doc" demoName="demo6"/>
     </div>
-    <k-preview compName="Textarea/doc" demoName="demo6"/>
+    
 </template>
 <script lang="ts" setup>
     import {ref} from 'Vue'

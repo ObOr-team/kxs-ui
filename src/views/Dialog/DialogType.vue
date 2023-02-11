@@ -17,7 +17,7 @@
 
 <template>
     <!-- 类型：info、confirm、warning、error -->
-    <div>
+    <div class="borderBox">
         <k-button :onclick = "() => {clickToShow(0)}">info</k-button>
         <k-dialog v-if = "isShow[0]"
         titleText = "Title"

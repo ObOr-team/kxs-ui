@@ -117,7 +117,8 @@ export default {
     display: inline-block;
     height: 40px;
     position: relative;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
     .div-input-div{
         border-radius: 5px;
         border: 1px solid var(--default-border-color);

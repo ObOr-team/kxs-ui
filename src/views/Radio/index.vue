@@ -57,7 +57,6 @@ import { ref } from 'vue';
         width: auto;
         height: auto;
         overflow: hidden;
-        margin-top: 15px;
         .k-item-radio{
             width: auto;
             height: auto;
@@ -66,7 +65,7 @@ import { ref } from 'vue';
             line-height: 20px;
             cursor: pointer;
             font-size: 14px;
-            margin:15px 10px;
+            margin:0px 10px 10px;
             user-select: none;
             span{
                 width: 14px;

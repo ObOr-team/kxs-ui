@@ -1,5 +1,5 @@
 <template>
-  <div id="root">
+  <div id="root" class="borderBox">
        <form id="basic3" :model="formDemo">
            <div id="account">
            账号：

@@ -83,6 +83,7 @@ import {computed,ref} from 'vue'
         display: inline-block;
         overflow: hidden;
         position: relative;
+        margin-left: 10px;
         textarea{
             outline:none;
             padding: 8px 8px;

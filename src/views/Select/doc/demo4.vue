@@ -1,10 +1,13 @@
 <template>
+  <div class="borderBox">
   <k-select
     :options="selOptions"
     filedLabel="name" filedValue="id"
     placeholder="请选择"
   >
   </k-select>
+</div>
+  
 </template>
 
 <script setup>

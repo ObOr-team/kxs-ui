@@ -1,5 +1,5 @@
 <template>
-    <div class="kbcontent">
+    <div class="borderBox">
         <div>
         <k-button type="default">Default</k-button>
         <k-button type="primary">Primary</k-button>

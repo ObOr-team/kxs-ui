@@ -1,5 +1,5 @@
 <template>
-    <div class="kbcontent">
+    <div class="borderBox">
         <div>
         <k-button type="default" disabled>Disabled</k-button>
         <k-button type="primary" disabled>Primary</k-button>
