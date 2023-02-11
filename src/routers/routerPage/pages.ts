@@ -30,7 +30,7 @@ export default[{
             //button
             path:'button',
             name:"Button 按钮",
-            component:()=>import ("@/views/Button//doc/doc.md") 
+            component:()=>import ("@/views/Button/doc/doc.md") 
         },
         {
             //form
@@ -80,6 +80,18 @@ export default[{
             path:'optfile',
             name:"OptFile 文件选择",
             component:()=>import ("@/views/OptFile/doc/doc.md") 
+        },
+        {
+            //carousel
+            path:'carousel',
+            name:"Carousel 轮播图",
+            component:()=>import ("@/views/Carousel/doc/doc.md") 
+        },
+        {
+             //input
+             path:'input',
+             name:"Input 输入框",
+             component:()=>import ("@/views/Input/doc/doc.md") 
         }
         ]
     }]

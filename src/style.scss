@@ -30,13 +30,15 @@
   --active-border-color:#3863ee;
   /*默认字体颜色*/
   --default-text-color:#5c5757;
+  /*轮播图按钮颜色变量*/
+  --default-carouselPointer-color:#00CCFF;
+  --active-carouselPointer-color:#3399FF;
   /*按钮内容样式
   .kbcontent{
     border: solid 1px var(--default-border-color);
     border-radius: 10px;
   }*/
-
-  //组件样式外边框
+  //*组件样式外边框*/
   .borderBox{
   border: solid 1px var(--default-border-color);
   border-radius: 10px;
