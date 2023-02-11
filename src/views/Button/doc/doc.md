@@ -9,26 +9,31 @@
 </script>
 ### ● 基础  
 <demo1/> 
-<!-- 测试md是否能传值过去preview.vue文件，但现在还没发实现传值 -->
-<!-- <k-preview compName="Button/doc" demoName="demo1"/>  -->
+<k-preview compname="Button" demoname="demo1"/> 
 
 ### ● 反色  
-<demo2/>   
+<demo2/>
+<k-preview compname="Button" demoname="demo2"/>   
 
 ### ● 禁用
 <demo3/> 
+<k-preview compname="Button" demoname="demo3"/>
 
 ### ● 大小
 <demo4/> 
+<k-preview compname="Button" demoname="demo4"/>
 
 ### ● 块级
-<demo5/> 
+<demo5/>
+<k-preview compname="Button" demoname="demo5"/> 
 
 ### ● 图标
-<demo6/> 
+<demo6/>
+<k-preview compname="Button" demoname="demo6"/>
 
 ### ● 加载
-<demo7/> 
+<demo7/>
+<k-preview compname="Button" demoname="demo7"/> 
 
 <style>
     table{

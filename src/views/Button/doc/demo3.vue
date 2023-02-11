@@ -8,6 +8,5 @@
         <k-button type="warming" disabled>Warming</k-button>
         <k-button type="danger" disabled>Danger</k-button>
         </div>
-        <k-preview compName="Button/doc" demoName="demo3"/>
     </div>
 </template>

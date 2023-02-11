@@ -8,6 +8,5 @@
         <k-button type="warming"  icon="jiazai" loading>Warming</k-button>
         <k-button type="danger" icon="jiazai" loading>Danger</k-button>
         </div>
-        <k-preview compName="Button/doc" demoName="demo7"/>
     </div>
 </template>
