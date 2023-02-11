@@ -24,6 +24,5 @@
         <k-button type="default" icon="bianjixiugai"></k-button>
         <k-button type="default" icon="shanchu"></k-button>
         </div>
-        <k-preview compName="Button/doc" demoName="demo6"/>
     </div>
 </template>

@@ -16,6 +16,5 @@
         <k-button type="warming" round plain>Warming</k-button>
         <k-button type="danger" round plain>Danger</k-button>
         </div>  
-        <k-preview compName="Button/doc" demoName="demo2"/>
     </div>
 </template>

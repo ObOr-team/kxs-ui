@@ -25,19 +25,19 @@ export default {
 <script lang="ts" setup>
     import { onMounted,ref} from "vue"
     const props = defineProps({
-        compName:{
+        compname:{
             type: String,
             default: "",
             require: true
         },
-        demoName: {
+        demoname: {
             type: String,
             default: "",
             require: true,
         },
     });
-    console.log(props.compName)
-    console.log(props.demoName)
+    console.log(props.compname)
+    console.log(props.demoname)
     const showCode = ref(false);
     const border = ref( "1px solid rgba(0,0,0,.06)");
     const showOrhideCode = ()=>{
@@ -55,12 +55,12 @@ export default {
         if (isDev){
             sourceCode.value =(
                 await import(
-                     /* @vite-ignore */ `/src/views/${props.compName}/${props.demoName}.vue?raw`
+                     /* @vite-ignore */ `/src/views/${props.compname}/doc/${props.demoname}.vue?raw`
                     )
                 ).default;
         }else{
             sourceCode.value = await fetch(
-                `/src/views/${props.compName}/${props.demoName}.vue`
+                `/src/views/${props.compname}/${props.demoname}.vue`
                 ).then((res) => res.text());
         }   
     }
