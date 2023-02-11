@@ -6,7 +6,9 @@
                 class="out-language-html"
                 v-if="showCode"
                 v-highlight
-            ><code class="language-html">{{sourceCode}}</code></pre>
+            >
+                <code class="language-html">{{sourceCode}}</code>
+            </pre>
         </transition>       
         <div class="showCode" @click="showOrhideCode">
             <span>{{ showCode? "隐藏代码":"显示代码"}}</span>
@@ -34,6 +36,8 @@ export default {
             require: true,
         },
     });
+    console.log(props.compName)
+    console.log(props.demoName)
     const showCode = ref(false);
     const border = ref( "1px solid rgba(0,0,0,.06)");
     const showOrhideCode = ()=>{
@@ -45,12 +49,13 @@ export default {
         }
     };
     const sourceCode = ref("");
+    //请求对应路径名的vue文件代码
     async function getSourceCode(){
         const isDev = import.meta.env.MODE === "development";
         if (isDev){
             sourceCode.value =(
                 await import(
-                     `/src/views/${props.compName}/${props.demoName}.vue?raw`
+                     /* @vite-ignore */ `/src/views/${props.compName}/${props.demoName}.vue?raw`
                     )
                 ).default;
         }else{
