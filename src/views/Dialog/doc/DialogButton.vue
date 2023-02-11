@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     // 引入KDialog组件
-    import KDialog from "@/components/kdialog/KDialog.vue"
+    import KDialog from "../index.vue"
     // 引入ref处理响应式数据
     import { ref } from 'vue'
 
@@ -15,7 +15,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="borderBox">
         <k-button :onclick = "() => {clickToShow(0)}">无关闭按钮</k-button>
         <k-dialog v-if = "isShow[0]"
         titleText = "对话框标题"
@@ -44,6 +44,6 @@
         footerBtn="null"
         ></k-dialog>
 
-        <k-preview compName="Dialog" demoName="DialogButton"/>
+        <k-preview compName="Dialog/doc" demoName="DialogButton"/>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-   <div id="root1">
+   <div id="root1" class="borderBox">
         <form id="basic" :model="formDemo">
             <div id="account">
             账号：
@@ -73,6 +73,7 @@ export default defineComponent({
 <style>
 #root1{
     margin-top: 50px;
+
 }
 #basic{
     width:60% ;

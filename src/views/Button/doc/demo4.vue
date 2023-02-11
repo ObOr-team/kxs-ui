@@ -1,5 +1,5 @@
 <template>
-    <div class="kbcontent">
+    <div class="borderBox">
         <div>
         <k-button type="default" size="small">Size</k-button>
         <k-button type="default" size="">Size</k-button>

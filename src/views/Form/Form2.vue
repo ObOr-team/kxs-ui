@@ -1,5 +1,5 @@
 <template>
-    <div id="total">
+    <div id="total" class="borderBox">
       <form id="basic2" :model="formDemo"
               name="oneForm"
               :label-col="{span:8}"   

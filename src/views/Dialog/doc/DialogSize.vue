@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     //引入KDialog组件
-    import KDialog from "@/components/kdialog/KDialog.vue"
+    import KDialog from "../index.vue"
     // 引入ref处理响应式数据
     import { ref } from 'vue'
 
@@ -13,33 +13,26 @@
         isShow.value[i] = true;
     }
 
-    // 自定义确认按钮点击事件
-    let confirmClick = () => {
-        window.alert("点击了确认按钮");
-    }
-    // 自定义取消按钮点击事件
-    let cancelClick = () => {
-        window.alert("点击了取消按钮");
-    }
-
 </script>
 
 <template>
-    <div>
-        <k-button :onclick = "() => {clickToShow(0)}">确认按钮点击事件</k-button>
+    <div class="borderBox">
+        <k-button :onclick = "() => {clickToShow(0)}">600×200</k-button>
         <k-dialog v-if = "isShow[0]"
         titleText = "对话框标题"
         contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        :confirmClick="confirmClick"
+        width="600px"
+        height="200px"
         ></k-dialog>
 
-        <k-button :onclick = "() => {clickToShow(1)}">取消按钮点击事件</k-button>
+        <k-button :onclick = "() => {clickToShow(1)}">400×170</k-button>
         <k-dialog v-if = "isShow[1]"
         titleText = "对话框标题"
         contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        :cancelClick="cancelClick"
+        width="400px"
+        height="170px"
         ></k-dialog>
 
-        <k-preview  compName="Dialog" demoName="DialogClick"/>
+        <k-preview  compName="Dialog/doc" demoName="DialogSize"/>
     </div>
 </template>

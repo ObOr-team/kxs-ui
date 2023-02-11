@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+    /* 暂未使用该文件 */
+    
     //引入KDialog组件
-    import KDialog from "@/components/kdialog/KDialog.vue"
+    import KDialog from "../index.vue"
     // 引入ref处理响应式数据
     import { ref } from 'vue'
 
@@ -27,7 +29,7 @@
 <template>
     <div>
         <!-- 类型：info、confirm、warning、error -->
-        <div>
+        <div class="borderBox">
             <h3>●  类型</h3>
             <k-button :onclick = "() => {clickToShow(0)}">info</k-button>
             <k-dialog v-if = "isShow[0]"
@@ -157,3 +159,9 @@
         </div>
     </div>
 </template>
+<style lang="scss" scoped>
+.borderBox{
+    border:solid 1px var(--default-border-color);
+    padding-top: 10px;
+}
+</style>

@@ -1,3 +1,8 @@
+<script lang="ts">
+    export default {
+         name:"kDialog",
+    }
+</script>
 <script lang="ts" setup>
     import {computed, ref} from 'vue'
     const props = defineProps({
@@ -208,6 +213,7 @@
         top: 50%;
         right: 50%;
         transform: translate(50%, -50%);
+        z-index: 1000;
     }
     .dialog-inner {
         width: 100%;
@@ -230,19 +236,20 @@
     .title {
         height: 20%;
         width: 100%;
-        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
         span {
-            position: absolute;
-            top: 50%;
-            transform: translate(0%, -50%);
-            padding-left: 15px;
             color: white;
+            margin-left: 10px;
+            margin-bottom: 0;
         }
         .closeBtn {
             height: 50%;
             aspect-ratio: 1 / 1; // 宽高比为1:1
             padding: 0; // 有padding此属性无效
-            float: right;
+            margin-bottom: 0;
         }
     }
     .base{

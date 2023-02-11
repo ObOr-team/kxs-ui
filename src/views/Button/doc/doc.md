@@ -11,6 +11,9 @@
 <p>使用<code>type</code>属性指定按钮类型</p>
 <p>使用<code>round</code>属性指定是否为圆角按钮</p>
 <demo1/>  
+<demo1/> 
+<!-- 测试md是否能传值过去preview.vue文件，但现在还没发实现传值 -->
+<!-- <k-preview compName="Button/doc" demoName="demo1"/>  -->
 
 ### ● 反色  
 <p>使用<code>plain</code>属性指定是否为朴素按钮</p>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="borderBox">
         <k-radio :options="options" filedLabel="name" filedValue="id"></k-radio>
         <k-preview compName="Radio/doc" demoName="demo5"/>
     </div>

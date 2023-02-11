@@ -42,7 +42,7 @@ export default[{
             //dialog
             path:'dialog',
             name:"Dialog 对话框",
-            component:()=>import ("@/views/Dialog/Dialog.md") 
+            component:()=>import ("@/views/Dialog/doc/doc.md") 
         },
         {
             //textarea

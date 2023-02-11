@@ -1,5 +1,5 @@
 <template>
-    <div class="kbcontent">
+    <div class="borderBox">
         <div>
         <k-button type="default" icon="jiazai" loading>Default</k-button>
         <k-button type="primary" icon="jiazai" loading>Primary</k-button>

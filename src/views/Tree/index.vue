@@ -53,7 +53,7 @@ li{
 .k-tree-item-box{
       width: 100%;
       height:100%;
-      margin-top: 20px;
+      margin: 0 10px 10px;
     //   &:hover{
     //     background:#f5f5f5 ;
     //   }

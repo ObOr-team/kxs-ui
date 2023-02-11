@@ -1,6 +1,9 @@
 <template>
-  <k-tree :options="treeOptions"></k-tree>
+  <div class="borderBox">
+    <k-tree :options="treeOptions"></k-tree>
   <k-preview compName="Tree/doc" demoName="demo1"/>
+  </div>
+  
 </template>
 
 <script setup>

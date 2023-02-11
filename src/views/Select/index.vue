@@ -101,11 +101,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .slide-fade-enter-active {
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .slide-fade-leave-active {
-  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
 .slide-fade-enter-from,.slide-fade-leave-to {
@@ -117,7 +117,8 @@ export default {
     display: inline-block;
     height: 40px;
     position: relative;
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 5px;
     .div-input-div{
         border-radius: 5px;
         border: 1px solid var(--default-border-color);

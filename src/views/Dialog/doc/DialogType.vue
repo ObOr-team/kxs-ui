@@ -1,6 +1,6 @@
 <script lang="ts" setup>
     //引入KDialog组件
-    import KDialog from "@/components/kdialog/KDialog.vue"
+    import KDialog from "../index.vue"
     // 引入ref处理响应式数据
     import { ref } from 'vue'
 
@@ -12,12 +12,11 @@
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
     }
-
 </script>
 
 <template>
     <!-- 类型：info、confirm、warning、error -->
-    <div>
+    <div class="borderBox">
         <k-button :onclick = "() => {clickToShow(0)}">info</k-button>
         <k-dialog v-if = "isShow[0]"
         titleText = "Title"
@@ -45,6 +44,6 @@
         type="error"
         ></k-dialog>
 
-        <k-preview  compName="Dialog" demoName="DialogType"/>
+        <k-preview  compName="Dialog/doc" demoName="DialogType"/>
     </div>
 </template>
