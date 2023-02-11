@@ -79,39 +79,39 @@
   const state = reactive({
     devoteList: [
       {
-        name: "Ningstyle",
-        github: "https://github.com/Ningstyle",
-        img: "https://avatars.githubusercontent.com/u/23306049?s=60&v=4",
+        name: "Huangpeijin",
+        github: "https://github.com/Huangpeijin",
+        img: "https://avatars.githubusercontent.com/u/116870542?v=4",
       },
       {
-        name: "pakchoily",
-        github: "https://github.com/pakchoily",
-        img: "https://avatars.githubusercontent.com/u/59410698?s=60&v=4",
+        name: "Neajue",
+        github: "https://github.com/Neajue",
+        img: "https://avatars.githubusercontent.com/u/87924593?v=4",
       },
       {
-        name: "Potato-X",
-        github: "https://github.com/Potato-X",
-        img: "https://avatars.githubusercontent.com/u/68857645?s=60&v=4",
+        name: "zkeq",
+        github: "https://github.com/zkeq",
+        img: "https://avatars.githubusercontent.com/u/62864752?v=4",
       },
       {
-        name: "wally94",
-        github: "https://github.com/wally94",
-        img: "https://avatars.githubusercontent.com/u/40847305?v=4",
+        name: "beginnierweb2",
+        github: "https://github.com/beginnierweb2",
+        img: "https://avatars.githubusercontent.com/u/87230594?v=4",
       },
       {
-        name: "amifed",
-        github: "https://github.com/amifed",
-        img: "https://avatars.githubusercontent.com/u/36906371?s=60&v=4",
+        name: "ColdyNi",
+        github: "https://github.com/ColdyNi",
+        img: "https://avatars.githubusercontent.com/u/104876115?v=4",
       },
       {
-        name: "zgx1996",
-        github: "https://github.com/zgx1996",
-        img: "https://avatars.githubusercontent.com/u/21330181?v=4",
+        name: "EnJoy77",
+        github: "https://github.com/EnJoy77",
+        img: "https://avatars.githubusercontent.com/u/108109256?v=4",
       },
       {
-        name: "spark154204",
-        github: "https://github.com/spark154204",
-        img: "https://avatars.githubusercontent.com/u/48675578?s=60&v=4",
+        name: "KeepTheFear",
+        github: "https://github.com/KeepTheFear",
+        img: "https://avatars.githubusercontent.com/u/99188353?v=4",
       },
     ],
   });
@@ -119,13 +119,13 @@
     router.push("home");
   };
   const goGuthub = () => {
-    window.open("https://github.com/Ningstyle/mzl-ui");
+    window.open("https://github.com/5th-Youth-Training-OOT/Kxxx-UI");
   };
   const goToNpm = () => {
     window.open("https://www.npmjs.com/package/mzl-ui");
   };
   const verSion = () => {
-    router.push("/mzlui/updatelog");
+    router.push("/home/log");
   };
   const toDevoteGithub = (item) => {
     window.open(item.github);
