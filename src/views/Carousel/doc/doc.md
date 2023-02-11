@@ -32,7 +32,7 @@
 | :----------------: | :------------------------------------------------: | :------: | :-----: |
 |    carouselW   |      轮播图长度                                      |  number  | 671        |
 |    carouselH   |      轮播图宽度                                      |  number  |    300     |
-|     imgData    |      轮播图图片数据                                  |  Object  | []         |
+|     imgData    |      轮播图图片数据                                  |  Object  | [ ]         |
 |    autoplay    |      自动播放时间间距                                |  number  | 2000        |
 |  showPointer   |        是否显示指示点                                |  boolead  |    true    |
 |  isHorizontal  |      是否水平显示                                    |  boolead  | true      |
