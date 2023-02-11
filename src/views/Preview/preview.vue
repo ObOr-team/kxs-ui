@@ -10,7 +10,7 @@
         </transition>       
         <div class="showCode" @click="showOrhideCode">
             <span>{{ showCode? "隐藏代码":"显示代码"}}</span>
-            <i class="m-icon-code"></i>
+            <!-- <i class="iconfont icon-sousuo"></i> -->
         </div>
         <textarea id="inputCopy"/>
     </div>

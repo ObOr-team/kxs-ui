@@ -6,6 +6,118 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1348",
+      "name": "向上",
+      "font_class": "xiangshang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1351",
+      "name": "向下",
+      "font_class": "xiangxia",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1353",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6119215",
+      "name": "右-三角",
+      "font_class": "right-s",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "20402148",
+      "name": "三角下",
+      "font_class": "sanjiaoxia",
+      "unicode": "e6ec",
+      "unicode_decimal": 59116
+    },
+    {
+      "icon_id": "20402150",
+      "name": "三角上",
+      "font_class": "sanjiaoshang",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "20402151",
+      "name": "三角左",
+      "font_class": "sanjiaozuo",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "20402158",
+      "name": "三角右",
+      "font_class": "sanjiaoyou",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "23261314",
+      "name": "三角下",
+      "font_class": "sanjiaoxia1",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "33702761",
+      "name": "chevron-down",
+      "font_class": "chevron-down",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "33702762",
+      "name": "chevron-left",
+      "font_class": "chevron-left",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "33702763",
+      "name": "chevron-right",
+      "font_class": "chevron-right",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "33702764",
+      "name": "chevron-up",
+      "font_class": "chevron-up",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "33702767",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "33702804",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "33702809",
+      "name": "停用",
+      "font_class": "tingyong",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
       "icon_id": "7127384",
       "name": "加载",
       "font_class": "jiazai",

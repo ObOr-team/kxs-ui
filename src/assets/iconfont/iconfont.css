@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3866918 */
-  src: url('iconfont.woff2?t=1675656049579') format('woff2'),
-       url('iconfont.woff?t=1675656049579') format('woff'),
-       url('iconfont.ttf?t=1675656049579') format('truetype');
+  src: url('iconfont.woff2?t=1676069700236') format('woff2'),
+       url('iconfont.woff?t=1676069700236') format('woff'),
+       url('iconfont.ttf?t=1676069700236') format('truetype');
 }
 
 .iconfont {
@@ -13,9 +13,72 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-xiangshang:before {
+  content: "\e600";
+}
+
+.icon-xiangxia:before {
+  content: "\e601";
+}
+
+.icon-xiangzuo:before {
+  content: "\e602";
+}
+
+.icon-right-s:before {
+  content: "\e627";
+}
+
+.icon-sanjiaoxia:before {
+  content: "\e6ec";
+}
+
+.icon-sanjiaoshang:before {
+  content: "\e6ed";
+}
+
+.icon-sanjiaozuo:before {
+  content: "\e6ee";
+}
+
+.icon-sanjiaoyou:before {
+  content: "\e6ef";
+}
+
+.icon-sanjiaoxia1:before {
+  content: "\e650";
+}
+
+.icon-chevron-down:before {
+  content: "\e608";
+}
+
+.icon-chevron-left:before {
+  content: "\e609";
+}
+
+.icon-chevron-right:before {
+  content: "\e60a";
+}
+
+.icon-chevron-up:before {
+  content: "\e60b";
+}
+
+.icon-bofang:before {
+  content: "\e60c";
+}
+
+.icon-dingwei:before {
+  content: "\e60d";
+}
+
+.icon-tingyong:before {
+  content: "\e60e";
+}
+
 .icon-jiazai:before {
   content: "\e607";
-  
 }
 .icon-jiazai{
   animation: rotate 2s linear infinite;
