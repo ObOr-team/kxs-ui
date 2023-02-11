@@ -6,8 +6,10 @@ import kRadio from "./Radio/index";
 import kTree from "./Tree/index";
 import KSelect from "./Select/index";
 import kOptfile from "./Optfile/index";
+import kCarousel from "./Carousel/kCarousel.vue";
+import kCarouselcard from "./Carousel/kCarouselcard.vue";
 
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile];
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kCarousel,kCarouselcard];
 const install =(app:any)=>{
     component.forEach((item)=>{
         app.use(item);
@@ -16,5 +18,5 @@ const install =(app:any)=>{
  const TUI = {
     install,
  }
- export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile};
+ export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kCarousel,kCarouselcard};
  export default TUI;
