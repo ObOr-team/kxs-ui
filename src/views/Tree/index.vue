@@ -38,12 +38,16 @@ const isOpen = (item:any)=>{
 
 li{
         cursor: pointer;
-        // list-style: none;
         &:hover{
                background: #f0f0f0;
         }
-     
+        //修改li的图标
         // list-style-image:url(../../assets/right-deltoid.png) ;
+        //采用背景修改图标，
+         list-style-type: none;
+        background: url("../../assets/right-deltoid.png") no-repeat 0rem 0.2rem;
+        background-size: 1rem 1rem;
+        text-indent: 2em;
         // line-height: 40px;
 }
 .k-tree-item-box{

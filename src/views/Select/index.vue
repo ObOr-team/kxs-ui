@@ -1,11 +1,17 @@
 <template>
     <div class="k-select" v-clickOutside>
-        <input type="text" readonly 
-        :value="selectVal" 
-        :disabled="disabled"
-        :class="{'disabled-input-li':disabled}"
-        :placeholder="placeholder"
-        />
+        <div class="div-input-div" :disabled="disabled" :class="{'disabled-input-li':disabled}">
+            <input type="text" readonly 
+            :value="selectVal" 
+            :disabled="disabled"
+            :class="{'disabled-input-li':disabled}"
+            :placeholder="placeholder"
+            />
+            <i :class="['iconfont icon-chevron-down','input-icon'] "
+            :style="[{ transform: rotate }]"
+            ></i>
+        </div>
+
         <transition name="slide-fade">
             <div class="k-position-box" v-if="positionShow">
             <li v-for="(item,index) in options" :key="index" 
@@ -49,6 +55,7 @@ export default {
     const activeIndex=ref(-1)
     const positionShow =ref(false)
     const selectVal=ref(props.modelValue)
+    const rotate = ref("rotate(0deg)");
     props.options.forEach((item:any,index:any)=>{
         if(item[props.filedValue]==props.modelValue){
             selectVal.value=item[props.filedLabel]
@@ -60,10 +67,21 @@ export default {
             let handler =(e:any)=>{
                 if(!props.disabled){
                     if(el.contains(e.target)&&e.target.className.indexOf('item-li')==-1){
-                        positionShow.value=true
+                        positionShow.value=!positionShow.value
+                        if (positionShow.value) {
+                             rotate.value = "rotate(180deg)";
+                        } else {
+                        rotate.value = "rotate(0deg)";
+                        }
                     }else{
-                        if(e.target.className.indexOf('disabled-input-li'))
-                        positionShow.value=false
+                        if(e.target.className.indexOf('disabled-input-li')){
+                            positionShow.value=false
+                            if (positionShow.value) {
+                                rotate.value = "rotate(180deg)";
+                            } else {
+                            rotate.value = "rotate(0deg)";
+                            }
+                        }
                     }
                 }
              
@@ -100,14 +118,23 @@ export default {
     height: 40px;
     position: relative;
     margin-top: 20px;
-    input{
-        width: 100%;
-        border: 1px solid var(--default-border-color);
+    .div-input-div{
         border-radius: 5px;
-        padding: 8px 10px;
-        outline: none;
-        box-sizing: border-box;
-        cursor: pointer;
+        border: 1px solid var(--default-border-color);
+        input{
+            width: 220px;
+            border: none;
+            // border: 1px solid var(--default-border-color);
+            border-radius: 5px;
+            padding: 8px 10px;
+            outline: none;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .input-icon{
+            display: inline-block;
+            transform: rotate(deg);
+        }
     }
     .k-position-box{
         width: 100%;

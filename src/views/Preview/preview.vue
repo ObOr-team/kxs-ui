@@ -3,14 +3,14 @@
 
         <transition name="slide-fade">
             <pre
-                class="language-html"
+                class="out-language-html"
                 v-if="showCode"
                 v-highlight
             ><code class="language-html">{{sourceCode}}</code></pre>
         </transition>       
         <div class="showCode" @click="showOrhideCode">
             <span>{{ showCode? "隐藏代码":"显示代码"}}</span>
-            <i class="m-icon-code"></i>
+            <!-- <i class="iconfont icon-sousuo"></i> -->
         </div>
         <textarea id="inputCopy"/>
     </div>
@@ -89,6 +89,11 @@ export default {
     }
 }
 .language-html{
+    border-radius: 10px;
+    // border: solid 1px #c9c6c6;
+    background-color: rgb(247, 245, 245);
+}
+.out-language-html{
     border-radius: 10px;
     border: solid 1px #c9c6c6;
     background-color: rgb(247, 245, 245);
