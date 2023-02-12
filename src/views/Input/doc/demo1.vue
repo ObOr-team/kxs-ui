@@ -1,13 +1,5 @@
 <template>
-    <div>
-        <k-input></k-input>
-    </div>
+    <k-space>
+           <k-input placeholder="请输入内容" ></k-input>
+    </k-space>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-
-</style>

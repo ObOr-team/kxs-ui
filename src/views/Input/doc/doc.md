@@ -1,7 +1,7 @@
 <script setup>
     import demo1 from './demo1.vue' 
-    // import demo2 from './demo2.vue' 
-    // import demo3 from './demo3.vue'
+    import demo2 from './demo2.vue' 
+    import demo3 from './demo3.vue'
     // import demo4 from './demo4.vue'
     // import demo5 from './demo5.vue'
     // import demo6 from './demo6.vue'
@@ -9,7 +9,26 @@
 
 ## Input 输入框
 
-<demo1/>
+### ● 基本用法 
+<p>input 的基本使用</p>
+<div class="borderBox">
+    <demo1/>
+    <k-preview compname="Input" demoname="demo1"/>
+</div>
+
+### ● 禁用状态
+<p>input 的禁用状态，通过<code>disabled</code>属性限制输入及操作</p>
+<div class="borderBox">
+    <demo3/>
+    <k-preview compname="Input" demoname="demo3"/>
+</div>
+
+### ● 密码类型
+<p>密码类型的输入框，可通过设置<code>type</code>为password来启用是否开启显示密码</p>
+<div class="borderBox">
+    <demo2/>
+    <k-preview compname="Input" demoname="demo2"/>
+</div>
 
 
 ### Attributes 参数
