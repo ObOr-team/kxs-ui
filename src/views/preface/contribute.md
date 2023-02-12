@@ -7,17 +7,17 @@
     <a href="https://github.com/Neajue" target= "_blank">
         <img src="https://avatars.githubusercontent.com/u/87924593?v=4" alt=""/>
     </a>
+        <a href="https://github.com/EnJoy77" target= "_blank">
+        <img src="https://avatars.githubusercontent.com/u/108109256?v=4" alt=""/>
+    </a>
     <a href="https://github.com/zkeq" target= "_blank">
         <img src="https://avatars.githubusercontent.com/u/62864752?v=4" alt=""/>
     </a>
-    <a href="https://github.com/beginnierweb2" target= "_blank">
-        <img src="https://avatars.githubusercontent.com/u/87230594?v=4" alt=""/>
-    </a>
-    <a href="https://github.com/ColdyNi" target= "_blank">
+        <a href="https://github.com/ColdyNi" target= "_blank">
         <img src="https://avatars.githubusercontent.com/u/104876115?v=4" alt=""/>
     </a>
-    <a href="https://github.com/EnJoy77" target= "_blank">
-        <img src="https://avatars.githubusercontent.com/u/108109256?v=4" alt=""/>
+    <a href="https://github.com/beginnierweb2" target= "_blank">
+        <img src="https://avatars.githubusercontent.com/u/87230594?v=4" alt=""/>
     </a>
     <a href="https://github.com/KeepTheFear" target= "_blank">
         <img src="https://avatars.githubusercontent.com/u/99188353?v=4" alt=""/>

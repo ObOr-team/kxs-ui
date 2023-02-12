@@ -25,7 +25,11 @@
 <template>
     <header>
         <div class="head_container">
-            <img src="../assets/Kxx-UI-logo.png" alt=""/>
+            <div>
+                <img class="Kx-UI-logo" src="../assets/Kx-UI-logo.png" alt=""/>
+                <img class="Kx-UI-logo-text" src="../assets/Kx-UI-logo-text.png" alt=""/>
+            </div>
+
             <div class="tools">
                 <a href=""            :class="navigationPointe==0? 'aisactive': '' " @click="changeNavigation(0)">首页</a>
                 <a href="javascript:" :class="navigationPointe==1? 'aisactive': '' " @click="switchMenu(menuList[0].children[0].children[0],0)">快速上手</a>
@@ -83,10 +87,15 @@ header{
         margin: auto;
         box-shadow: 0 2px 8px rgba(230, 230, 230, 0.5);
     }
-    img{
-        width: 200px;
-        height: 60px;
-        margin-left:30px;
+    .Kx-UI-logo{
+        width: 36px;
+        height: 34px;
+        margin-left: 30px;
+    }
+    .Kx-UI-logo-text{
+        width: 51px;
+        height: 20px;
+        margin-left: 17px;
     }
     .tools{
         height: 50px;

@@ -12,7 +12,7 @@ yarn add kxx-ui
 ```
 
 ### 使用
-```js
+```ts
 import { createApp } from "vue";
 import App from "@/App.vue";
 import mzlUi from "mzl-ui";

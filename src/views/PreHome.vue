@@ -1,7 +1,7 @@
 <template>
     <div class="contentBox"  v-if="router.currentRoute.value.path=='/'">
       <div class="imgLogo">
-        <img src="../assets/Kxx-UI-logo.png" alt="mzl-ui" />
+        <img src="../assets/Kx-UI-logo.png" alt="mzl-ui" />
       </div>
       <h3>一套适合开发者使用的轻量级UI组件库，完美支持vue3</h3>
       <div class="tiBox">
@@ -10,15 +10,16 @@
         </p>
         <div class="buttonGroups">
           <k-button
-            type="primary"
+            class="btn-intohome"
+            type="info"
             round
             style="padding: 15px 50px; margin-right: 2vw; font-size: 17px"
             @click="toComponents"
-            >立即上手</k-button
+            >立即上手
+            </k-button
           >
           <k-button
             round
-            icon="m-icon-github"
             style="padding: 15px 50px; margin-left: 2vw; font-size: 17px"
             @click="goGuthub"
             >Github</k-button
@@ -89,14 +90,14 @@
         img: "https://avatars.githubusercontent.com/u/87924593?v=4",
       },
       {
+        name: "EnJoy77",
+        github: "https://github.com/EnJoy77",
+        img: "https://avatars.githubusercontent.com/u/108109256?v=4",
+      },
+      {
         name: "zkeq",
         github: "https://github.com/zkeq",
         img: "https://avatars.githubusercontent.com/u/62864752?v=4",
-      },
-      {
-        name: "beginnierweb2",
-        github: "https://github.com/beginnierweb2",
-        img: "https://avatars.githubusercontent.com/u/87230594?v=4",
       },
       {
         name: "ColdyNi",
@@ -104,9 +105,9 @@
         img: "https://avatars.githubusercontent.com/u/104876115?v=4",
       },
       {
-        name: "EnJoy77",
-        github: "https://github.com/EnJoy77",
-        img: "https://avatars.githubusercontent.com/u/108109256?v=4",
+        name: "beginnierweb2",
+        github: "https://github.com/beginnierweb2",
+        img: "https://avatars.githubusercontent.com/u/87230594?v=4",
       },
       {
         name: "KeepTheFear",
@@ -175,6 +176,9 @@
         height: auto;
         overflow: hidden;
         margin-top: 5vh;
+        .btn-intohome{
+          // background: #636e86;
+        }
       }
       .cardBox {
         width: 100%;
