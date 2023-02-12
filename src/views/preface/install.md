@@ -33,7 +33,8 @@ scrolling=no
 src="https://gist.onmicrosoft.cn/Neajue/427c26f8d5529076115a9912af6727bc.pibb">
 </iframe>
 
-<!-- ```js
+<!-- 
+```ts
 import { createApp } from "vue";
 import App from "@/App.vue";
 import mzlUi from "mzl-ui";

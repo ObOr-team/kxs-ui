@@ -9,7 +9,7 @@ import router from './routers/index'
 import Component from '@/views'
 //全局引入代码高亮highlight.js文件和它的样式并
 import hljs from "highlight.js"
-import "highlight.js/styles/color-brewer.css"
+import "highlight.js/styles/github.css"
 
 
 const app =createApp(App)
