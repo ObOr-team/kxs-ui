@@ -25,3 +25,22 @@ app.directive("highlight",function(el){
 });
 //挂载app
 app.mount('#app')
+/* 应该是代码高亮识别语言 */
+hljs.configure({
+    ignoreUnescapedHTML: true,
+    languages: [
+      "javascript",
+      "css",
+      "python",
+      "html",
+      "bash",
+      "java",
+      "sql",
+      "json",
+      "http",
+      "go",
+      "c++",
+      "c#",
+      "",
+    ],
+  });
