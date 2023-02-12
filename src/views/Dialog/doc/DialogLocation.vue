@@ -1,17 +1,20 @@
 <template>
-    <div class="borderBox">
-        <k-button :onclick = "() => {clickToShow(0)}">top</k-button>
+    <div>
+        <k-space>
+            <k-button :onclick = "() => {clickToShow(0)}">top</k-button>
+            <k-button :onclick = "() => {clickToShow(1)}">center</k-button>
+        </k-space>
+
         <k-dialog v-if = "isShow[0]"
-        titleText = "对话框标题"
-        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        location="top"
+            titleText = "对话框标题"
+            contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
+            location="top"
         ></k-dialog>
 
-        <k-button :onclick = "() => {clickToShow(1)}">center</k-button>
         <k-dialog v-if = "isShow[1]"
-        titleText = "对话框标题"
-        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        location="center"
+            titleText = "对话框标题"
+            contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
+            location="center"
         ></k-dialog>
     </div>
 </template>

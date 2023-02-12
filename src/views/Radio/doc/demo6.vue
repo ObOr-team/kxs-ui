@@ -1,5 +1,5 @@
 <template>
-    <div class="borderBox">
+    <div>
         <k-radio :options="options" @change="change"></k-radio>
     </div>
 </template>

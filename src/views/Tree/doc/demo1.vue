@@ -1,5 +1,5 @@
 <template>
-  <div class="borderBox">
+  <div>
     <k-tree :options="treeOptions"></k-tree>
   </div>
   

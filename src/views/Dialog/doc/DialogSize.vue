@@ -1,6 +1,10 @@
 <template>
-    <div class="borderBox">
-        <k-button :onclick = "() => {clickToShow(0)}">600×200</k-button>
+    <div>
+        <k-space>
+            <k-button :onclick = "() => {clickToShow(0)}">600×200</k-button>
+            <k-button :onclick = "() => {clickToShow(1)}">400×170</k-button>
+        </k-space>
+        
         <k-dialog v-if = "isShow[0]"
         titleText = "对话框标题"
         contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
@@ -8,7 +12,6 @@
         height="200px"
         ></k-dialog>
 
-        <k-button :onclick = "() => {clickToShow(1)}">400×170</k-button>
         <k-dialog v-if = "isShow[1]"
         titleText = "对话框标题"
         contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"

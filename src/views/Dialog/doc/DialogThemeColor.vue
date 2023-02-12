@@ -1,6 +1,9 @@
 <template>
-    <div class="borderBox">
-        <k-button :onclick = "() => {clickToShow(0)}">themeColor = "#1ABC9C"</k-button>
+    <div>
+        <k-space>
+            <k-button :onclick = "() => {clickToShow(0)}">themeColor = "#1ABC9C"</k-button>
+        </k-space>
+    
         <k-dialog v-if = "isShow[0]"
         titleText = "对话框标题"
         contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"

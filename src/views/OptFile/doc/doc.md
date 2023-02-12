@@ -1,15 +1,45 @@
 <script setup>
     import demo1 from './demo1.vue' 
-    // import demo2 from './demo2.vue' 
-    // import demo3 from './demo3.vue'
-    // import demo4 from './demo4.vue'
+    import demo2 from './demo2.vue' 
+    import demo3 from './demo3.vue'
+    import demo4 from './demo4.vue'
     // import demo5 from './demo5.vue'
     // import demo6 from './demo6.vue'
 </script>
 
 ## OptFile 文件选择
 
+### ● 基本用法 
+<p><code> OptFile </code>组件基本使用示例。</p>
+<div class="borderBox">
 <demo1/>
+<k-preview compname="OptFile" demoname="demo1"/>
+</div>
+
+
+### ● 显示已选文件 
+<p>可以通过 <code> showFileList</code> 启用。</p>
+<div class="borderBox">
+<demo2/>
+<k-preview compname="OptFile" demoname="demo2"/>
+</div>
+
+### ● 展示方式 
+<p>可以通过设置 <code>targetType</code> 为 box 切换。</p>
+<div class="borderBox">
+<demo3/>
+<k-preview compname="OptFile" demoname="demo3"/>
+</div>
+
+
+### ● 开启拖拽
+<p>通过设置<code> drop</code> 启用。</p>
+<div class="borderBox">
+<demo4/>
+<k-preview compname="OptFile" demoname="demo4"/>
+</div>
+ 
+
 
 ### Attributes 参数
 

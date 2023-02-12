@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <k-input></k-input>
     </div>
 </template>
 

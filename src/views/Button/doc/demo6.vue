@@ -1,28 +1,18 @@
 <template>
-    <div class="borderBox">
-        <div>
-        <k-button type="default" icon="sousuo">FrontIcon</k-button>
-        <k-button type="default" icon="tianjia">FrontIcon</k-button>
-        <k-button type="default" icon="shezhi-xianxing">FrontIcon</k-button>
-        <k-button type="default" icon="xiazai">FrontIcon</k-button>
-        <k-button type="default" icon="bianjixiugai">FrontIcon</k-button>
-        <k-button type="default" icon="shanchu">FrontIcon</k-button>
-        </div>
-        <div>
+    <k-space>
+        <k-button type="default" icon="sousuo">Icon</k-button>
+        <k-button type="default" icon="tianjia">Icon</k-button>
+        <k-button type="default" icon="shezhi-xianxing">Icon</k-button>
+        <k-button type="default" icon="xiazai">Icon</k-button>
+        <k-button type="default" icon="bianjixiugai">Icon</k-button>
+        <k-button type="default" icon="shanchu">Icon</k-button>
+    </k-space>
+    <k-space>
         <k-button type="default" postIcon="sousuo">PostIcon</k-button>
         <k-button type="default" postIcon="tianjia">PostIcon</k-button>
         <k-button type="default" postIcon="shezhi-xianxing">PostIcon</k-button>
         <k-button type="default" postIcon="xiazai">PostIcon</k-button>
         <k-button type="default" postIcon="bianjixiugai">PostIcon</k-button>
         <k-button type="default" postIcon="shanchu">PostIcon</k-button>
-        </div>
-        <div>
-        <k-button type="default" icon="sousuo"></k-button>
-        <k-button type="default" icon="tianjia"></k-button>
-        <k-button type="default" icon="shezhi-xianxing"></k-button>
-        <k-button type="default" icon="xiazai"></k-button>
-        <k-button type="default" icon="bianjixiugai"></k-button>
-        <k-button type="default" icon="shanchu"></k-button>
-        </div>
-    </div>
+    </k-space>
 </template>

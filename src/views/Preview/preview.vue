@@ -36,8 +36,9 @@ export default {
             require: true,
         },
     });
+/*     //用于测试数据是否被接收
     console.log(props.compname)
-    console.log(props.demoname)
+    console.log(props.demoname) */
     const showCode = ref(false);
     const border = ref( "1px solid rgba(0,0,0,.06)");
     const showOrhideCode = ()=>{

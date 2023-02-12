@@ -1,11 +1,13 @@
 <template>
-    <div class="borderBox">
-        <k-button :onclick = "() => {clickToShow()}">异步确认</k-button>
+    <div>
+        <k-space>
+            <k-button :onclick = "() => {clickToShow()}">异步确认</k-button>            
+        </k-space>
         <k-dialog v-if = "isShow"
-        titleText = "对话框标题"
-        contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
-        :confirmLoading = true
-        :confirmClick="confirmClick"
+            titleText = "对话框标题"
+            contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
+            :confirmLoading = true
+            :confirmClick="confirmClick"
         ></k-dialog>
     </div>
 </template>
@@ -19,7 +21,7 @@
     let clickToShow = () => {
         isShow.value = true;
     }
-    // 自定义确认按钮点击事件
+    // 自定义异步确认按钮点击事件
     let confirmClick = () => {
         let p = new Promise<void>((resolve, reject) => {
             setTimeout(()=> {
