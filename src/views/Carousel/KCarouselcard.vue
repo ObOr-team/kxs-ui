@@ -200,6 +200,8 @@ function initialize(){
   position: relative;
   margin: 10px auto 30px;
   top: 30px;
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
   .inner {
     width: 100%;
     height: 260px;

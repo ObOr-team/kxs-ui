@@ -9,7 +9,7 @@
 <iframe 
 frameborder=0  
 height=130px 
-width="80%" 
+width="70%" 
 marginwidth=0 
 scrolling=no 
 src="https://gist.onmicrosoft.cn/Neajue/48e60d8e65e56558cbbd2b02159e4485.pibb">
@@ -27,7 +27,7 @@ yarn add kxx-ui
 <iframe 
 frameborder=0  
 height=200px 
-width="80%" 
+width="70%" 
 marginwidth=0 
 scrolling=no 
 src="https://gist.onmicrosoft.cn/Neajue/427c26f8d5529076115a9912af6727bc.pibb">
