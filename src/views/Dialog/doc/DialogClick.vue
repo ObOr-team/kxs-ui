@@ -20,12 +20,10 @@
 </template>
 <script lang="ts" setup>
     import { ref } from 'vue'
-
     // 是否展示对话框组件
     let isShow: any = ref([false, false]);
     // 点击按钮显示对应对话框
     let clickToShow = (i:number) => {
-        // TODO: BUG：连续点击一个按钮，响应式数据失效，对话框不显示
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
     }

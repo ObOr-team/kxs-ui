@@ -12,9 +12,7 @@
     </div>
 </template>
 <script lang="ts" setup>
-    // 引入ref处理响应式数据
     import { ref } from 'vue'
-
     // 是否展示对话框组件
     let isShow: any = ref(false);
     // 点击按钮显示对应对话框
