@@ -9,23 +9,31 @@
 
 ### ● 基本用法 
 <p>相邻组件间的水平间距。</p>
-<demo1/>
-<k-preview compname="Space" demoname="demo1"/>
+<div class="borderBox">
+    <demo1/>
+    <k-preview compname="Space" demoname="demo1"/>
+</div>
 
 ### ● 垂直间距 
 <p>通过添加<code>column</code>属性设置相邻组件间的按垂直方向排列间距。</p>
-<demo2/>
-<k-preview compname="Space" demoname="demo2"/>
+<div class="borderBox">
+    <demo2/>
+    <k-preview compname="Space" demoname="demo2"/>
+</div>
 
 ### ● 间距大小 
 <p>通过设置<code>size</code>的值来规定间距的大小。</p>
-<demo3/>
-<k-preview compname="Space" demoname="demo3"/>
+<div class="borderBox">
+    <demo3/>
+    <k-preview compname="Space" demoname="demo3"/>
+</div>
 
 ### ● 自动换行 
 <p>通过添加<code>wrap</code>属性来设置自动换行。</p>
-<demo4/>
-<k-preview compname="Space" demoname="demo4"/>
+<div class="borderBox">
+    <demo4/>
+    <k-preview compname="Space" demoname="demo4"/>
+</div>
 
 ### Space Attributes
 |  参数  |                             说明                             |  类型   |

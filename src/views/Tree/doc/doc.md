@@ -10,8 +10,10 @@
 
 ### ● 基本使用
 <p> tree 组件基本使用示例。</p>
-<demo1/>
-<k-preview compname="Tree" demoname="demo1"/>
+<div class="borderBox">
+    <demo1/>
+    <k-preview compname="Tree" demoname="demo1"/>
+</div>
 
 ### Attributes 参数
 

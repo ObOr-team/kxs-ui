@@ -1,5 +1,5 @@
 <template>
-    <div class="borderBox">
+    <div>
         <k-carouselcard  
         :imgData="imgData"
         :autoplay="2000"

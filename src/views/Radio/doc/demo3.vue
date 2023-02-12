@@ -1,5 +1,5 @@
 <template>
-    <div class="borderBox">
+    <div>
         <k-radio :options="options" column></k-radio>
     </div>
 </template>

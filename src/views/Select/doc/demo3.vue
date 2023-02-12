@@ -1,6 +1,6 @@
 <template>
   
-  <div class="borderBox">
+  <div>
   <k-select
     :options="selOptions"
     v-model="selVal"

@@ -78,7 +78,7 @@ export default[{
         {
             //form
             path:'form',
-            name:"From 表单",
+            name:"Form 表单",
             component:()=>import ("@/views/Form/Form.md") 
         },
         {

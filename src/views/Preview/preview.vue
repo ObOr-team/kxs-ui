@@ -98,6 +98,7 @@ export default {
     border-radius: 10px;
     // border: solid 1px #c9c6c6;
     background-color: rgb(247, 245, 245);
+    font-size: 13px;
 }
 .out-language-html{
     border-radius: 10px;

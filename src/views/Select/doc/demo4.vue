@@ -1,5 +1,5 @@
 <template>
-  <div class="borderBox">
+  <div>
   <k-select
     :options="selOptions"
     filedLabel="name" filedValue="id"

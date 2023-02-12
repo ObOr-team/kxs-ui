@@ -1,5 +1,5 @@
 <template>
-    <div class="container borderBox">
+    <div class="container">
         <k-textarea v-model="textVal"></k-textarea>
     </div>
     

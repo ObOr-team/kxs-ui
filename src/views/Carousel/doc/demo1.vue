@@ -1,5 +1,5 @@
 <template>
-    <div class="borderBox">
+    <div>
         <k-carousel  
             :carouselW="671"
             :carouselH="300"

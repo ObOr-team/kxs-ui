@@ -10,33 +10,45 @@
 
 ### ● 基本使用
 <p> radio 组件的基本使用，需要一个主要的<code>options</code>参数。</p>
-<demo1/>
-<k-preview compname="Radio" demoname="demo1"/>
+<div class="borderBox">
+    <demo1/>
+    <k-preview compname="Radio" demoname="demo1"/>
+</div>
 
 ### ● 禁用选项
 <p>可以针对 options 下某个选项来添加<code>disabled</code> 属性实现禁用选项。</p>
-<demo2/>
-<k-preview compname="Radio" demoname="demo2"/>
+<div class="borderBox">
+    <demo2/>
+    <k-preview compname="Radio" demoname="demo2"/>
+</div>
 
 ### ● 垂直排列
 <p>可以通过添加<code>column</code>属性为实现垂直排列。</p>
-<demo3/>
-<k-preview compname="Radio" demoname="demo3"/>
+<div class="borderBox">
+    <demo3/>
+    <k-preview compname="Radio" demoname="demo3"/>
+</div>
 
 ### ● 自定义颜色
 <p>可以通过设置<code>customColor</code>属性的值自定义你喜欢的颜色。</p>
-<demo4/>
-<k-preview compname="Radio" demoname="demo4"/>
+<div class="borderBox">
+    <demo4/>
+    <k-preview compname="Radio" demoname="demo4"/>
+</div>
 
 ### ● 自定义数据格式
 <p>默认options接收label和value作为显示和值绑定，你可以使用<code>labelFiled</code>和<code>valueFiled</code>来重新确定字段的绑定，更方便的匹配不同格式的数据。</p>
-<demo5/>
-<k-preview compname="Radio" demoname="demo5"/>
+<div class="borderBox">
+    <demo5/>
+    <k-preview compname="Radio" demoname="demo5"/>
+</div>
 
 ### ● 获取点击的数据
 <p>可以通过绑定<code>change</code>事件,获取点击的数据</p>
-<demo6/>
-<k-preview compname="Radio" demoname="demo6"/>
+<div class="borderBox">
+    <demo6/>
+    <k-preview compname="Radio" demoname="demo6"/>
+</div>
 
 ### Attributes 参数
 

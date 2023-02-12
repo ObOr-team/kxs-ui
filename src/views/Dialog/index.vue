@@ -247,7 +247,7 @@ export default {
             height: 50%;
             aspect-ratio: 1 / 1; // 宽高比为1:1
             padding: 0; // 有padding此属性无效
-            margin-bottom: 0;
+            margin: 0 10px;
         }
     }
     .base{
@@ -289,6 +289,7 @@ export default {
         }
         .cancelBtn {
             color: #6C6C6C;
+            margin-right: 10px;
         }
     }
 </style>

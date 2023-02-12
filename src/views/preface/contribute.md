@@ -29,7 +29,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    margin: 20px 7% 20px 30px;
+    margin: 20px 7% 0 30px;
 }
 .people:hover a {
     animation: stretch 0.2s 1 linear forwards;
