@@ -90,11 +90,10 @@ import {computed,toRef} from 'vue'
     border: solid 1px var(--default);
     border-radius: 8px;
     cursor: pointer;
-    margin: 0 5px 10px 5px;
     box-sizing: border-box;
 }
 .btn:first-child{
-        margin-left: 10px;
+        // margin-left: 10px;
 }
 .default{
     color: var(--btn-color-gray);

@@ -13,40 +13,59 @@
 ### ● 基础  
 <p>使用<code>type</code>属性指定按钮类型</p>
 <p>使用<code>round</code>属性指定是否为圆角按钮</p> 
-<demo1/> 
-<k-preview compname="Button" demoname="demo1"/> 
+<div class="borderBox">
+    <demo1/> 
+    <k-preview compname="Button" demoname="demo1"/> 
+</div>
+<!-- 测试边框一起包组件和代码预览 -->
+<style scoped>
+.t-test{
+    background:pink;
+}
+</style>
 
 ### ● 反色  
 <p>使用<code>plain</code>属性指定是否为朴素按钮</p>
-<demo2/>   
-<k-preview compname="Button" demoname="demo2"/>   
+<div class="borderBox">
+    <demo2/>   
+    <k-preview compname="Button" demoname="demo2"/>
+</div>   
 
 ### ● 禁用
 <p>使用<code>disabled</code>属性指定按钮是否被禁用</p>
-<demo3/> 
-<k-preview compname="Button" demoname="demo3"/>
+<div class="borderBox">
+    <demo3/> 
+    <k-preview compname="Button" demoname="demo3"/>
+</div>
 
 ### ● 大小
 <p>使用<code>size</code>属性指定按钮的大小</p>
-<demo4/> 
-<k-preview compname="Button" demoname="demo4"/>
+<div class="borderBox">
+    <demo4/> 
+    <k-preview compname="Button" demoname="demo4"/>
+</div>
 
 ### ● 块级
 <p>使用<code>block</code>属性指定是否为块级按钮</p>
-<demo5/> 
-<k-preview compname="Button" demoname="demo5"/>
+<div class="borderBox">
+    <demo5/> 
+    <k-preview compname="Button" demoname="demo5"/>
+</div>
 
 ### ● 图标
-<p>使用<code>FrontIcon</code>属性指定按钮文字前面的图标</p>
-<p>使用<code>postIcon</code>属性指定按钮文字后面的图标</p>
-<p>使用<code>icon</code>属性指定无按钮文字的图标</p>
-<demo6/> 
-<k-preview compname="Button" demoname="demo6"/>
+<p>默认使用<code>icon</code>属性指定无按钮文字的图标</p>
+<p>可以使用<code>postIcon</code>属性指定按钮文字后面的图标</p>
+<div class="borderBox">
+    <demo6/> 
+    <k-preview compname="Button" demoname="demo6"/>
+</div>
 
 ### ● 加载
-<p>使用<code>icon="jiazai" loading</code>指定按钮的加载状态</p>
-<demo7/> 
-<k-preview compname="Button" demoname="demo7"/>
+<p>使用<code>loading</code>指定按钮的加载状态</p>
+<div class="borderBox">
+    <demo7/> 
+    <k-preview compname="Button" demoname="demo7"/>
+</div>
 
 ### Button Attributes
 |      参数      | 说明                                   |   类型   | 可选值                                                    | 默认值 |

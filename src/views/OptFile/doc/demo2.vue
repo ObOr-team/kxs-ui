@@ -1,0 +1,9 @@
+<template>
+    <k-space>
+        <k-optfile 
+            showFileList
+            multiple 
+            btnType="info">
+        </k-optfile>
+    </k-space>
+</template>

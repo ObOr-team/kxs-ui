@@ -2,7 +2,7 @@
   
 </template>
 
-<script lang="js">
+<script>
 import {useSlots,h,ref,computed} from 'vue'
     export default {
          name:"kSpace",
@@ -13,7 +13,7 @@ import {useSlots,h,ref,computed} from 'vue'
             },
             size:{
                 type:String,
-                default:false
+                default:""
             },
             column:{
                 type:Boolean,
@@ -27,17 +27,19 @@ import {useSlots,h,ref,computed} from 'vue'
          setup(props){
             const $slot = useSlots()
             const slotList = ref([])
+       /*     // 输出插槽里面的Dom值
             console.log($slot.default())
             const size = computed(()=>{
                     return props.size? `iconfont icon-${props.icon}`:""
-            })
+            }) */
             const kStyle = computed(()=>{
                 
                 return{
                     display:props.inline? 'inline-flex':'flex',
-                    gap: props.size? `${props.size}`:`10px 10px`,
+                    gap:props.size? `${props.size}`:`20px 20px`,
                     'flex-direction':props.column? 'column':'inherit',
                     'flex-wrap':props.wrap? 'wrap':'no wrap',
+                    padding:'15px'
                 }
             })
             $slot.default().forEach((item,index)=>{
@@ -65,12 +67,3 @@ import {useSlots,h,ref,computed} from 'vue'
          }
     }
 </script>
-
-<style lang="scss" scoped>
-    // .k-space{
-    //     display: flex;
-    //     flex-wrap:wrap ;
-    //     gap: 10px 10px;
-    //     flex-direction: inherit;
-    // }
-</style>
