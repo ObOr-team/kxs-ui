@@ -76,10 +76,10 @@ export default[{
             component:()=>import ("@/views/OptFile/doc/doc.md") 
         },
         {
-            //form
-            path:'form',
-            name:"From 表单",
-            component:()=>import ("@/views/Form/Form.md") 
+            //table
+            path:'table',
+            name:"Table 表格",
+            component:()=>import ("@/views/Table/doc/doc.md") 
         },
         {
             //tree

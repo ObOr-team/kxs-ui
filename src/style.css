@@ -1,0 +1,45 @@
+@import url(./assets/iconfont/iconfont.css);
+@import url(./assets/bass.css);
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /*按钮颜色变量*/
+  --btn-color-white:#fff;
+  --btn-color-gray:#9b9ea3;
+  --btn-color-default:rgba(221, 204, 238, 0.877);
+  --btn-color-default-lighter:rgba(240, 236, 245, 0.877);
+  --btn-color-primary:#4475a5;
+  --btn-color-primary-lighter:#c5e0fc;
+  --btn-color-success:#6ba74d;
+  --btn-color-success-lighter:#c8eeb6;
+  --btn-color-info:#909399;
+  --btn-color-info-lighter:#e6e7eb;
+  --btn-color-warming:#dbaf6c;
+  --btn-color-warming-lighter:#f7e2c4;
+  --btn-color-danger:#e98383;
+  --btn-color-danger-lighter:#f7cbcb;
+}
+
+body{
+  margin: 50px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

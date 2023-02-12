@@ -10,7 +10,9 @@ import kInput from "./Optfile/index";
 import kDialog from "./Dialog/index";
 import kCarousel from "./Carousel/index1";
 import kCarouselcard from "./Carousel/index2";
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kCarouselcard,kDialog];
+import kTable from "./Table/index";
+import KPagination from "./pagination/index";
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kCarouselcard,kDialog,kTable,KPagination];
 const install =(app:any)=>{
     component.forEach((item)=>{
         app.use(item);
@@ -19,5 +21,5 @@ const install =(app:any)=>{
  const TUI = {
     install,
  }
- export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kDialog};
+ export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kDialog,kTable,KPagination};
  export default TUI;
