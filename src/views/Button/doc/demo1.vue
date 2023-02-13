@@ -16,12 +16,12 @@
     <k-button type="danger" round>Danger</k-button>
 </k-space>
 <k-space>
-    <k-button type="default" icon="sousuo"></k-button>
-    <k-button type="default" icon="tianjia"></k-button>
-    <k-button type="default" icon="shezhi-xianxing"></k-button>
-    <k-button type="default" icon="xiazai"></k-button>
-    <k-button type="default" icon="bianjixiugai"></k-button>
-    <k-button type="default" icon="shanchu"></k-button>
+    <k-button type="default" icon="k-icon-shezhi-xianxing"></k-button>
+    <k-button type="default" icon="k-icon-address_book_line"></k-button>
+    <k-button type="default" icon="k-icon-search_line"></k-button>
+    <k-button type="default" icon="k-icon-volume_mute_line"></k-button>
+    <k-button type="default" icon="k-icon-star_line"></k-button>
+    <k-button type="default" icon="k-icon-shop_line"></k-button>
 </k-space>
 </template>
 

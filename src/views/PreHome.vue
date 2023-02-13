@@ -19,7 +19,7 @@
             </k-button
           >
           <k-button
-            icon="github_line"
+            icon="k-icon-github_line"
             round
             style="padding: 15px 50px; margin-left: 2vw; font-size: 17px"
             @click="goGuthub"
