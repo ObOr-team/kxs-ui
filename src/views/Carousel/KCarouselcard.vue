@@ -37,7 +37,7 @@
     }
 </script>
 <script lang="ts" setup>
-import { ref, toRef, watch,onMounted } from "vue"
+import { ref, toRef, watch,onMounted ,onBeforeUnmount} from "vue"
 const props = defineProps({
     carouselW:{
         type:Number,
@@ -165,6 +165,9 @@ let ulMove =setInterval(()=>{
       index.value++;
     }
 },autoplay.value)
+onBeforeUnmount(()=>{
+    clearTimeout(ulMove)
+})
 const mouseover=function(){
     clearTimeout(ulMove)
 }
