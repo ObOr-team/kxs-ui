@@ -42,6 +42,10 @@
 </script>
 
 <style lang="scss" scope>
+	.titlep {
+		font-size: 17px;
+		font-weight: 600;
+	}
 	.iconListBox{
 		width: 100%;
 		height: auto;
