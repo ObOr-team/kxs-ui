@@ -79,7 +79,13 @@ export default[{
             //form
             path:'form',
             name:"Form 表单",
-            component:()=>import ("@/views/Form/Form.md") 
+            component:()=>import ("@/views/Form/doc/doc.md") 
+        },
+        {
+            //table
+            path:'table',
+            name:"Table 表格",
+            component:()=>import ("@/views/Table/doc/doc.md") 
         },
         {
             //tree
@@ -92,8 +98,68 @@ export default[{
              path:'input',
              name:"Input 输入框",
              component:()=>import ("@/views/Input/doc/doc.md") 
-        }
+        },
 
+        {
+            // switch
+            path:'switch',
+            name:'Switch 开关',
+            component:()=>import("@/views/Switch/doc/doc.md")
+        },
+        {
+            // color
+            path:'color',
+            name:'Color 颜色',
+            component:()=>import("@/views/Color/doc/doc.md")
+        },
+        {
+            // checkbox
+            path:'checkbox',
+            name:'Checkbox 多选',
+            component:()=>import("@/views/Checkbox/doc/doc.md")
+        },
+        {
+            // layout
+            path:'layout',
+            name:'Layout 布局',
+            component:()=>import("@/views/Layout/doc/doc.md")
+        },
+        {
+            // outfile
+            path:'outfile',
+            name:'Outfile 上传文件',
+            component:()=>import("@/views/Outfile/doc/doc.md")
+        },
+        {
+            // backtop
+            path:'backtop',
+            name:'Backtop 回到顶部',
+            component:()=>import("@/views/Backtop/doc/doc.md")
+        },
+        {
+            // menu
+            path:'menu',
+            name:'Menu 菜单',
+            component:()=>import("@/views/Menu/doc/doc.md")
+        },
+        {
+            // progress
+            path:'progress',
+            name:'Progress 进度条',
+            component:()=>import("@/views/Progress/doc/doc.md")
+        },
+        {
+            // drawer
+            path:'drawer',
+            name:'Drawer 抽屉',
+            component:()=>import("@/views/Drawer/doc/doc.md")
+        },
+        {
+            // divider
+            path:'divider',
+            name:'Divider 分割线',
+            component:()=>import("@/views/Divider/doc/doc.md")
+        }
         ]
     }]
 

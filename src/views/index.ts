@@ -10,7 +10,26 @@ import kInput from "./Input/index";
 import kDialog from "./Dialog/index";
 import kCarousel from "./Carousel/index1";
 import kCarouselcard from "./Carousel/index2";
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kCarouselcard,kDialog];
+import kTable from "./Table/index";
+import KPagination from "./pagination/index";
+
+import KSwitch from "./Switch/index.vue";
+import KColor from "./Color/index.vue";
+import KCheckbox from "./Checkbox/index.vue";
+import KLayout from "./Layout/index.vue";
+import KOutfile from "./Optfile/index.vue";
+import KBacktop from "./Backtop/index.vue";
+import KMenu from "./Menu/index.vue";
+import KProgress from "./Progress/index.vue";
+import KDrawer from "./Drawer/index.vue";
+import KDivider from "./Divider/index.vue";
+
+
+
+
+
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,
+    kOptfile,kInput,kCarousel,kCarouselcard,kDialog,kTable,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,KBacktop,KMenu,KProgress,KDrawer,KDivider];
 const install =(app:any)=>{
     component.forEach((item)=>{
         app.use(item);
@@ -19,5 +38,6 @@ const install =(app:any)=>{
  const TUI = {
     install,
  }
- export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kDialog};
+ export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,
+    kDialog,kTable,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,KBacktop,KMenu,KProgress,KDrawer,KDivider};
  export default TUI;
