@@ -26,7 +26,7 @@ import KDivider from "./Divider/index";
 
 
 
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kTable,
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kTable,KLayout,
     kInput,kDialog
     ];
 const install =(app:any)=>{
@@ -39,7 +39,7 @@ const install =(app:any)=>{
  const TUI = {
     install,
  }
- export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kTable,
+ export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kTable,KLayout,
     kDialog};
  export default TUI;
 //  ,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,
