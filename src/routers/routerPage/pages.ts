@@ -33,6 +33,12 @@ export default[{
             component:()=>import ("@/views/Button/doc/doc.md") 
         },
         {
+            //icon
+            path:'icon',
+            name:"Icon 图标",
+            component:()=>import ("@/views/Icon/doc.md") 
+        },
+        {
             //dialog
             path:'dialog',
             name:"Dialog 对话框",

@@ -15,7 +15,7 @@
             @click="fileChange" 
             ref="areaRef"
             id="title">
-            <i class="iconfont icon-tianjia"></i>
+            <i class="k-icon-tianjia"></i>
             <p v-if="label!=''">{{lableText}}</p>
         </div>
         <div class="fileList-box" v-if="showFileList">

@@ -9,12 +9,14 @@ import kOptfile from "./OptFile/index";
 import kInput from "./Input/index";
 import kDialog from "./Dialog/index";
 import kCarousel from "./Carousel/index1";
-import kCarouselcard from "./Carousel/index2";
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kCarouselcard,kDialog];
+// import kCarouselcard from "./Carousel/index2";
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kDialog];
 const install =(app:any)=>{
     component.forEach((item)=>{
         app.use(item);
     })
+    app.use(kCarousel.KCarouselcard)
+    app.use(kCarousel.KCarousel)
 };
  const TUI = {
     install,

@@ -76,6 +76,15 @@
   <script lang="ts" setup >
   import { useRouter } from "vue-router";
   import { reactive } from "vue";
+  import te12 from "./test/te1";
+
+const install:any =(app:any)=>{
+
+        app.use(te12);
+}; 
+ const TUI = {
+    install,
+ }
   const router = useRouter();
   const state = reactive({
     devoteList: [

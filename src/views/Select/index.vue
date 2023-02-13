@@ -7,7 +7,7 @@
             :class="{'disabled-input-li':disabled}"
             :placeholder="placeholder"
             />
-            <i :class="['iconfont icon-chevron-down','input-icon'] "
+            <i :class="['k-icon-xia','input-icon'] "
             :style="[{ transform: rotate }]"
             ></i>
         </div>

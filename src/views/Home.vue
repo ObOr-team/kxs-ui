@@ -36,7 +36,7 @@
                 <a href="javascript:" :class="navigationPointe==2? 'aisactive': '' " @click="switchMenu(menuList[0].children[0].children[3],3)">组件</a>
                 <a href="https://github.com/5th-Youth-Training-OOT/Kxxx-UI/issues" :class="navigationPointe==3? 'aisactive': '' " @click="changeNavigation(3)">问题反馈</a>
             </div>
-        </div>      
+        </div>   
     </header>
     <!-- <hr/> -->
     <section>

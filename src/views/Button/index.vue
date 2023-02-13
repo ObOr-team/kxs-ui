@@ -64,10 +64,10 @@ import {computed,toRef} from 'vue'
         return props.block? {display:"block",width:"40%" }:""
     })
     const post = computed(()=>{
-        return props.postIcon? `iconfont icon-${props.postIcon}`:""
+        return props.postIcon? `k-icon-${props.postIcon}`:""
     })
     const icon = computed(()=>{
-        return props.icon? `iconfont icon-${props.icon}`:""
+        return props.icon? `k-icon-${props.icon}`:""
     })
     const classObj = computed(()=>{
         return [

@@ -125,3 +125,15 @@ p {
     background-color: #f9f9f9;
   }
 }
+//设置加载按钮的无限旋转
+.k-icon-jiazai{
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);/*从0度开始*/
+	}
+	100%{
+		transform: rotateZ(360deg);/*360度结束*/
+	}
+}
