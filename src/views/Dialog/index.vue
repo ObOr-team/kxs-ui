@@ -11,7 +11,7 @@
                 <div class="content">
                     <!-- info类型不展示图标 -->
                     <div v-if="!(props.type === 'info')" class="icon-box">
-                        <k-icon :class="iconType" :style="{color:themeColor}"></k-icon>
+                        <i :class="iconType" :style="{color:themeColor}"></i>
                     </div>
                     <div class="info" :style="[conColorCss]">{{ props.contentText }}</div>
                 </div>
@@ -258,7 +258,7 @@ export default {
         .icon-box {
             flex: 1;
             padding: 10px;
-            k-icon {
+            i {
                 font-size: 25px;
             }
         }
