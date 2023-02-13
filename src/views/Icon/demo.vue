@@ -25,11 +25,7 @@
     input.select()
     if(document.execCommand('copy')){
       document.execCommand('copy')
-    //   Message({
-    //     type: 'success',
-    //     text: '复制成功'
-    //   })
-		alert("复制成功")
+	  toast('复制成功',1000)
     }else{
     //   Message({
     //     type: 'error',
@@ -38,6 +34,11 @@
     }
     
   }
+  const toast=function Toast(msg:string, duration:number) {
+            duration = isNaN(duration) ? 1000 : duration; 
+            var toastDiv = document.createElement('div'); toastDiv.innerHTML = msg; 
+            toastDiv.style.cssText = "padding: 0 10px;opacity: 0.7;height: 30px;color:#38a155;line-height: 30px;text-align: center;border-radius: 5px;position: fixed;top: 5%;left: 50%;transform: translateX(-50%);z-index: 999999;background: #def5d4;font-size: 12px;"; document.body.appendChild(toastDiv); setTimeout(function () { var d = 0.5; toastDiv.style.webkitTransition = '-webkit-transform ' + d + 's ease-in, opacity ' + d + 's ease-in'; toastDiv.style.opacity = '0'; setTimeout(function () { document.body.removeChild(toastDiv) }, d * 1000); }, duration);
+}
 </script>
 
 <style lang="scss" scope>
