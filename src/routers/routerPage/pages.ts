@@ -36,7 +36,7 @@ export default[{
             //icon
             path:'icon',
             name:"Icon 图标",
-            component:()=>import ("@/views/Icon/doc.md") 
+            component:()=>import ("@/views/Icon/doc/doc.md") 
         },
         {
             //dialog
