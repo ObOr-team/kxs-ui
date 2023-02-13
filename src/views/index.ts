@@ -26,7 +26,7 @@ import KDivider from "./Divider/index";
 
 
 
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kTable,KLayout,
     kInput,kDialog
     ];
 const install =(app:any)=>{
@@ -39,8 +39,8 @@ const install =(app:any)=>{
  const TUI = {
     install,
  }
- export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,
+ export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kTable,KLayout,
     kDialog};
  export default TUI;
-//  kTable,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,
+//  ,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,
 // KBacktop,KMenu,KProgress,KDrawer,KDivider 这段引入出问题 稍后修改。
