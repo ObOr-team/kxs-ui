@@ -30,6 +30,4 @@ import demo from './demo.vue'
 ```
 
 <br/>
-
-<preview compName="icon" demoName="demo"/> 
 <demo/>

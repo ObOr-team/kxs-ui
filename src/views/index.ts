@@ -11,23 +11,24 @@ import kDialog from "./Dialog/index";
 import kCarousel from "./Carousel/index1";
 import kTable from "./Table/index";
 import KPagination from "./pagination/index";
-import KSwitch from "./Switch/index.vue";
-import KColor from "./Color/index.vue";
-import KCheckbox from "./Checkbox/index.vue";
-import KLayout from "./Layout/index.vue";
-import KOutfile from "./Outfile/index.vue";
-import KBacktop from "./Backtop/index.vue";
+import KSwitch from "./Switch/index";
+import KColor from "./Color/index";
+import KCheckbox from "./Checkbox/index";
+import KLayout from "./Layout/index";
+import KOutfile from "./Outfile/index";
+import KBacktop from "./Backtop/index";
 import KMenu from "./Menu/index.vue";
-import KProgress from "./Progress/index.vue";
-import KDrawer from "./Drawer/index.vue";
-import KDivider from "./Divider/index.vue";
+import KProgress from "./Progress/index";
+import KDrawer from "./Drawer/index";
+import KDivider from "./Divider/index";
 
 
 
 
 
-const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,
-    kOptfile,kInput,kCarousel,kDialog,kTable,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,KBacktop,KMenu,KProgress,KDrawer,KDivider];
+const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,
+    kInput,kDialog
+    ];
 const install =(app:any)=>{
     component.forEach((item)=>{
         app.use(item);
@@ -39,5 +40,7 @@ const install =(app:any)=>{
     install,
  }
  export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,
-    kDialog,kTable,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,KBacktop,KMenu,KProgress,KDrawer,KDivider};
+    kDialog};
  export default TUI;
+//  kTable,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,
+// KBacktop,KMenu,KProgress,KDrawer,KDivider 这段引入出问题 稍后修改。
