@@ -1,0 +1,3 @@
+npm install kxx-ui
+cnpm install  kxx-ui --save
+yarn add kxx-ui
