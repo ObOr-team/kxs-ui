@@ -92,9 +92,9 @@ import {computed,toRef} from 'vue'
     cursor: pointer;
     box-sizing: border-box;
 }
-.btn:first-child{
-        // margin-left: 10px;
-}
+// .btn:first-child{
+//     margin-left: 10px;
+// }
 .default{
     color: var(--btn-color-gray);
     background-color: var(--btn-color-white);
