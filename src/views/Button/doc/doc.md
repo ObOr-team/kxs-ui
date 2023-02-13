@@ -15,7 +15,7 @@
 <p>使用<code>round</code>属性指定是否为圆角按钮</p> 
 <div class="borderBox">
     <demo1/> 
-    <k-preview compname="Button" demoname="demo1"/> 
+    <k-preview compname="Button" demoname="demo1" open/> 
 </div>
 <!-- 测试边框一起包组件和代码预览 -->
 <style scoped>
