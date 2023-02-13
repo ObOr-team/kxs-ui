@@ -61,7 +61,7 @@ import {computed,toRef} from 'vue'
     //可以通过toRef处理响应式数据
     const round =toRef(props,"round");
     const blockCss = computed(()=>{
-        return props.block? {display:"block",width:"40%" }:""
+        return props.block? {display:"block",width:"100%" }:""
     })
     const post = computed(()=>{
         return props.postIcon? `${props.postIcon}`:""

@@ -1,12 +1,11 @@
 <template>
-    <h>small</h>
+    <h4>small</h4>
     <k-table :options="options" size="small"></k-table>
-    <h>mini</h>
+    <h4>mini</h4>
     <k-table :options="options" size="mini"></k-table>
-  </template>
+</template>
   
-  <!-- js -->
-  <script lang="ts" setup>
+<script lang="ts" setup>
   import { reactive } from "vue";
   const state = reactive({
     options: {

@@ -5,26 +5,28 @@
 </script>
 ## Table 表格
 
-### ● 基础表格
-<p> Table 组件<code>基本使用</code>示例</p>
-<demo1/>
-<br/>
+### ● 基本使用
+<p> table 表格基本使用示例,需要一个主要的 <code>options</code> 参数。</p>
+<div class="borderBox">
+    <demo1/>
 <k-preview compname="Table" demoname="demo1"/>
+</div>
 
-### ● Size表格
-<p> Table 组件<code>可变大小使用</code>示例</p>
-<demo2/>
-<br/>
-<k-preview compname="Table" demoname="demo2"/>
+### ● 不同大小
+<p> 你可以传入一个<code> size </code>来确定表格的不同大小，以适配不同的应用场景</p>
+<div class="borderBox">
+    <demo2/>
+    <k-preview compname="Table" demoname="demo2"/>
+</div>
 
-### ● 可操作表格
-<p> Table 组件<code>可编辑使用</code>示例</p>
+<!-- 待研究
+### ● 自定义插槽内容
+<p> 根据需要自定义表格的插槽内容，插槽接受需要定义表格列的 field 并返回当前行的数据 rowItem ，如果是定义表头，需要在插槽名加上 head- 前缀作为识别符</p>
 <demo3/>
 <br/>
-<k-preview compname="Table" demoname="demo3"/>
+<k-preview compname="Table" demoname="demo3"/> -->
 
-<br/>
-<br/>
+
 
 ### Table Attributes
 |      参数      | 说明                                   |   类型   | 可选值                                                    | 默认值 |
