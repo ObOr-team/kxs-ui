@@ -24,7 +24,3 @@
     <k-button type="default" icon="k-icon-shop_line"></k-button>
 </k-space>
 </template>
-
-<style scoped>
-
-</style>

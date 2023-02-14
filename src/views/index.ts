@@ -8,7 +8,7 @@ import KSelect from "./Select/index";
 import kOptfile from "./OptFile/index";
 import kInput from "./Input/index";
 import kDialog from "./Dialog/index";
-import kCarousel from "./Carousel/index1";
+import kCarousel from "./Carousel";
 import kTable from "./Table/index";
 import KPagination from "./pagination/index";
 import KSwitch from "./Switch/index";

@@ -1,11 +1,12 @@
 <template>
     <k-table :options="options">
       <template #action="item">
-        <k-button type="text" leftIcon="m-icon-edit" size="small" :disabled="item.scope.rowIndex%0==0 " >编辑</k-button >
-        <k-button type="text" leftIcon="m-icon-ashbin" style="color: #ec3437" size="small" >删除</k-button >
+        <!-- <k-button size="small" Icon="k-icon-bianjixiugai"  :disabled="item.scope.rowIndex%0==0 " >编辑</k-button > -->
+        <k-button size="small" Icon="k-icon-bianjixiugai">编辑</k-button >
+        <k-button size="small" Icon="k-icon-shanchu1">删除</k-button >
       </template>
     </k-table>
-    <k-pagination @change-page='changePage' :total='total' :page='1' ></k-pagination>
+    <!-- <k-pagination @change-page='changePage' :total='total' :page='1' ></k-pagination> -->
   </template>
   
   <script lang="ts" setup>

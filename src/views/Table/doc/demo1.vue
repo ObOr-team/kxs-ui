@@ -23,7 +23,3 @@ const state = reactive({
 });
 const { options } = state;
 </script>
-
-<style>
-
-</style>
