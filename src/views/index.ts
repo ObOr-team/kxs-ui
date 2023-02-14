@@ -21,13 +21,14 @@ import KMenu from "./Menu/index.vue";
 import KProgress from "./Progress/index";
 import KDrawer from "./Drawer/index";
 import KDivider from "./Divider/index";
+import kDropdown from "./Dropdown/index";
 
 
 
 
 
 const component =[kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kTable,KLayout,
-    kInput,kDialog
+    kInput,kDialog,kDropdown
     ];
 const install =(app:any)=>{
     component.forEach((item)=>{
@@ -40,7 +41,7 @@ const install =(app:any)=>{
     install,
  }
  export {kButton,kTextarea,kPreview,kSpace,kRadio,kTree,KSelect,kOptfile,kInput,kCarousel,kTable,KLayout,
-    kDialog};
+    kDialog,kDropdown};
  export default TUI;
 //  ,KPagination,KSwitch,KColor,KCheckbox,KLayout,KOutfile,
 // KBacktop,KMenu,KProgress,KDrawer,KDivider 这段引入出问题 稍后修改。

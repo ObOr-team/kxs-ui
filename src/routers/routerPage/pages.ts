@@ -39,6 +39,12 @@ export default[{
             component:()=>import ("@/views/Icon/doc/doc.md") 
         },
         {
+            //dropdown
+            path:'dropdown',
+            name:"Dropdown 下拉菜单",
+            component:()=>import ("@/views/Dropdown/doc/doc.md") 
+        },
+        {
             //dialog
             path:'dialog',
             name:"Dialog 对话框",
