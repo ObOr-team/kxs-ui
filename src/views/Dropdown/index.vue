@@ -53,6 +53,9 @@ const handleClick = () =>{
 <style lang="scss" scoped>
 .k-dropdown-default{
     width: fit-content;
+    display: inline-block;
+    height: 40px;
+    position: relative;
     .k-dropdown-menu{
         font-size: 13px;
 		color:#444d55;
@@ -64,18 +67,18 @@ const handleClick = () =>{
         
     }
     .k-dropdown-item {
-        border: 1px solid var(--default-border-color);
-        border-radius: 10px;
+		// box-sizing: border-box;
+        width: 100%;
         height: auto;
-        // position: absolute;
-		height: auto;
-		overflow: hidden;
-		box-sizing: border-box;
-		left:0;
-		z-index: 99;
+        overflow: hidden;
+        position: absolute;
+        top: 42px;
+        z-index: 99;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+        border: 1px solid var(--default-border-color);
+
             ul {
                 height: 100%;
                 overflow-y: auto;
