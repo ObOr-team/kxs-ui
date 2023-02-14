@@ -1,7 +1,7 @@
 <template>
 	<p class="titlep">所有图标</p>
 	<div class="">
-		<k-input placeholder="输入图标关键词进行搜索" ></k-input>
+		<k-input placeholder="输入图标关键词进行搜索" leftIcon="k-icon-sousuo1" @input="search"></k-input>
 	</div>
     <div class="iconListBox">
 		<ul>
@@ -32,8 +32,16 @@
     //     text: '复制失败'
     //   })
     }
-    
   }
+	const search = (e:any)=>{
+		console.log(e)
+		// IconListData.value = []
+		// iconList.filter(item=>{
+		// 	if(item.className.indexOf(e)!=-1){
+		// 		IconListData.value.push(item)
+		// 	}
+		// })
+	}
   const toast=function Toast(msg:string, duration:number) {
             duration = isNaN(duration) ? 1000 : duration; 
             var toastDiv = document.createElement('div'); toastDiv.innerHTML = msg; 

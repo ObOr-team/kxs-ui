@@ -2,7 +2,7 @@
     import demo1 from './demo1.vue' 
     import demo2 from './demo2.vue' 
     import demo3 from './demo3.vue'
-    // import demo4 from './demo4.vue'
+    import demo4 from './demo4.vue'
     // import demo5 from './demo5.vue'
     // import demo6 from './demo6.vue'
 </script>
@@ -30,6 +30,12 @@
     <k-preview compname="Input" demoname="demo2"/>
 </div>
 
+### ● 带图标
+<p>可使用 <code>leftIcon</code> 或者<code> rightIcon </code>来定义显示图标并确定显示的位置。</p>
+<div class="borderBox">
+    <demo4/>
+    <k-preview compname="Input" demoname="demo4"/>
+</div>
 
 ### Attributes 参数
 
