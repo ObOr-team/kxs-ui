@@ -1,8 +1,8 @@
 <template>
 	<p class="titlep">所有图标</p>
 	<div class="">
-		<!--   <k-input type="text" placeholder="输入图标关键词进行搜索"  leftIcon="k-icon-sousuo1"></k-input>   -->
-		<input class="inputcss iconfont icon-sousuo-xianxing" type="text" v-model="searchValue" :placeholder='"\ue8b8"+"输入图标关键词进行搜索"'>
+		  <k-input type="text" placeholder="输入图标关键词进行搜索" v-model="searchValue" ></k-input>  
+		<!-- <input class="inputcss iconfont icon-sousuo-xianxing" type="text" v-model="searchValue" :placeholder='"\ue8b8"+"输入图标关键词进行搜索"'> -->
 	</div>
     <div class="iconListBox">
 		<ul>
@@ -28,24 +28,11 @@
       document.execCommand('copy')
 	  toast('复制成功',1000)
     }else{
-    //   Message({
-    //     type: 'error',
-    //     text: '复制失败'
-    //   })
     }
   }
  	const searchRule = (rule:string,name:string) => {
         let reg = new RegExp("(?="+rule+")");
 		return(reg.test(name))
-	}
-	const search = (e:any)=>{
-		console.log(e)
-		// IconListData.value = []
-		// iconList.filter(item=>{
-		// 	if(item.className.indexOf(e)!=-1){
-		// 		IconListData.value.push(item)
-		// 	}
-		// })
 	}
   const toast=function Toast(msg:string, duration:number) {
             duration = isNaN(duration) ? 1000 : duration; 
@@ -106,34 +93,34 @@
 			}
 		}
 	}
-.inputcss{
-	line-height: 35px;
-	width: 200px;
-	border-radius: 5px;
-	font-size: 10px;
-	border: 1px solid #d1d1d1;
-	&:focus {
-      outline: none;
-    }
-}
+// .inputcss{
+// 	line-height: 35px;
+// 	width: 200px;
+// 	border-radius: 5px;
+// 	font-size: 10px;
+// 	border: 1px solid #d1d1d1;
+// 	&:focus {
+//       outline: none;
+//     }
+// }
 
-@font-face {
-  font-family: "iconfont"; /* Project id 3579896 */
-  src: url('//at.alicdn.com/t/c/font_3579896_4z4w105wteu.woff2?t=1676359378416') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3579896_4z4w105wteu.woff?t=1676359378416') format('woff'),
-       url('//at.alicdn.com/t/c/font_3579896_4z4w105wteu.ttf?t=1676359378416') format('truetype');
-}
+// @font-face {
+//   font-family: "iconfont"; /* Project id 3579896 */
+//   src: url('//at.alicdn.com/t/c/font_3579896_4z4w105wteu.woff2?t=1676359378416') format('woff2'),
+//        url('//at.alicdn.com/t/c/font_3579896_4z4w105wteu.woff?t=1676359378416') format('woff'),
+//        url('//at.alicdn.com/t/c/font_3579896_4z4w105wteu.ttf?t=1676359378416') format('truetype');
+// }
 
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+// .iconfont {
+//   font-family: "iconfont" !important;
+//   font-size: 16px;
+//   font-style: normal;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
-.icon-sousuo-xianxing:before {
-  content: "\e8b8";
-  padding-left: 5px;
-}
+// .icon-sousuo-xianxing:before {
+//   content: "\e8b8";
+//   padding-left: 5px;
+// }
 </style>

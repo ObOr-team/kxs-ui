@@ -10,6 +10,7 @@
            :name="name"
            :disabled="disabled"
            ref="inputBox"
+           @input="iptChange"
     />
     <span class="icon-left"  @click="changeEye" v-if="type=='password'">
       <svg v-if="eyeOpen" t="1676271826305" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3704" width="16" height="16"><path d="M512 637.207273c-171.752727 0-343.272727-52.363636-465.454545-156.858182a34.909091 34.909091 0 1 1 46.545454-53.061818c215.505455 186.181818 623.243636 186.181818 837.818182 0a34.909091 34.909091 0 0 1 46.545454 53.061818c-122.181818 104.494545-293.701818 156.858182-465.454545 156.858182z" fill="#666666" p-id="3705"></path><path d="M384.465455 791.272727a28.625455 28.625455 0 0 1-6.283637 0A34.676364 34.676364 0 0 1 349.090909 749.149091l23.272727-137.309091a34.909091 34.909091 0 1 1 69.818182 12.101818l-23.272727 137.309091A34.909091 34.909091 0 0 1 384.465455 791.272727zM907.636364 721.454545a34.443636 34.443636 0 0 1-24.669091-10.472727l-114.734546-116.363636a34.909091 34.909091 0 1 1 49.570909-48.872727l114.734546 116.363636a34.909091 34.909091 0 0 1 0 49.338182A36.305455 36.305455 0 0 1 907.636364 721.454545zM116.363636 721.454545a36.305455 36.305455 0 0 1-23.272727-10.007272 34.909091 34.909091 0 0 1 0-49.338182l114.734546-116.363636a34.909091 34.909091 0 1 1 48.174545 48.872727l-114.734545 116.363636A34.443636 34.443636 0 0 1 116.363636 721.454545zM641.163636 791.272727a34.909091 34.909091 0 0 1-34.210909-28.858182l-23.272727-137.30909a34.909091 34.909091 0 1 1 67.956364-13.265455l23.272727 137.309091a34.676364 34.676364 0 0 1-28.16 40.494545 28.625455 28.625455 0 0 1-5.585455 1.629091z" fill="#666666" p-id="3706"></path></svg>
@@ -22,11 +23,16 @@
 </template>
 
 <script lang="ts">
+  export default {
+    name: 'kInput',
+  
+  }
+</script>
+<script lang="ts" setup>
 import { ref } from "vue"
-export default {
-  name: 'kInput',
-  props: {
-    placeholder: {
+const emit = defineEmits(['update:modelValue','clear','focus','blur','input','change'])
+const props =defineProps({
+  placeholder: {
       type: String,
       default: ''
     },
@@ -49,15 +55,20 @@ export default {
     rightIcon:{
       type:String,
       default:""
-    },
+    }, 
+    modelValue:[String,Number],
+    // articleId: {
+    //   type: [Number, String, Object],
+    //   required: true
+    // }
+   
     // defaultValue:{
     //   type:String,
     //   default:'abcdef'
     // }
 
-  },
- 
-  setup(props){
+})
+
     const inputBox:any =ref(null)
     // let oldValue=ref('')
     let eyeOpen=ref(true)
@@ -66,9 +77,10 @@ export default {
       inputBox.value.type=inputBox.value.type==="password" ? "text":"password"
       eyeOpen.value=!eyeOpen.value
     }
-    return {changeEye,inputBox,eyeOpen}
-  }
-};
+    const iptChange = (e:any) => {
+        emit('update:modelValue', e.target.value)
+        // emit('input',e.target.value)
+    }
 </script>
 
 <style lang="scss" scoped>
