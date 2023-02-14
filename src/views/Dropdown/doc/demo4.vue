@@ -1,21 +1,7 @@
 <template>
   <k-space>
-    <k-dropdown
-      title="Hover me"
-      :options="dorpoptions"
-    ></k-dropdown>
-    <k-dropdown
-      title="Hover me"
-      :options="dorpoptions"
-      size="small"
-    ></k-dropdown>
-    <k-dropdown
-      title="Hover me"
-      :options="dorpoptions"
-      size="mini"
-    ></k-dropdown>
+      <k-dropdown title="Click me" :options="dorpoptions" size="small" trigger="click"></k-dropdown>
   </k-space>
-
 </template>
 
 <script lang="ts" setup>

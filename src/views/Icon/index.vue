@@ -24,11 +24,14 @@
 	const IconListData = ref(iconList)
 	// IconListData.value = []
 	const copyIconNane = (name:any) =>{
-    if(document.execCommand('copy')){
-      document.execCommand('copy')
-	  toast('复制成功',1000)
-    }else{
-    }
+	    const input:any = document.getElementById('inputCopy')
+    	input.value = name
+    	input.select()
+    	if(document.execCommand('copy')){
+      		document.execCommand('copy')
+	  		toast('复制成功',1000)
+    	}else{
+    	}
   }
  	const searchRule = (rule:string,name:string) => {
         let reg = new RegExp("(?="+rule+")");
