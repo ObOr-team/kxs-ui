@@ -27,7 +27,7 @@ export default defineConfigWithTheme<VuetomThemeConfig>({
         ]
       },
       socialLinks: [
-        // { icon: 'github', link: pkg.repository }
+        { icon: 'github', link: 'https://github.com/5th-Youth-Training-OOT/Kxxx-UI' }
       ],
       footer: {
         message: 'Released under the MIT License.',
