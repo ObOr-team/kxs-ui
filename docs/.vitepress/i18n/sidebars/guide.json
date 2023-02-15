@@ -77,6 +77,23 @@
           "link": "/guide/dark"
         }
       ]
+    },
+    {
+      "text": "组件",
+      "items": [
+        {
+          "text": "Button 按钮",
+          "link": "/guide/button"
+        },
+        {
+          "text": "Icon 图标",
+          "link": "/guide/lang"
+        },
+        {
+          "text": "Radio 单选",
+          "link": "/guide/dark"
+        }
+      ]
     }
   ]
 }
