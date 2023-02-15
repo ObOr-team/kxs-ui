@@ -25,4 +25,16 @@
 .dark {
     // 代码
     --vp-c-text-code:var(--vp-c-brand-lighter);
+    .VPNavBar {
+        background-color: rgba($color: #000, $alpha: 0.9);
+    }
+    .VPNavBar.has-sidebar {
+        background-color:#000;
+    }
+}
+.VPNavBar {
+    background-color: rgba($color: #ebf7ff, $alpha: 0.8);
+}
+.VPNavBar.has-sidebar {
+    background-color:#fff;
 }
