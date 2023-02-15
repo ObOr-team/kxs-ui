@@ -1,13 +1,12 @@
 ---
 layout: home
 
-title: kx-ui
-titleTemplate: kx-ui
+title: Kx UI
+titleTemplate: Kx UI
 
 hero:
-  name: kx-ui
+  name: Kx UI
   text: 组件库
-  tagline: 欢迎光临
   image:
     src: /logo.png
     alt: kx-ui-logo
@@ -16,7 +15,7 @@ hero:
       text: Get Started
       link: /use/index.md
     - theme: alt
-      text: View on GitHub
+      text: GitHub
       link: https://github.com/5th-Youth-Training-OOT/Kxxx-UI
 
 features:
@@ -29,5 +28,4 @@ features:
   - title: Fully static yet still dynamic
     details: Go wild with true SSG + SPA architecture. Static on page load, but engage users with 100% interactivity from there.
 ---
-<k-button type="danger">Danger</k-button>
-<k-button type="danger">Danger</k-button>
+

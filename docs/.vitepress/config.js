@@ -3,10 +3,10 @@ import ComponentSideBar from "./sidebar/componentSideBar"
 
 export default {
     base: '/',
-    title: 'kx-ui', // 所有文档的浏览器标签title
-    description: 'kx-ui组件库', // 会渲染成<meta>标签，SEO用
+    title: 'Kx UI', // 所有文档的浏览器标签title
+    description: 'Kx UI组件库', // 会渲染成<meta>标签，SEO用
     themeConfig: {
-        siteTitle: 'kx-ui',
+        siteTitle: 'Kx UI',
         logo: '/logo.png',
 
         nav: [
