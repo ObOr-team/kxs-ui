@@ -47,29 +47,38 @@ import pk from 'vitepress-theme-vuetom/package.json'
 
 const sponsors = [
   {
-    "id": "vue",
-    "name": "Vue",
-    // "href": "https://v3.cn.vuejs.org/",
-    // "src": "https://v3.cn.vuejs.org/logo.png",
+    "id": "huangpeijin",
+    "name": "huangpeijin",
+    "href": "https://github.com/Huangpeijin",
+    "src": "https://avatars.githubusercontent.com/u/116870542?v=4",
     "tier": "platinum"
   },
   {
-    "id": "vite",
-    "name": "Vite",
-    // "href": "https://vitejs.cn/",
-    // "src": "https://vitejs.cn/logo.svg"
+    "id": "Neajue",
+    "name": "Neajue",
+    "href": "https://github.com/Neajue",
+    "src": "https://avatars.githubusercontent.com/u/87924593?v=4",
+    
+    
   },
   {
-    "id": "vitepress",
-    "name": "Vitepress",
-    // "href": "https://fttp.jjf-tech.cn/vitepress/",
-    // "src": "https://v3.cn.vuejs.org/logo.png"
+    "id": "EnJoy77",
+    "name": "EnJoy77",
+    "href": "https://github.com/EnJoy77",
+    "src": "https://avatars.githubusercontent.com/u/108109256?v=4"
   },
   {
-    "id": "elementplus",
-    "name": "Element Plus",
-    // "href": "https://element-plus.gitee.io/zh-CN/",
-    // "src": "https://element-plus.gitee.io/images/element-plus-logo.svg"
+    "id": "zkeq",
+    "name": "zkeq",
+    "href": "https://github.com/zkeq",
+    "src": "https://avatars.githubusercontent.com/u/62864752?v=4"
+  }
+  ,
+  {
+    "id": "beginnierweb2",
+    "name": "beginnierweb2",
+    "href": "https://github.com/beginnierweb2",
+    "src": "https://avatars.githubusercontent.com/u/87230594?v=4"
   }
 ]
 
