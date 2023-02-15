@@ -9,6 +9,7 @@ head:
       content: 开始使用
 ---
 
+
 # {{ $frontmatter.title }}
 
 使用主题前请确保你已经搭建了一个 Vitepress 文档项目，因为主题是建立在该框架的基础上使用的。
