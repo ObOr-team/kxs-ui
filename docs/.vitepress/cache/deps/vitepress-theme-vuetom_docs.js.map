@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../node_modules/vitepress-theme-vuetom/dist/doc/index.js"],
+  "sourcesContent": ["// vitepress styles ==> /dist/client/theme-default/styles\nimport vitepressTheme from 'vitepress/theme';\n// for dev (prod should import .css)\nimport '../styles/index.css';\nimport '../styles/rewrite/index.css';\nimport VTLayout from './components/VTLayout.vue';\nconst DocsTheme = {\n    ...vitepressTheme,\n    Layout: VTLayout\n};\nexport * from 'vitepress/theme';\nexport default DocsTheme;\n"],
+  "mappings": ";AACA,OAAO,oBAAoB;AAE3B,OAAO;AACP,OAAO;AACP,OAAO,cAAc;AAKrB,cAAc;AAJd,IAAM,YAAY;AAAA,EACd,GAAG;AAAA,EACH,QAAQ;AACZ;AAEA,IAAO,cAAQ;",
+  "names": []
+}

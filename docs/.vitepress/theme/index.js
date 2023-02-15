@@ -1,21 +1,9 @@
 import DefaultTheme from 'vitepress/theme'
-import "../../../src/style.scss"
-import kButton from '../../../components/button.vue'
-import kInput from '../../../components/input.vue'
-import kRadio from '../../../components/radio.vue'
-import kSelect from '../../../components/select.vue'
-
-const components = [kButton,kInput,kRadio,kSelect]
+import VuetomTheme from 'vitepress-theme-vuetom/docs'
+import "./custom.scss"
 
 export default {
-  ...DefaultTheme,
+  ...VuetomTheme,
   enhanceApp({ app }) {
-    // app.component(kButton.name, kButton)
-    components.forEach((item)=>{ 
-          app.component(item.name,item);
-      }
-    )
   }
 }
-
-
