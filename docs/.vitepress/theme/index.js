@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import "../../../src/style.scss"
+import "./custom.scss"
 import kButton from '../../../components/button.vue'
 import kInput from '../../../components/input.vue'
 import kRadio from '../../../components/radio.vue'
