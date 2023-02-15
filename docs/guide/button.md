@@ -40,6 +40,40 @@ head:
 </k-space>
 </div>
 
+<details>
+<summary>展示代码</summary>
+
+  ```vue
+  <template>
+  <k-space>
+      <k-button type="default">Default</k-button>
+      <k-button type="primary">Primary</k-button>
+      <k-button type="success">Success</k-button>
+      <k-button type="info">Info</k-button>
+      <k-button type="warming">Warming</k-button>
+      <k-button type="danger">Danger</k-button>
+  </k-space>
+  <k-space>
+      <k-button type="default" round>Round</k-button>
+      <k-button type="primary" round>Primary</k-button>
+      <k-button type="success" round>Success</k-button>
+      <k-button type="info" round>Info</k-button>
+      <k-button type="warming" round>Warming</k-button>
+      <k-button type="danger" round>Danger</k-button>
+  </k-space>
+  <k-space>
+      <k-button type="default" icon="k-icon-shezhi-xianxing"></k-button>
+      <k-button type="default" icon="k-icon-address_book_line"></k-button>
+      <k-button type="default" icon="k-icon-search_line"></k-button>
+      <k-button type="default" icon="k-icon-volume_mute_line"></k-button>
+      <k-button type="default" icon="k-icon-star_line"></k-button>
+      <k-button type="default" icon="k-icon-shop_line"></k-button>
+  </k-space>
+  </template>
+  ```
+</details>
+
+
 下面是一些简要的配置项一览：
 
 其中 head、sidebar、nav 对应的分别是 页面head脚本、侧边栏菜单、头部导航栏(都可以默认为[])

@@ -58,7 +58,7 @@ const sponsors = [
     "name": "Neajue",
     "href": "https://github.com/Neajue",
     "src": "https://avatars.githubusercontent.com/u/87924593?v=4",
-    
+    "tier": "platinum"
     
   },
   {
