@@ -22,7 +22,8 @@
     // 代码
     --vp-c-text-code:var(--vp-c-brand-dark);
     //页面背景色
-    --vt-bg-doc: rgba(var(--vt-c-bg-rgb), 0.9);
+    --vt-bg-doc: rgba(var(--vt-c-bg-rgb), 1) !important;
+    //标题h1颜色
 }
 .dark {
     // 代码
@@ -44,7 +45,7 @@
     background-color:#fff;
 }
 .VPDoc .container .vp-doc h1, .VPDoc .container .vp-doc h1 a {
-    color: var(--vp-c-pink);
+    color: var(#6078ea);
 }
 .VPTeamPageTitle .title, .VPTeamPageTitle .lead{
     color: var(--vp-c-pink);
