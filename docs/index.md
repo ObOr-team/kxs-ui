@@ -27,12 +27,12 @@ features:
 
 <div class="frontpage sponsors">
   <h2>参与贡献</h2>
-  <!-- <div class="platinum-sponsors">
+  <div class="platinum-sponsors">
     <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier === 'platinum')" :href="href" target="_blank" rel="noopener" aria-label="sponsor-img">
       <img :src="src" :alt="name" :id="`sponsor-${id}`">
       <p>{{ name }}</p>
     </a>
-  </div> -->
+  </div>
   <div class="gold-sponsors">
     <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier !== 'platinum')" :href="href" target="_blank" rel="noopener" aria-label="sponsor-img">
       <img :src="src" :alt="name" :id="`sponsor-${id}`">
@@ -52,28 +52,28 @@ const sponsors = [
     "id": "huangpeijin",
     "name": "huangpeijin",
     "href": "https://github.com/Huangpeijin",
-    "src": "https://avatars.githubusercontent.com/u/116870542?v=4",
-    // "tier": "platinum"
+    "src": "https://github.com/Huangpeijin.png",
+    "tier": "platinum"
   },
   {
     "id": "Neajue",
     "name": "Neajue",
     "href": "https://github.com/Neajue",
-    "src": "https://avatars.githubusercontent.com/u/87924593?v=4",
-    // "tier": "platinum"
+    "src": "https://github.com/Neajue.png",
+    "tier": "platinum"
     
   },
   {
     "id": "EnJoy77",
     "name": "EnJoy77",
     "href": "https://github.com/EnJoy77",
-    "src": "https://avatars.githubusercontent.com/u/108109256?v=4"
+    "src": "https://github.com/EnJoy77.png"
   },
   {
     "id": "zkeq",
     "name": "zkeq",
     "href": "https://github.com/zkeq",
-    "src": "https://avatars.githubusercontent.com/u/62864752?v=4"
+    "src": "https://github.com/zkeq.png"
   }
   ,
   {
@@ -81,6 +81,13 @@ const sponsors = [
     "name": "beginnierweb2",
     "href": "https://github.com/beginnierweb2",
     "src": "https://avatars.githubusercontent.com/u/87230594?v=4"
+  }
+   ,
+  {
+    "id": "ColdyNi",
+    "name": "ColdyNi",
+    "href": "https://github.com/ColdyNi",
+    "src": "https://github.com/ColdyNi.png"
   }
 ]
 
@@ -131,7 +138,7 @@ const sponsors = [
 .sponsors img {
   max-width: 200px;
   max-height: 80px;
-  border-radius: 10px;
+  border-radius: 40px;
 }
 
 .sponsors.frontpage {
@@ -144,7 +151,7 @@ const sponsors = [
 }
 
 .sponsors.frontpage h2 {
-  color: #999;
+  color: #c5b0b0;
   font-size: 1.2rem;
   border: none;
 }

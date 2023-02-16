@@ -58,14 +58,6 @@ const members = [
       { icon: 'github', link: 'https://github.com/ColdyNi' }
     ]
   },
-  {
-    avatar: 'https://github.com/KeepTheFear.png',
-    name: 'KeepTheFear',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/KeepTheFear' }
-    ]
-  },
 ]
 </script>
 
