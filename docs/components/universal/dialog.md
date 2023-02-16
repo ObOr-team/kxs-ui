@@ -1,23 +1,16 @@
 <script lang="ts" setup>
-    // 引入ref处理响应式数据
     import { ref } from 'vue'
-    // 是否展示对话框组件
     let isShow: any = ref([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
-    // 点击按钮显示对应对话框
     let clickToShow = (i:number) => {
-        // TODO: BUG：连续点击一个按钮，响应式数据失效，对话框不显示
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
     }
-    // 自定义确认按钮点击事件
     let confirmClick = () => {
         window.alert("点击了确认按钮");
     }
-    // 自定义取消按钮点击事件
     let cancelClick = () => {
         window.alert("点击了取消按钮");
     }
-    // 异步确认事件
     let loadingConfirm = () => {
         let p = new Promise<void>((resolve, reject) => {
             setTimeout(()=> {
@@ -65,7 +58,6 @@ type="error"
 
 ```vue
 <template>
-    <!-- 类型：info、confirm、warning、error -->
     <div>
         <k-space>
             <k-button :onclick = "() => {clickToShow(0)}" type="primary">Open a dialog of type info</k-button>
@@ -100,9 +92,7 @@ type="error"
 </template>
 <script lang="ts" setup>
     import { ref } from 'vue'
-    // 是否展示对话框组件
     let isShow: any = ref([false, false, false, false]);
-    // 点击按钮显示对应对话框
     let clickToShow = (i:number) => {
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
@@ -157,9 +147,7 @@ height="170px"
 </template>
 <script lang="ts" setup>
     import { ref } from 'vue'
-    // 是否展示对话框组件
     let isShow: any = ref([false, false]);
-    // 点击按钮显示对应对话框
     let clickToShow = (i:number) => {
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
@@ -198,9 +186,7 @@ themeColor="#1ABC9C"
 </template>
 <script lang="ts" setup>
     import { ref } from 'vue'
-    // 是否展示对话框组件
     let isShow: any = ref([false]);
-    // 点击按钮显示对应对话框
     let clickToShow = (i:number) => {
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
@@ -252,9 +238,7 @@ location="center"
 </template>
 <script lang="ts" setup>
     import { ref } from 'vue'
-    // 是否展示对话框组件
     let isShow: any = ref([false, false]);
-    // 点击按钮显示对应对话框
     let clickToShow = (i:number) => {
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
@@ -292,7 +276,6 @@ titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 footerBtn="null"
 ></k-dialog>
-
 <details>
 <summary class="pre-code-tag">展示代码</summary>
 
@@ -305,25 +288,21 @@ footerBtn="null"
             <k-button :onclick = "() => {clickToShow(2)}" type="primary">仅含取消按钮</k-button>
             <k-button :onclick = "() => {clickToShow(3)}" type="primary">不展示确认和取消按钮</k-button>
         </k-space>
-
         <k-dialog v-if = "isShow[0]"
             titleText = "对话框标题"
             contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
             :closable = false
         ></k-dialog>
-
         <k-dialog v-if = "isShow[1]"
             titleText = "对话框标题"
             contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
             footerBtn="confirm"
         ></k-dialog>
-
         <k-dialog v-if = "isShow[2]"
             titleText = "对话框标题"
             contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
             footerBtn="cancel"
         ></k-dialog>
-
         <k-dialog v-if = "isShow[3]"
             titleText = "对话框标题"
             contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
@@ -333,9 +312,7 @@ footerBtn="null"
 </template>
 <script lang="ts" setup>
     import { ref } from 'vue'
-    // 是否展示对话框组件
     let isShow: any = ref([false, false, false, false]);
-    // 点击按钮显示对应对话框
     let clickToShow = (i:number) => {
         isShow.value.forEach((item:boolean, index:number) => isShow.value[index] = false);
         isShow.value[i] = true;
@@ -360,7 +337,6 @@ titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 :cancelClick="cancelClick"
 ></k-dialog>
-
 <details>
 <summary class="pre-code-tag">展示代码</summary>
 
@@ -459,7 +435,7 @@ contentText = "提示内容提示内容提示内容提示内容提示内容提�
 ```
 </details>
 
-## Dialog Attributes
+## ● Attributes 参数
 |      参数      |                        说明                        |   类型   | 默认值  |
 | :----------------: | :------------------------------------------------: | :------: | :-----: |
 |      type      |     提示框类型：info、confirm、warning、error      |  string  | "info"  |
