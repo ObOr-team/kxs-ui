@@ -28,13 +28,13 @@ features:
 <div class="frontpage sponsors">
   <h2>参与贡献</h2>
   <div class="platinum-sponsors">
-    <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier === 'platinum')" :href="href" target="_blank" rel="noopener" aria-label="sponsor-img">
+    <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier === 'platinum')" :href="href" >
       <img :src="src" :alt="name" :id="`sponsor-${id}`">
       <p>{{ name }}</p>
     </a>
   </div>
   <div class="gold-sponsors">
-    <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier !== 'platinum')" :href="href" target="_blank" rel="noopener" aria-label="sponsor-img">
+    <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier !== 'platinum')" :href="href" >
       <img :src="src" :alt="name" :id="`sponsor-${id}`">
       <p>{{ name }}</p>
     </a>

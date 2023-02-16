@@ -17,9 +17,14 @@
 	<input type="text" id="inputCopy" placeholder="请输入" style="opacity: 0;">
 </template>
 
+<script lang="ts">
+    export default {
+         name:"kIcon",
+    }
+</script>
 <script lang="ts" setup>
 	import {ref} from 'vue'
-    import iconList from '@/const/iconList'
+    import iconList from './iconList'
 	let searchValue=ref("")
 	const IconListData = ref(iconList)
 	// IconListData.value = []

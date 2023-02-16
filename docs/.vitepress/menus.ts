@@ -54,14 +54,14 @@ const head: HeadConfig[] = [
   [
     'script', {}, ';(() => { })()'
   ],
-  [
-    'script',
-    {},
-    `;(() => {
-      const cacheKey = 'vuetom_langs'
-      localStorage.setItem(cacheKey, supportedLangs)
-    })()`
-  ]
+  // [
+  //   'script',
+  //   {},
+  //   `;(() => {
+  //     const cacheKey = 'vuetom_langs'
+  //     localStorage.setItem(cacheKey, supportedLangs)
+  //   })()`
+  // ]
 ]
 
 // const nav = (lang: '/zh-CN' | '/en-US' | '' = '') => [
