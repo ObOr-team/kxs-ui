@@ -10,9 +10,9 @@ head:
 ---
 
 ## {{ $frontmatter.title }}
-**● 基础**
+### ● 基础
 
-可以使用`type`属性指定按钮类型,通过`round`属性指定是否为圆角按钮
+使用`type`属性指定按钮类型,通过`round`属性指定是否为圆角按钮
 <div class="borderBox">
 <k-space>
 <k-button type="default">Default</k-button>
@@ -44,7 +44,7 @@ head:
 <summary>展示代码</summary>
 
   ```vue
-  <template>
+<template>
   <k-space>
       <k-button type="default">Default</k-button>
       <k-button type="primary">Primary</k-button>
@@ -69,11 +69,154 @@ head:
       <k-button type="default" icon="k-icon-star_line"></k-button>
       <k-button type="default" icon="k-icon-shop_line"></k-button>
   </k-space>
-  </template>
+</template>
   ```
 </details>
 
+### ● 反色
 
+使用`plain`属性指定是否为朴素按钮
+
+<div class="borderBox">
+        <k-space>
+            <k-button type="default" round plain>Round</k-button>
+            <k-button type="primary" round plain>Primary</k-button>
+            <k-button type="success" round plain>Success</k-button>
+            <k-button type="info" round plain>Info</k-button>
+            <k-button type="warming" round plain>Warming</k-button>
+            <k-button type="danger" round plain>Danger</k-button>
+      </k-space>
+</div>
+
+<details>
+<summary>展示代码</summary>
+
+  ```vue
+<template>
+        <k-space>
+            <k-button type="default" round plain>Round</k-button>
+            <k-button type="primary" round plain>Primary</k-button>
+            <k-button type="success" round plain>Success</k-button>
+            <k-button type="info" round plain>Info</k-button>
+            <k-button type="warming" round plain>Warming</k-button>
+            <k-button type="danger" round plain>Danger</k-button>
+        </k-space>
+</template>
+
+  ```
+</details>
+
+### ● 禁用
+
+使用`disabled`属性指定按钮是否被禁用
+
+<div class="borderBox">
+        <k-space>
+            <k-button type="default" disabled>Disabled</k-button>
+            <k-button type="primary" disabled>Primary</k-button>
+            <k-button type="success" disabled>Success</k-button>
+            <k-button type="info" disabled>Info</k-button>
+            <k-button type="warming" disabled>Warming</k-button>
+            <k-button type="danger" disabled>Danger</k-button>
+        </k-space>
+</div>
+
+<details>
+<summary>展示代码</summary>
+
+  ```vue
+<template>
+        <k-space>
+            <k-button type="default" disabled>Disabled</k-button>
+            <k-button type="primary" disabled>Primary</k-button>
+            <k-button type="success" disabled>Success</k-button>
+            <k-button type="info" disabled>Info</k-button>
+            <k-button type="warming" disabled>Warming</k-button>
+            <k-button type="danger" disabled>Danger</k-button>
+        </k-space>
+</template>
+
+  ```
+</details>
+
+### ● 大小
+
+使用`size`属性指定按钮的大小
+
+<div class="borderBox">
+         <k-space>
+            <k-button type="warming" >Size</k-button>
+              <k-button size="small">Size</k-button>
+            <k-button type="danger" size="large">Size</k-button>
+         </k-space>
+</div>
+
+<details>
+<summary>展示代码</summary>
+
+  ```vue
+<template>
+         <k-space>
+            <k-button size="small">Size</k-button>
+            <k-button type="warming" >Size</k-button>
+            <k-button type="danger" size="large">Size</k-button>
+         </k-space>
+</template>
+
+  ```
+</details>
+
+### ● 块级
+
+使用`block`属性指定是否为块级按钮
+
+<div class="borderBox">
+            <k-button type="primary" block>Block</k-button>
+</div>
+
+<details>
+<summary>展示代码</summary>
+
+  ```vue
+<template>
+      <k-button type="default" block>Block</k-button>
+</template>
+
+  ```
+</details>
+
+### ● 图标
+
+<p>默认使用<code>icon</code>属性指定无按钮文字的图标</p>
+<p>可以使用<code>postIcon</code>属性指定按钮文字后面的图标</p>
+<div class="borderBox">
+    <k-space wrap>
+        <k-button type="default" icon="k-icon-star_line">Icon</k-button>
+        <k-button type="default" icon="k-icon-tv_line">Icon</k-button>
+        <k-button type="default" icon="k-icon-translate_line">Icon</k-button>
+        <k-button type="default" icon="k-icon-add_line">Icon</k-button>
+        <k-button type="default" icon="k-icon-book_open_line">Icon</k-button>
+        <k-button type="default" icon="k-icon-xiazai">Icon</k-button>
+    </k-space>
+    <k-space>
+        <k-button type="default" postIcon="k-icon-star_line">PostIcon</k-button>
+        <k-button type="default" postIcon="k-icon-tv_line">PostIcon</k-button>
+        <k-button type="default" postIcon="k-icon-translate_line">PostIcon</k-button>
+        <k-button type="default" postIcon="k-icon-add_line">PostIcon</k-button>
+    </k-space>
+</div>
+
+
+<details>
+<summary>展示代码</summary>
+
+  ```vue
+<template>
+      <k-button type="default" block>Block</k-button>
+</template>
+
+  ```
+</details>
 
 下面是一些简要的配置项一览：
 
