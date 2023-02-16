@@ -15,8 +15,8 @@
     --vp-button-brand-active-border: #f0f9ff;
     //  主题颜色：导航
     --vp-c-brand:  #538ce9;
-    --vp-c-brand-light:  #538ce9;
-    --vp-c-brand-lighter:  #bae7ff;
+    --vp-c-brand-light:  #77a3ea;
+    --vp-c-brand-lighter:  #ebf3ff;
     --vp-c-brand-dark:  #096dd9;
     --vp-c-brand-darker:  #003a8c;
     // 代码
@@ -50,10 +50,10 @@
     color: var(--vp-c-pink);
 }
 .VPSidebarItem.level-1.is-link.is-active.has-active {
-    background-color: rgba($color: #40a9ff, $alpha: 0.1);
+    background-color: rgba($color: var(--vp-c-brand), $alpha: 0.1);
     border-radius: 5px;
     .indicator {
-        background-color: rgba($color: #40a9ff, $alpha: 0.8);
+        background-color: rgba($color: var(--vp-c-brand), $alpha: 0.8);
         width: 0.15rem;
     }
 }
