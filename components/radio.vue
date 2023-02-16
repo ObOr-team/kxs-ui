@@ -86,8 +86,8 @@ import { ref } from 'vue';
                     content: "";
                     background-color: rgb(253, 250, 250);
                     position: absolute;
-                    left: 30%;
-                    top: 32%;
+                    left: 29%;
+                     top: 25%;
                     // margin: -2px 0 0 -2px;
                     // transition: transform .15s ease-in-out;
                 }

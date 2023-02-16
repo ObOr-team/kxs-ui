@@ -71,6 +71,7 @@ const handleClick = () =>{
         border: 1px solid var(--default-border-color);
         border-radius: 10px;
         padding: 0px 5px;
+        width: fit-content;
     }
     .k-dropdown-item {
 		// box-sizing: border-box;

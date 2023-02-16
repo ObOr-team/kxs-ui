@@ -121,6 +121,7 @@ export default {
     margin-bottom: 5px;
     .div-input-div{
         border-radius: 5px;
+        width: fit-content;
         border: 1px solid var(--default-border-color);
         input{
             width: 220px;
@@ -168,5 +169,7 @@ export default {
 .item-active-li{
     color: rgb(82, 129, 231);
 }
-
+.k-icon-xia:before {
+    padding: 5px;
+}
 </style>
