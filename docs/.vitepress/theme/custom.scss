@@ -38,11 +38,15 @@
         color: #aaa;
     }
 }
+// 导航栏
 .VPNavBar {
     background-color: rgba($color: #ebf7ff, $alpha: 0.8);
 }
 .VPNavBar.has-sidebar {
     background-color:#fff;
+    .curtain ::before {
+        background: linear-gradient(rgba($color: var(--vp-c-bg), $alpha: 0.5), transparent 70%);
+    }
 }
 //页面标题1
 .VPDoc .container .vp-doc h1, .VPDoc .container .vp-doc h1 a {
@@ -58,6 +62,7 @@
     color:var(--success);
     border: 1px solid rgb(120 24 52 / 25%);
     background-color: var(--vp-c-pink-dimm-3);
+    margin: 0 2px;
 }
 .VPTeamPageTitle .title, .VPTeamPageTitle .lead{
     color: var(--vp-c-pink);

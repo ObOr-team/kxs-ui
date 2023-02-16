@@ -18,6 +18,18 @@
             {
                 "text": "Button 按钮",
                 "link": "/components/universal/button"
+            },
+            {
+                "text": "Icon 图标",
+                "link": "/components/universal/icon"
+            },
+            {
+                "text": "Carousel 轮播图",
+                "link": "/components/universal/carousel"
+            },
+            {
+                "text": "Dialog 对话框",
+                "link": "/components/universal/dialog"
             }
             ]
         },
@@ -25,8 +37,37 @@
             "text": "数据录入",
             "items": [
             {
+                "text": "Input 输入框",
+                "link": "/components/dataEntry/input"
+            },
+            {
+                "text": "Textarea 文本域",
+                "link": "/components/dataEntry/textarea"
+            },
+            {
+                "text": "Optfile 文件上传",
+                "link": "/components/dataEntry/optfile"
+            },
+            {
+                "text": "Radio 单选",
+                "link": "/components/dataEntry/radio"
+            },
+            {
                 "text": "Select 选择器",
                 "link": "/components/dataEntry/select"
+            }
+            ]
+        },
+        {
+            "text": "布局",
+            "items": [
+            {
+                "text": "Space 间距",
+                "link": "/components/layout/space"
+            },
+            {
+                "text": "Dropdown 下拉菜单",
+                "link": "/components/layout/dropdown"
             }
             ]
         }
