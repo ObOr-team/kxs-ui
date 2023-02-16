@@ -27,12 +27,12 @@ features:
 
 <div class="frontpage sponsors">
   <h2>参与贡献</h2>
-  <div class="platinum-sponsors">
+  <!-- <div class="platinum-sponsors">
     <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier === 'platinum')" :href="href" target="_blank" rel="noopener" aria-label="sponsor-img">
       <img :src="src" :alt="name" :id="`sponsor-${id}`">
       <p>{{ name }}</p>
     </a>
-  </div>
+  </div> -->
   <div class="gold-sponsors">
     <a v-for="{ href, src, name, id } of sponsors.filter(s => s.tier !== 'platinum')" :href="href" target="_blank" rel="noopener" aria-label="sponsor-img">
       <img :src="src" :alt="name" :id="`sponsor-${id}`">
@@ -42,6 +42,8 @@ features:
 </div>
 
 <script setup>
+
+
 import { onMounted } from 'vue'
 import pk from 'vitepress-theme-vuetom/package.json'
 
@@ -51,14 +53,14 @@ const sponsors = [
     "name": "huangpeijin",
     "href": "https://github.com/Huangpeijin",
     "src": "https://avatars.githubusercontent.com/u/116870542?v=4",
-    "tier": "platinum"
+    // "tier": "platinum"
   },
   {
     "id": "Neajue",
     "name": "Neajue",
     "href": "https://github.com/Neajue",
     "src": "https://avatars.githubusercontent.com/u/87924593?v=4",
-    "tier": "platinum"
+    // "tier": "platinum"
     
   },
   {
@@ -82,36 +84,36 @@ const sponsors = [
   }
 ]
 
-function fetchReleaseTag() {
-  onMounted(() => {
-    const dom = document.getElementsByClassName('name')
-    const mainTitle = dom[0]
-    const docsReleaseTag = document.createElement('span')
-    docsReleaseTag.classList.add('release-tag')
-    const releaseTagName = `v${pk.version}`
-    docsReleaseTag.innerText = releaseTagName
-    if (releaseTagName !== undefined) {
-      mainTitle.appendChild(docsReleaseTag)
-    }
-    // fetch('https://api.github.com/repos/vitejs/docs-cn/releases/latest')
-    //   .then((res) => res.json())
-    //   .then((json) => {
-    //     const mainTitle = document.getElementById('main-title')
-    //     mainTitle.style.position = 'relative'
+// function fetchReleaseTag() {
+//   onMounted(() => {
+//     const dom = document.getElementsByClassName('name')
+//     const mainTitle = dom[0]
+//     const docsReleaseTag = document.createElement('span')
+//     docsReleaseTag.classList.add('release-tag')
+//     const releaseTagName = `v${pk.version}`
+//     docsReleaseTag.innerText = releaseTagName
+//     if (releaseTagName !== undefined) {
+//       mainTitle.appendChild(docsReleaseTag)
+//     }
+//     // fetch('https://api.github.com/repos/vitejs/docs-cn/releases/latest')
+//     //   .then((res) => res.json())
+//     //   .then((json) => {
+//     //     const mainTitle = document.getElementById('main-title')
+//     //     mainTitle.style.position = 'relative'
 
-    //     const docsReleaseTag = document.createElement('span')
-    //     docsReleaseTag.classList.add('release-tag')
-    //     const releaseTagName = json.tag_name
-    //     docsReleaseTag.innerText = releaseTagName
+//     //     const docsReleaseTag = document.createElement('span')
+//     //     docsReleaseTag.classList.add('release-tag')
+//     //     const releaseTagName = json.tag_name
+//     //     docsReleaseTag.innerText = releaseTagName
 
-    //     if (releaseTagName !== undefined) {
-    //       mainTitle.appendChild(docsReleaseTag)
-    //     }
-    //   })
-  })
-}
+//     //     if (releaseTagName !== undefined) {
+//     //       mainTitle.appendChild(docsReleaseTag)
+//     //     }
+//     //   })
+//   })
+// }
 
-fetchReleaseTag()
+// fetchReleaseTag()
 </script>
 
 <style>
@@ -127,8 +129,9 @@ fetchReleaseTag()
 }
 
 .sponsors img {
-  max-width: 160px;
-  max-height: 40px;
+  max-width: 200px;
+  max-height: 80px;
+  border-radius: 10px;
 }
 
 .sponsors.frontpage {
@@ -137,7 +140,7 @@ fetchReleaseTag()
 
 .sponsors.frontpage img {
   display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .sponsors.frontpage h2 {
@@ -150,20 +153,13 @@ fetchReleaseTag()
   max-height: 36px;
 }
 
-.platinum-sponsors {
-  margin-bottom: 1.5em;
-}
-
-.platinum-sponsors a img {
-  max-width: 240px;
-  max-height: 60px;
-}
-
 .gold-sponsors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+     width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
 }
 
 </style>

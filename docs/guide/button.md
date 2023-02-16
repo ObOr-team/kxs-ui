@@ -3,161 +3,170 @@ title: Button 按钮
 head:
   - - meta
     - name: description
-      content: kx-ui Button 按钮
+      content: vuetom 主题配置项
   - - meta
     - name: keywords
-      content: Button 按钮
+      content: vuetom theme config
 ---
 
-# {{ $frontmatter.title }}
-## ● 基础
+## {{ $frontmatter.title }}
+### ● 基础
 
-可以使用`type`属性指定按钮类型,通过`round`属性指定是否为圆角按钮
+使用`type`属性指定按钮类型,通过`round`属性指定是否为圆角按钮
 <div class="borderBox">
-<div class="k-row">
+<k-space>
 <k-button type="default">Default</k-button>
 <k-button type="primary">Primary</k-button>
 <k-button type="success">Success</k-button>
 <k-button type="info">Info</k-button>
 <k-button type="warming">Warming</k-button>
 <k-button type="danger">Danger</k-button>
-</div>
-<div class="k-row">
+</k-space>
+<k-space>
     <k-button type="default" round>Round</k-button>
     <k-button type="primary" round>Primary</k-button>
     <k-button type="success" round>Success</k-button>
     <k-button type="info" round>Info</k-button>
     <k-button type="warming" round>Warming</k-button>
     <k-button type="danger" round>Danger</k-button>
-</div>
-<div class="k-row">
-<k-button type="default" icon="k-icon-shezhi-xianxing"></k-button>
-<k-button type="default" icon="k-icon-address_book_line"></k-button>
-<k-button type="default" icon="k-icon-search_line"></k-button>
-<k-button type="default" icon="k-icon-volume_mute_line"></k-button>
-<k-button type="default" icon="k-icon-star_line"></k-button>
-<k-button type="default" icon="k-icon-shop_line"></k-button>
-</div>
+</k-space>
+<k-space>
+    <k-button type="default" icon="k-icon-shezhi-xianxing"></k-button>
+    <k-button type="default" icon="k-icon-address_book_line"></k-button>
+    <k-button type="default" icon="k-icon-search_line"></k-button>
+    <k-button type="default" icon="k-icon-volume_mute_line"></k-button>
+    <k-button type="default" icon="k-icon-star_line"></k-button>
+    <k-button type="default" icon="k-icon-shop_line"></k-button>
+</k-space>
 </div>
 
 <details>
-<summary class="pre-code-tag">展示代码</summary>
+<summary>展示代码</summary>
 
   ```vue
-  <template>
+<template>
+  <k-space>
       <k-button type="default">Default</k-button>
       <k-button type="primary">Primary</k-button>
       <k-button type="success">Success</k-button>
       <k-button type="info">Info</k-button>
       <k-button type="warming">Warming</k-button>
       <k-button type="danger">Danger</k-button>
-
+  </k-space>
+  <k-space>
       <k-button type="default" round>Round</k-button>
       <k-button type="primary" round>Primary</k-button>
       <k-button type="success" round>Success</k-button>
       <k-button type="info" round>Info</k-button>
       <k-button type="warming" round>Warming</k-button>
       <k-button type="danger" round>Danger</k-button>
-  
+  </k-space>
+  <k-space>
       <k-button type="default" icon="k-icon-shezhi-xianxing"></k-button>
       <k-button type="default" icon="k-icon-address_book_line"></k-button>
       <k-button type="default" icon="k-icon-search_line"></k-button>
       <k-button type="default" icon="k-icon-volume_mute_line"></k-button>
       <k-button type="default" icon="k-icon-star_line"></k-button>
       <k-button type="default" icon="k-icon-shop_line"></k-button>
-  </template>
+  </k-space>
+</template>
   ```
 </details>
 
-
-## ● 反色
+### ● 反色
 
 使用`plain`属性指定是否为朴素按钮
 
 <div class="borderBox">
-        <div class="k-row">
+        <k-space>
             <k-button type="default" round plain>Round</k-button>
             <k-button type="primary" round plain>Primary</k-button>
             <k-button type="success" round plain>Success</k-button>
             <k-button type="info" round plain>Info</k-button>
             <k-button type="warming" round plain>Warming</k-button>
             <k-button type="danger" round plain>Danger</k-button>
-      </div>
+      </k-space>
 </div>
 
 <details>
-<summary class="pre-code-tag">展示代码</summary>
+<summary>展示代码</summary>
 
   ```vue
 <template>
+        <k-space>
             <k-button type="default" round plain>Round</k-button>
             <k-button type="primary" round plain>Primary</k-button>
             <k-button type="success" round plain>Success</k-button>
             <k-button type="info" round plain>Info</k-button>
             <k-button type="warming" round plain>Warming</k-button>
             <k-button type="danger" round plain>Danger</k-button>
+        </k-space>
 </template>
 
   ```
 </details>
 
-## ● 禁用
+### ● 禁用
 
 使用`disabled`属性指定按钮是否被禁用
 
 <div class="borderBox">
-         <div class="k-row">
+        <k-space>
             <k-button type="default" disabled>Disabled</k-button>
             <k-button type="primary" disabled>Primary</k-button>
             <k-button type="success" disabled>Success</k-button>
             <k-button type="info" disabled>Info</k-button>
             <k-button type="warming" disabled>Warming</k-button>
             <k-button type="danger" disabled>Danger</k-button>
-        </div>
+        </k-space>
 </div>
 
 <details>
-<summary class="pre-code-tag">展示代码</summary>
+<summary>展示代码</summary>
 
   ```vue
 <template>
+        <k-space>
             <k-button type="default" disabled>Disabled</k-button>
             <k-button type="primary" disabled>Primary</k-button>
             <k-button type="success" disabled>Success</k-button>
             <k-button type="info" disabled>Info</k-button>
             <k-button type="warming" disabled>Warming</k-button>
             <k-button type="danger" disabled>Danger</k-button>
+        </k-space>
 </template>
 
   ```
 </details>
 
-## ● 大小
+### ● 大小
 
 使用`size`属性指定按钮的大小
 
 <div class="borderBox">
-          <div class="k-row">
-            <k-button size="small">Size</k-button>
+         <k-space>
             <k-button type="warming" >Size</k-button>
+              <k-button size="small">Size</k-button>
             <k-button type="danger" size="large">Size</k-button>
-         </div>
+         </k-space>
 </div>
 
 <details>
-<summary class="pre-code-tag">展示代码</summary>
+<summary>展示代码</summary>
 
   ```vue
 <template>
+         <k-space>
             <k-button size="small">Size</k-button>
             <k-button type="warming" >Size</k-button>
             <k-button type="danger" size="large">Size</k-button>
+         </k-space>
 </template>
 
   ```
 </details>
 
-## ● 块级
+### ● 块级
 
 使用`block`属性指定是否为块级按钮
 
@@ -166,7 +175,7 @@ head:
 </div>
 
 <details>
-<summary class="pre-code-tag">展示代码</summary>
+<summary>展示代码</summary>
 
   ```vue
 <template>
@@ -176,92 +185,220 @@ head:
   ```
 </details>
 
-## ● 图标
+### ● 图标
 
 <p>默认使用<code>icon</code>属性指定无按钮文字的图标</p>
 <p>可以使用<code>postIcon</code>属性指定按钮文字后面的图标</p>
 <div class="borderBox">
-     <div class="k-row">
+    <k-space wrap>
         <k-button type="default" icon="k-icon-star_line">Icon</k-button>
         <k-button type="default" icon="k-icon-tv_line">Icon</k-button>
         <k-button type="default" icon="k-icon-translate_line">Icon</k-button>
         <k-button type="default" icon="k-icon-add_line">Icon</k-button>
         <k-button type="default" icon="k-icon-book_open_line">Icon</k-button>
         <k-button type="default" icon="k-icon-xiazai">Icon</k-button>
-    </div>
-     <div class="k-row">
+    </k-space>
+    <k-space>
         <k-button type="default" postIcon="k-icon-star_line">PostIcon</k-button>
         <k-button type="default" postIcon="k-icon-tv_line">PostIcon</k-button>
         <k-button type="default" postIcon="k-icon-translate_line">PostIcon</k-button>
         <k-button type="default" postIcon="k-icon-add_line">PostIcon</k-button>
-    </div>
+    </k-space>
 </div>
 
 
 <details>
-<summary class="pre-code-tag">展示代码</summary>
+<summary>展示代码</summary>
 
   ```vue
 <template>
-      <template>
-        <k-button type="default" icon="k-icon-star_line">Icon</k-button>
-        <k-button type="default" icon="k-icon-tv_line">Icon</k-button>
-        <k-button type="default" icon="k-icon-translate_line">Icon</k-button>
-        <k-button type="default" icon="k-icon-add_line">Icon</k-button>
-        <k-button type="default" icon="k-icon-book_open_line">Icon</k-button>
-        <k-button type="default" icon="k-icon-xiazai">Icon</k-button>
-
-        <k-button type="default" postIcon="k-icon-star_line">PostIcon</k-button>
-        <k-button type="default" postIcon="k-icon-tv_line">PostIcon</k-button>
-        <k-button type="default" postIcon="k-icon-translate_line">PostIcon</k-button>
-        <k-button type="default" postIcon="k-icon-add_line">PostIcon</k-button>
-        <k-button type="default" postIcon="k-icon-book_open_line">PostIcon</k-button>
-        <k-button type="default" postIcon="k-icon-xiazai">PostIcon</k-button>
+      <k-button type="default" block>Block</k-button>
 </template>
 
   ```
 </details>
 
-## ● 加载
+下面是一些简要的配置项一览：
 
-<p>使用<code>loading</code>指定按钮的加载状态</p>
-<div class="borderBox">
-     <div class="k-row">
-        <k-button type="default" icon="k-icon-jiazai" loading></k-button>
-        <k-button type="primary" icon="k-icon-jiazai" loading></k-button>
-        <k-button type="success" icon="k-icon-jiazai" loading></k-button>
-        <k-button type="info"  icon="k-icon-jiazai" loading></k-button>
-        <k-button type="warming"  icon="k-icon-jiazai" loading></k-button>
-        <k-button type="danger" icon="k-icon-jiazai" loading></k-button>
-    </div>
-</div>
+其中 head、sidebar、nav 对应的分别是 页面head脚本、侧边栏菜单、头部导航栏(都可以默认为[])
 
+<br>
 
-<details>
-<summary class="pre-code-tag">展示代码</summary>
+以下是版本号满足 `vitepress >= 1.0.0` `vuetom-theme >= 2.3.0` 的配置
 
-  ```vue
-<template>
-        <k-button type="default" icon="k-icon-jiazai" loading></k-button>
-        <k-button type="primary" icon="k-icon-jiazai" loading></k-button>
-        <k-button type="success" icon="k-icon-jiazai" loading></k-button>
-        <k-button type="info"  icon="k-icon-jiazai" loading></k-button>
-        <k-button type="warming"  icon="k-icon-jiazai" loading></k-button>
-        <k-button type="danger" icon="k-icon-jiazai" loading></k-button>
-</template>
+```js macos
+// .vitepress/config.ts
+// import ...
 
-  ```
-</details>
+export default defineConfigWithTheme<VuetomThemeConfig>({
+  base: `/vt/`,
+  ignoreDeadLinks: true,
+  lastUpdated: true,
+  head,
+  locales: locales.vitepressConfig,
+  themeConfig: {
+    nav,
+    sidebar,
+    localeLinks: {
+      text: '',
+      items: [
+          {
+            text: '中文',
+            link: '/lang/zhcn'
+          },
+          {
+            text: 'English',
+            link: '/lang/enus'
+          }
+      ]
+    },
+    socialLinks: [
+      { icon: 'github', link: pkg.repository }
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2021-present Lauset'
+    },
+    algolia: {
+      appId: '8Q3CNX0EF2',
+      apiKey: 'd44e3c8ec76aff9c758ef34f2cefe24d',
+      indexName: 'dev_vuetom'
+    },
 
+    logoImg: '/logo/vuetom-logo-m.png',
+    bgImg: '/imgs/homg-bg01.jpg',
+    bgColor: '0,0,0',
+    bgOpacity: 0.6,
+    flashEnable: true,
+    flashColor: ['238,17,17', '0,98,255'],
+    parallaxEnable: true,
+    pageBgEnable: true,
+    pageBgOpacity: 0.8,
+    featuresColor: ['#06cdff30', 'rgba(223,7,107,.3)']
 
-## Attributes
+  },
 
-|      参数      | 说明                                   |   类型   | 可选值                                                    | 默认值 |
-| :----------------: | :---------------------------------:   | :------: | :------------------------------------------:            | :-------: |
-|      size      | 尺寸                                  |  string   | small / default / large  | default           |
-|   type         | 类型                                  |  string    |default/primary / success / warning / danger / info     | default   |
-|   plain        | 是否朴素按钮                           |  boolean  | —| false  |
-|  round         | 是否圆角按钮                           |  boolean  | —| false|
-|   disabled     | 是否禁用状态                           |  boolean  |   —    | false 
-|  icon          | 图标类名                               |  string   | — | 	—   |
-|  loading       | 是否加载                               |  boolean   | — | false |
+  markdown: {
+    lineNumbers: true
+  },
+  appearance: true,
+  vite: {
+    ssr: {
+      noExternal: ["vitepress-theme-vuetom"]
+    }
+  }
+})
+```
+
+:::warning 注意
+需要将主题配置成防止被 SSR 外部化的依赖项
+
+```js
+vite: {
+  ssr: {
+    noExternal: ["vitepress-theme-vuetom"]
+  }
+}
+```
+
+:::
+
+<br>
+
+:::danger 过期提示
+vitepress-theme-vuetom 1.x 版本已弃用
+
+请升级版本 `vitepress>=1.0` `vitepress-theme-vuetom>=2.3.0`
+:::
+
+<br />
+
+以下是对配置项的简要说明
+
+## 首页LOGO
+
+**logoImg**
+
+- 类型：`string`
+- 默认值：`''`
+
+首页上方LOGO，路径中的首个 `/` 表示 `public` 目录
+
+例如：`'/logo/homg-logo.jpg'`
+
+## 首页背景图
+
+**bgImg**
+
+- 类型：`string`
+- 默认值：`undefined`
+
+首页全屏背景图，路径中的首个 `/` 表示 `public` 目录
+
+例如：`'/imgs/homg-bg01.jpg'` 等同于 `/public/imgs/home-bg01.jpg`
+
+**bgColor**
+
+- 类型：`string`
+- 默认值：`'0,0,0'`
+
+背景图边缘的覆盖颜色，值是 `rgb` 的颜色值 `rgb(0,0,0)` 则写为 `'0,0,0'`，默认为黑色
+
+**bgOpacity**
+
+- 类型：`0 - 1`
+- 默认值：`0.6`
+
+覆盖颜色的透明度，搭配上面的覆盖颜色使用，图片中间透明度要比图片边缘透明度要小
+
+图片中间透明度为 `当前bgOpacity - 0.3`，也就是说默认为 `0.3`
+
+## 文章页背景图
+
+注意：文章页背景图片与首页一致
+
+**pageBgEnable**
+
+- 类型：`boolean`
+- 默认值：`true`
+
+文章页面背景图是否开启，默认开启
+
+**pageBgOpacity**
+
+- 类型：`0 - 1`
+- 默认值：`0.8`
+
+文章页背景图透明度，1将看不到背景图，0能清晰看到背景图
+
+**featuresColor**
+
+- 类型：`string | Array`
+- 默认值：`rgba(255,255,255,0.8)`
+
+首页功能面板背景色，可以是单个颜色字符串，也可以是两个字符串组成的数组
+
+**flashEnable**
+
+- 类型：`boolean`
+- 默认值：`false`
+  
+是否开启首页背景图闪烁功能，效果类似于朋克风故障
+
+**flashColor**
+
+- 类型：`string | Array`
+- 默认值：`['0,0,0','0,0,0']`
+
+首页背景闪烁时附加的色彩，0: Top位置的颜色，1: Right位置的颜色，默认都是黑色
+
+**parallaxEnable**
+
+- 类型：`boolean`
+- 默认值：`false`
+  
+是否开启首页部分元素视觉差效果
+
+## 博客配置项
+
+博客开发中...
