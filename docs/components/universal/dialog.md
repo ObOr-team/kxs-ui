@@ -21,6 +21,7 @@
 ## ● 类型
 <p>通过<code>type</code>属性来设置对话框的类型</P>
 <div class="borderBox">
+
 </div>
 
 ## ● 自定义大小

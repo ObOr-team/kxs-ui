@@ -198,7 +198,7 @@ function initialize(){
 }
 
 .out {
-  width: 800px;
+  width: 600px;
   height: 280px;
   position: relative;
   margin: 10px auto 30px;
@@ -209,7 +209,7 @@ function initialize(){
     width: 100%;
     height: 260px;
     .img {
-      width: 400px;
+      width: 200px;
       height: 200px;
       position: absolute;
       transition: 0.7s;

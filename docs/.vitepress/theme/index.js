@@ -11,11 +11,12 @@ import kCarouselcard from '../../../components/carouselcard.vue'
 import kTextarea from '../../../components/textarea.vue'
 import kIcon from '../../../components/icon/icon.vue'
 import kDialog from '../../../components/dialog.vue'
+import kDropdown from '../../../components/dropdown.vue'
 import "./custom.scss"
 import "../../../src/style.scss"
 
 const components = [kButton,kInput,kRadio,kSelect,kSpace,kCarousel,kCarouselcard
-  ,kOptfile,kTextarea,kIcon,kDialog]
+  ,kOptfile,kTextarea,kIcon,kDialog,kDropdown]
 export default {
   ...VuetomTheme,
   enhanceApp({ app }) {

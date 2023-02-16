@@ -1,5 +1,4 @@
 <template>
-  
 </template>
 
 <script>
@@ -37,7 +36,7 @@ import {useSlots,h,ref,computed} from 'vue'
                 return{
                     display:props.inline? 'inline-flex':'flex',
                     gap:props.size? `${props.size}`:`20px 20px`,
-                    'flex-direction':props.column? 'column':'inherit',
+                    'flex-direction':props.column? 'column':'',
                     'flex-wrap':props.wrap? 'wrap':'no wrap',
                     padding:'15px'
                 }

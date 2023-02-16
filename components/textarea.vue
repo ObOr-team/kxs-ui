@@ -78,13 +78,13 @@ import {computed,ref} from 'vue'
 
 <style lang="scss" scoped>
     .k-textarea{
-        width: auto;
         height: auto;
         display: inline-block;
         overflow: hidden;
         position: relative;
         margin-left: 10px;
         textarea{
+            width: 100%;
             outline:none;
             padding: 8px 8px;
             border-radius: 5px;
@@ -92,6 +92,7 @@ import {computed,ref} from 'vue'
             font-family: auto;
             cursor: pointer;
             color:var(--default-text-color);
+            border: 1px solid var(--btn-color-gray);
             &:focus{
                 border: 1px solid var(--active-border-color);
             }
