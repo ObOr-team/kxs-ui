@@ -44,8 +44,20 @@
 .VPNavBar.has-sidebar {
     background-color:#fff;
 }
+//页面标题1
 .VPDoc .container .vp-doc h1, .VPDoc .container .vp-doc h1 a {
     color: var(#6078ea);
+}
+//页面标题2
+.VPDoc .container .vp-doc h2 {
+    border-bottom: 4px solid #53dfd357 ;
+}
+//页面<code><code/>颜色
+.VPDoc .container .vp-doc :not(pre) > code {
+    font-size: 0.5px;
+    color:var(--success);
+    border: 1px solid rgb(120 24 52 / 25%);
+    background-color: var(--vp-c-pink-dimm-3);
 }
 .VPTeamPageTitle .title, .VPTeamPageTitle .lead{
     color: var(--vp-c-pink);
