@@ -11,10 +11,11 @@ hero:
   actions:
     - theme: brand big
       text: 快 速 开 始
-      link: /guide/info
+      link: /guide/use
     - theme: alt big
       text: GitHub
-      link: /guide/config
+      link: https://github.com/5th-Youth-Training-OOT/Kxxx-UI
+
 
 features:
   - title: 📦 优化的构建
