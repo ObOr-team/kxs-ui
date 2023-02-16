@@ -31,10 +31,27 @@
     .VPNavBar.has-sidebar {
         background-color:#000;
     }
+    .VPTeamPageTitle .title, .VPTeamPageTitle .lead{
+        color: #aaa;
+    }
 }
 .VPNavBar {
     background-color: rgba($color: #ebf7ff, $alpha: 0.8);
 }
 .VPNavBar.has-sidebar {
     background-color:#fff;
+}
+.VPDoc .container .vp-doc h1, .VPDoc .container .vp-doc h1 a {
+    color: var(--vp-c-pink);
+}
+.VPTeamPageTitle .title, .VPTeamPageTitle .lead{
+    color: var(--vp-c-pink);
+}
+.VPSidebarItem.level-1.is-link.is-active.has-active {
+    background-color: rgba($color: #40a9ff, $alpha: 0.1);
+    border-radius: 5px;
+    .indicator {
+        background-color: rgba($color: #40a9ff, $alpha: 0.8);
+        width: 0.15rem;
+    }
 }

@@ -1,0 +1,34 @@
+{
+    "en-US": {
+      "langshow": {
+        "text": "Universal",
+        "items": [
+          
+        ]
+      }
+    },
+    "zh-CN": [
+        {
+            "text": "组件介绍",
+            "link": "/components/index"
+        },
+        {
+            "text": "通用",
+            "items": [
+            {
+                "text": "Button 按钮",
+                "link": "/components/universal/button"
+            }
+            ]
+        },
+        {
+            "text": "数据录入",
+            "items": [
+            {
+                "text": "Select 选择器",
+                "link": "/components/dataEntry/select"
+            }
+            ]
+        }
+    ]
+}

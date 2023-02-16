@@ -5,12 +5,14 @@ import { getNav, getSidebar, head, locales } from './menus'
 const nav = getNav('zh-CN')
 const sidebar = getSidebar('zh-CN')
 export default defineConfigWithTheme<VuetomThemeConfig>({
-    base: `/vt/`,
+    base: `/kx/`,
     ignoreDeadLinks: true,
     lastUpdated: true,
     head,
     locales: locales.vitepressConfig,
     themeConfig: {
+      siteTitle: 'kxUi',
+      logo: '/logo/logo-blue.png',
       nav,
       sidebar,
       localeLinks: {
@@ -31,7 +33,7 @@ export default defineConfigWithTheme<VuetomThemeConfig>({
       ],
       footer: {
         message: 'Released under the MIT License.',
-        copyright: 'Copyright © 2021-present Lauset'
+        copyright: 'Copyright © 2023-present Lauset'
       },
       algolia: {
         appId: '8Q3CNX0EF2',
