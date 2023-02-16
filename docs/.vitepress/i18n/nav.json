@@ -7,56 +7,28 @@
     },
     {
       "text": "Components",
-      "link": "/mdshow/",
-      "activeMatch": "/mdshow/"
+      "link": "/components/",
+      "activeMatch": "/components/"
     },
     {
-      "text": "Links",
-      "items": [
-        {
-          "text": "FeedBack",
-          "link": "/feedback/",
-          "activeMatch": "/feedback/"
-        },
-        {
-          "text": "Gitee",
-          "link": "https://gitee.com/lauset/vitepress-theme-vuetom"
-        },
-        {
-          "text": "Vitepress",
-          "link": "https://vitepress.vuejs.org/"
-        }
-      ]
+      "text": "Feedback",
+      "link": "https://github.com/5th-Youth-Training-OOT/Kxxx-UI/issues"
     }
   ],
   "zh-CN": [
     {
       "text": "指引",
-      "link": "/guide/info",
-      "activeMatch": "/guide/"
+      "link": "/guide/use",
+      "activeMatch": "/guide/use"
     },
     {
       "text": "组件",
-      "link": "/mdshow/",
-      "activeMatch": "/mdshow/"
+      "link": "/components/",
+      "activeMatch": "/components/"
     },
     {
-      "text": "链接",
-      "items": [
-        {
-          "text": "反馈",
-          "link": "/feedback/",
-          "activeMatch": "/feedback/"
-        },
-        {
-          "text": "GitHub",
-          "link": "https://gitee.com/lauset/vitepress-theme-vuetom"
-        },
-        {
-          "text": "Vitepress官网",
-          "link": "https://vitepress.vuejs.org/"
-        }
-      ]
+      "text": "问题反馈", 
+      "link": "https://github.com/5th-Youth-Training-OOT/Kxxx-UI/issues"
     }
   ]
 }

@@ -48,83 +48,83 @@
 
 
 
-body{
-  margin: 50px;
-}
-table{
-  width: 100%; 
-}
-th {
-  height: 50px;
-  background: #f4f4f4;
-}
-td {
-  height: 35px;
-  padding: 0.3em 0;
-}
-table, th, td {
-  border: 1px solid var(--default-border-color);
-  border-collapse: collapse;
-}
-table td:nth-child(1) {
-  font-weight: bold;
-}
-table tr:nth-child(odd) {
-  background: #fff;
-}
-table tr:nth-child(even) {
-  background: #F9F9F9;
-}
-code {
-  margin: 0 3px;
-  padding: 0.2em;
-  background: #f6f6f6;
-  color: #0e7ade;
-  font-family: "Consolas, 'Courier New', monospace";
-  border: 0px;
-  border-radius: 3px;
-}
-p {
-  font-size: 14px;
-}
-// 美化滚动条
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  width: 6px;
-  background: rgba(#101e1f, 0.1);
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  border-radius: 2em;
-}
-::-webkit-scrollbar-thumb {
-  background-color: rgba(144,147,153,.4);
-  background-clip: padding-box;
-  min-height: 28px;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  border-radius: 2em;
-  transition: background-color .3s;
-  cursor: pointer;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(144,147,153,.2);
-}
+// body{
+//   margin: 50px;
+// }
+// table{
+//   width: 100%; 
+// }
+// th {
+//   height: 50px;
+//   background: #f4f4f4;
+// }
+// td {
+//   height: 35px;
+//   padding: 0.3em 0;
+// }
+// table, th, td {
+//   border: 1px solid var(--default-border-color);
+//   border-collapse: collapse;
+// }
+// table td:nth-child(1) {
+//   font-weight: bold;
+// }
+// table tr:nth-child(odd) {
+//   background: #fff;
+// }
+// table tr:nth-child(even) {
+//   background: #F9F9F9;
+// }
+// code {
+//   margin: 0 3px;
+//   padding: 0.2em;
+//   background: #f6f6f6;
+//   color: #0e7ade;
+//   font-family: "Consolas, 'Courier New', monospace";
+//   border: 0px;
+//   border-radius: 3px;
+// }
+// p {
+//   font-size: 14px;
+// }
+// // 美化滚动条
+// ::-webkit-scrollbar {
+//   width: 10px;
+//   height: 10px;
+// }
+// ::-webkit-scrollbar-track {
+//   width: 6px;
+//   background: rgba(#101e1f, 0.1);
+//   -webkit-border-radius: 2em;
+//   -moz-border-radius: 2em;
+//   border-radius: 2em;
+// }
+// ::-webkit-scrollbar-thumb {
+//   background-color: rgba(144,147,153,.4);
+//   background-clip: padding-box;
+//   min-height: 28px;
+//   -webkit-border-radius: 2em;
+//   -moz-border-radius: 2em;
+//   border-radius: 2em;
+//   transition: background-color .3s;
+//   cursor: pointer;
+// }
+// ::-webkit-scrollbar-thumb:hover {
+//   background-color: rgba(144,147,153,.2);
+// }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: #213547;
+//     background-color: #ffffff;
+//   }
+//   a:hover {
+//     color: #747bff;
+//   }
+//   button {
+//     background-color: #f9f9f9;
+//   }
+// }
 //设置加载按钮的无限旋转
 .k-icon-jiazai{
   animation: rotate 2s linear infinite;

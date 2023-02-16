@@ -41,57 +41,19 @@
   ],
   "zh-CN": [
     {
-      "text": "基础",
+      "text": "快速上手",
       "items": [
         {
-          "text": "什么是Vitepress?",
-          "link": "/guide/info"
+          "text": "安装使用",
+          "link": "/guide/use"
         },
         {
-          "text": "快速开始",
-          "link": "/guide/start"
+          "text": "更新日志",
+          "link": "/guide/log"
         },
         {
-          "text": "问题一览",
-          "link": "/guide/question"
-        },
-        {
-          "text": "主题目录",
-          "link": "/guide/prodir"
-        }
-      ]
-    },
-    {
-      "text": "进阶",
-      "items": [
-        {
-          "text": "主题配置",
-          "link": "/guide/config"
-        },
-        {
-          "text": "国际化",
-          "link": "/guide/lang"
-        },
-        {
-          "text": "夜间模式",
-          "link": "/guide/dark"
-        }
-      ]
-    },
-    {
-      "text": "组件",
-      "items": [
-        {
-          "text": "Button 按钮",
-          "link": "/guide/button"
-        },
-        {
-          "text": "Icon 图标",
-          "link": "/guide/lang"
-        },
-        {
-          "text": "Radio 单选",
-          "link": "/guide/dark"
+          "text": "参与贡献",
+          "link": "/guide/contribute"
         }
       ]
     }

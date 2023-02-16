@@ -2,7 +2,8 @@ import type { HeadConfig } from 'vitepress'
 // import { languages } from './utils/lang'
 import navJson from './i18n/nav.json'
 import guideSidebarJson from './i18n/sidebars/guide.json'
-import mdshowSidebarJson from './i18n/sidebars/mdshow.json'
+import componentSidebarJson from './i18n/sidebars/components.json'
+// import mdshowSidebarJson from './i18n/sidebars/mdshow.json'
 import vitepressConfigJson from './i18n/vitepress-config.json'
 import themeConfigJson from './i18n/theme-config.json'
 
@@ -13,7 +14,8 @@ const getVitepressConfigLocales = (lang: langType = 'zh-CN') => (vitepressConfig
 const getThemeConfigLocales = (lang: langType = 'zh-CN') => {
   const sidebar = {}
   sidebar[`/${lang}/guide/`] = guideSidebarJson[lang]
-  sidebar[`/${lang}/mdshow/`] = mdshowSidebarJson[lang]
+  // sidebar[`/${lang}/mdshow/`] = mdshowSidebarJson[lang]
+  sidebar[`/${lang}/components/`] = componentSidebarJson[lang]
   return {
     nav: navJson[lang],
     sidebar,
@@ -37,7 +39,7 @@ const getNav = (lang: 'zh-CN' | 'en-US' = 'zh-CN') => (navJson[lang])
 
 const getSidebar = (lang: 'zh-CN' | 'en-US' = 'zh-CN') => ({
   '/guide/': guideSidebarJson[lang],
-  '/mdshow/': mdshowSidebarJson[lang]
+  '/components/': componentSidebarJson[lang]
 })
 
 const head: HeadConfig[] = [
