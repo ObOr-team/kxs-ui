@@ -68,7 +68,64 @@
             {
                 "text": "Dropdown 下拉菜单",
                 "link": "/components/layout/dropdown"
+            },
+            {
+                "text": "Pagination 分页",
+                "link": "/components/layout/pagination"
+            },
+            {
+                "text": "Table 表格",
+                "link": "/components/layout/table"
+            },
+            {
+                "text": "Tree 树形控件",
+                "link": "/components/layout/tree"
             }
+            ]
+        },
+        {
+            "text": "待开发",
+            "items":[
+                {
+                    "text": "Checkbox 多选框",
+                    "link": "/components/dev/checkbox"
+                },
+                {
+                    "text": "Switch 开关",
+                    "link": "/components/dev/switch"
+                },
+                {
+                    "text": "Form 表单",
+                    "link": "/components/dev/form"
+                },
+                {
+                    "text": "Rate 评分",
+                    "link": "/components/dev/rate"
+                },
+                {
+                    "text": "ColorPicker 颜色选择器",
+                    "link": "/components/dev/colorPicker"
+                },
+                {
+                    "text": "Progress 进度条",
+                    "link": "/components/dev/progress"
+                },
+                {
+                    "text": "Steps 步骤条",
+                    "link": "/components/dev/steps"
+                },
+                {
+                    "text": "Result 结果",
+                    "link": "/components/dev/result"
+                },
+                {
+                    "text": "Loading 加载",
+                    "link": "/components/dev/loading"
+                },
+                {
+                    "text": "Timeline 时间线",
+                    "link": "/components/dev/timeline"
+                }
             ]
         }
     ]
