@@ -75,3 +75,23 @@
         width: 0.15rem;
     }
 }
+//首页第二行字的颜色
+.VPHome .VPHero .container .main .tagline {
+    background: linear-gradient(to right, #17ead9, #6078ea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    max-width: 100%;
+}
+.VPHome .VPFeatures {
+    padding: 32px;
+    margin: 0 15%;
+    margin-bottom: 5%;
+    background: linear-gradient(to right, rgb(21 224 229 / 22%), rgb(83 140 233 / 36%))  !important; 
+    border-radius: 16px;
+}
+.VPHome .VPFeatures .item .VPFeature .details {
+    color: #3baae7;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
