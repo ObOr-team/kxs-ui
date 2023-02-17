@@ -1,7 +1,7 @@
 <template>
    <div :class="[`k-table-${size}`,customClass]">
     <table>
-      <thead v-if="showHeader">
+      <!-- <thead v-if="showHeader"> -->
         <tr>
           <th v-for="(x,n) in options.fileds" :key="n" :style="[headStyle,{'text-align':x.align}]">
             <!-- <slot :name="'head-'+x.field" :scope="x" v-if="$slot['head-'+x.field]"></slot> -->
@@ -9,8 +9,8 @@
             <div>{{x.title}}</div>
           </th>
         </tr>  
-      </thead>
-      <tbody>
+      <!-- </thead> -->
+      <!-- <tbody> -->
         <tr v-for="(v,i) in options.datas" :key="i">
           <td v-for="(m,j) in options.fileds" :key="j" :style="[rowStyle,{width:options.fileds[j].width?(options.fileds[j].width):'','text-align':options.fileds[j].align}]">
             <!-- <slot :name="options.fileds[j].field" :scope="{rowIndex:i,cellIndex:j,row:v}" v-if="$slot[options.fileds[j].field]"></slot> -->
@@ -18,7 +18,7 @@
             <div>{{options.datas[i][options.fileds[j].field]}}</div>
           </td>
         </tr>
-      </tbody>
+      <!-- </tbody> -->
     </table>
   </div>
 </template>
@@ -72,12 +72,10 @@ const $slot = useSlots()
   overflow:hidden;
   table{
     width:100%;
-    border-radius: 2px;
-    border:1px solid #ebe6e6;
     box-sizing: border-box;
     border-spacing:0;
-    thead{
-      th{
+    border-spacing: 0;
+    th{
         padding:14px 12px;
         box-sizing: border-box;
         text-align: left;
@@ -92,9 +90,11 @@ const $slot = useSlots()
       th:last-child{
         border-right:1px solid #ebe6e6;
       }
-    }
-    tbody{
-      tr{
+      th:first-child{
+        border-left:1px solid #ebe6e6;
+      }
+    tr{
+      border-bottom: 1px solid #f0f0f0;
         td{
           padding:13.5px 12px;
           box-sizing: border-box;
@@ -107,134 +107,176 @@ const $slot = useSlots()
           border-right:0;
           border-top:0;
         }
+        td:first-child{
+          border-left:1px solid #f0f0f0;
+          
+        }
         td:last-child{
-          border-bottom:1px solid #f0f0f0;
           border-right:1px solid #f0f0f0;
           
         }
         &:hover{
           background:rgba(240,240,240,.2)
-        }     
+        } 
+    }
+      tr:first-child th:first-child{
+                border-top-left-radius: 10px; /* 设置table左下圆角 */
+      } 
+      tr:first-child th:last-child{
+                border-top-right-radius: 10px;/* 设置table右下圆角 */
+            }
+      tr:last-child td:first-child{
+                border-bottom-left-radius: 10px; /* 设置table左下圆角 */
+            }
+      tr:last-child td:last-child{
+                border-bottom-right-radius: 10px;/* 设置table右下圆角 */
+            }
+      tr:first-child th{
+                border-top: 1px solid #f0f0f0;
+        }
+      tr:last-child td{
+                border-bottom: 1px solid #f0f0f0;
       }
     }
   }
-}
 .k-table-small{
-  width:100%;
+  width: 600px;
   height:auto;
   overflow:hidden;
   table{
     width:100%;
-    border-radius: 2px;
-    // border:1px solid #f0f0f0;
     box-sizing: border-box;
     border-spacing:0;
-    thead{
-      th{
-        padding:10px 10px;
+    border-spacing: 0;
+    th{
+        padding:14px 12px;
         box-sizing: border-box;
         text-align: left;
         line-height: 20px;
         color: #646468;
         font-weight: 550;
         font-size:14px;
-        border:1px solid #f0f0f0;
+        border:1px solid #ebe6e6;
         border-right:0;
         background-color:#fafafa ;
       }
       th:last-child{
-        border-right:1px solid #f0f0f0;
+        border-right:1px solid #ebe6e6;
       }
-    }
-    tbody{
-      tr{
+      th:first-child{
+        border-left:1px solid #ebe6e6;
+      }
+    tr{
+      border-bottom: 1px solid #f0f0f0;
         td{
-          padding:9.5px 10px;
+          padding: 12.5px 12px;
           box-sizing: border-box;
-          text-align: left;
           line-height: 20px;
           color: #505050;
           font-weight: 500;
-          font-size:14px;
-          border:1px solid #f0f0f0;
-          border-right:0;
-          border-top:0;
+          font-size: 13px;
+        }
+        td:first-child{
+          border-left:1px solid #f0f0f0;
+          
         }
         td:last-child{
-          border-bottom:1px solid #f0f0f0;
           border-right:1px solid #f0f0f0;
+          
         }
         &:hover{
           background:rgba(240,240,240,.2)
+        } 
+    }
+      tr:first-child th:first-child{
+                border-top-left-radius: 10px; /* 设置table左下圆角 */
+      } 
+      tr:first-child th:last-child{
+                border-top-right-radius: 10px;/* 设置table右下圆角 */
+            }
+      tr:last-child td:first-child{
+                border-bottom-left-radius: 10px; /* 设置table左下圆角 */
+            }
+      tr:last-child td:last-child{
+                border-bottom-right-radius: 10px;/* 设置table右下圆角 */
+            }
+      tr:first-child th{
+                border-top: 1px solid #f0f0f0;
         }
-      }
-      tr:last-child{
-        td{
-          // border:1px solid #f0f0f0;
-        }
-        
+      tr:last-child td{
+                border-bottom: 1px solid #f0f0f0;
       }
     }
-  }
-}
-.k-table-mini{
-  width:100%;
+ }
+ .k-table-mini{
+  width: 500px;
   height:auto;
   overflow:hidden;
   table{
     width:100%;
-    border-radius: 2px;
-     border:1px solid #f0f0f0;
     box-sizing: border-box;
     border-spacing:0;
-    thead{
-      th{
-        padding:8px 10px;
+    border-spacing: 0;
+    th{
+        padding:14px 12px;
         box-sizing: border-box;
         text-align: left;
-        line-height: 18px;
+        line-height: 20px;
         color: #646468;
         font-weight: 550;
-        font-size:12px;
-        border:1px solid #f0f0f0;
+        font-size:14px;
+        border:1px solid #ebe6e6;
         border-right:0;
         background-color:#fafafa ;
       }
       th:last-child{
-        border-right:1px solid #f0f0f0;
+        border-right:1px solid #ebe6e6;
       }
-    }
-    tbody{
-      tr{
+      th:first-child{
+        border-left:1px solid #ebe6e6;
+      }
+    tr{
+      border-bottom: 1px solid #f0f0f0;
         td{
-          padding:7.5px 10px;
+          padding: 11.5px 11px;
           box-sizing: border-box;
-          text-align: left;
-          line-height: 18px;
+          line-height: 20px;
           color: #505050;
           font-weight: 500;
-          font-size:12px;
-          border:1px solid #f0f0f0;
-          border-right:0;
-          border-top:0;
+          font-size: 12px;
+        }
+        td:first-child{
+          border-left:1px solid #f0f0f0;
+          
         }
         td:last-child{
-          border-bottom:1px solid #f0f0f0;
           border-right:1px solid #f0f0f0;
+          
         }
         &:hover{
           background:rgba(240,240,240,.2)
+        } 
+    }
+      tr:first-child th:first-child{
+                border-top-left-radius: 10px; /* 设置table左下圆角 */
+      } 
+      tr:first-child th:last-child{
+                border-top-right-radius: 10px;/* 设置table右下圆角 */
+            }
+      tr:last-child td:first-child{
+                border-bottom-left-radius: 10px; /* 设置table左下圆角 */
+            }
+      tr:last-child td:last-child{
+                border-bottom-right-radius: 10px;/* 设置table右下圆角 */
+            }
+      tr:first-child th{
+                border-top: 1px solid #f0f0f0;
         }
-      }
-      tr:last-child{
-        td{
-          // border-bottom:0;
-        }
-        
+      tr:last-child td{
+                border-bottom: 1px solid #f0f0f0;
       }
     }
-  }
-}
+ }
 table{
   -webkit-border-horizontal-spacing: 0px;
   -webkit-border-vertical-spacing: 0px;

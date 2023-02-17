@@ -80,6 +80,10 @@
             {
                 "text": "Tree 树形控件",
                 "link": "/components/layout/tree"
+            },
+            {
+                "text": "Nav 导航",
+                "link": "/components/layout/nav"
             }
             ]
         },

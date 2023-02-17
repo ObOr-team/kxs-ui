@@ -14,11 +14,13 @@ import kDialog from '../../../components/dialog.vue'
 import kDropdown from '../../../components/dropdown.vue'
 import kTree from '../../../components/tree.vue'
 import kTable from '../../../components/table.vue'
+import kMenu from '../../../components/menu.vue'
+import kNav from '../../../components/nav.vue'
 import "./custom.scss"
 import "../../../src/style.scss"
 
 const components = [kButton,kInput,kRadio,kSelect,kSpace,kCarousel,kCarouselcard
-  ,kOptfile,kTextarea,kIcon,kDialog,kDropdown,kTree,kTable]
+  ,kOptfile,kTextarea,kIcon,kDialog,kDropdown,kTree,kTable,kMenu,kNav]
 export default {
   ...VuetomTheme,
   enhanceApp({ app }) {

@@ -41,10 +41,6 @@ import {computed,toRef} from 'vue'
             type:Boolean,
             default:false
         },
-        frontIcon:{
-            type:String,
-            default:""
-        },
         postIcon:{
             type:String,
             default:""

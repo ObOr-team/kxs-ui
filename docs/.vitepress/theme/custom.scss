@@ -124,3 +124,98 @@
 .outline-link.active {
     color: var(--vp-c-brand) !important; 
 }
+
+.vp-doc table{
+    border: none;
+      width:100%;
+      box-sizing: border-box;
+      border-spacing:0;
+      thead{
+        border: none;
+        border-spacing: 0;
+        width: 100%;
+        display: block;
+        tr{
+            flex-wrap: wrap;
+            display: flex;
+                    th{
+          padding:14px 12px;
+          box-sizing: border-box;
+          text-align: left;
+          line-height: 20px;
+          color: #646468;
+          font-weight: 550;
+          font-size:14px;
+          border:1px solid #ebe6e6;
+          border-right:0;
+          background-color:#fafafa ;
+        }
+        th:last-child{
+          border-right:1px solid #ebe6e6;
+        }
+        th:first-child{
+          border-left:1px solid #ebe6e6;
+        }
+        }
+        tr>th{
+            flex: 1;
+        }
+
+      }
+      tbody{
+        border-spacing: 0;
+        display: block;
+        width: 100%;
+        border: none;
+        tr>td{
+            flex: 1;
+        }
+              tr{
+                flex-wrap: wrap;
+                display: flex;
+        border-bottom: 1px solid #f0f0f0;
+          td{
+            padding:13.5px 12px;
+            box-sizing: border-box;
+            text-align: left;
+            line-height: 20px;
+            color: #505050;
+            font-weight: 500;
+            font-size:14px;
+            border:1px solid #f0f0f0;
+            border-right:0;
+            border-top:0;
+          }
+          td:first-child{
+            border-left:1px solid #f0f0f0;
+            
+          }
+          td:last-child{
+            border-right:1px solid #f0f0f0;
+            
+          }
+          &:hover{
+            background:rgba(240,240,240,.2)
+          } 
+      }
+        tr:first-child th:first-child{
+                  border-top-left-radius: 10px; /* 设置table左上圆角 */
+        } 
+        tr:first-child th:last-child{
+                  border-top-right-radius: 10px;/* 设置table右上圆角 */
+              }
+        tr:last-child td:first-child{
+                  border-bottom-left-radius: 10px; /* 设置table左下圆角 */
+              }
+        tr:last-child td:last-child{
+                  border-bottom-right-radius: 10px;/* 设置table右下圆角 */
+              }
+        tr:first-child th{
+                  border-top: 1px solid #f0f0f0;
+          }
+        tr:last-child td{
+                  border-bottom: 1px solid #f0f0f0;
+        }
+      }
+
+}
