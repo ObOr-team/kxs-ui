@@ -101,6 +101,10 @@ type="error"
 ```
 </details>
 
+:::danger 注意
+请勿将`<k-dialog>`组件放入行内元素中。
+:::
+
 ## ● 自定义大小
 <p>通过<code>width</code>和<code>height</code>属性来设置对话框的整体宽度和高度</P>
 <div class="borderBox">

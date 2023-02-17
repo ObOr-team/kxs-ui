@@ -26,6 +26,10 @@
             {
                 "text": "Button 按钮",
                 "link": "/components/universal/button"
+            },
+            {
+                "text": "Dialog 对话框",
+                "link": "/components/universal/dialog"
             }
             ]
         },
