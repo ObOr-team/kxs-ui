@@ -14,7 +14,7 @@ hero:
       link: /guide/use
     - theme: alt big
       text: GitHub
-      link: /guide/config
+      link: https://github.com/5th-Youth-Training-OOT/Kxxx-UI/tree/main
 
 features:
   - title: 📦 更快的响应
