@@ -75,7 +75,7 @@ import { defineProps,computed,} from 'vue'
 
             } 
         } 
-         console.log(navList.length);
+        //  console.log(navList.length);
     }
 </script>
 
@@ -112,5 +112,9 @@ import { defineProps,computed,} from 'vue'
         }  
 div{
     display: inline-block;
+    &:hover{
+            color: var(--btn-color-white);
+            background-color: var(--primary);
+        }
 }
 </style>

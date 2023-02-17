@@ -13,83 +13,93 @@
             "link": "/components/index"
         },
         {
-            "text": "通用",
+            "text": "Basic 基础组件",
             "items": [
             {
-                "text": "Button 按钮",
-                "link": "/components/universal/button"
+                "text": "Color 颜色",
+                "link": "/components/universal/color"
             },
             {
                 "text": "Icon 图标",
                 "link": "/components/universal/icon"
             },
             {
-                "text": "Carousel 轮播图",
-                "link": "/components/universal/carousel"
-            },
-            {
-                "text": "Dialog 对话框",
-                "link": "/components/universal/dialog"
+                "text": "Button 按钮",
+                "link": "/components/universal/button"
             }
             ]
         },
         {
-            "text": "数据录入",
+            "text": "Form 表单组件",
             "items": [
-            {
-                "text": "Input 输入框",
-                "link": "/components/dataEntry/input"
-            },
-            {
-                "text": "Textarea 文本域",
-                "link": "/components/dataEntry/textarea"
-            },
-            {
-                "text": "Optfile 文件上传",
-                "link": "/components/dataEntry/optfile"
-            },
-            {
-                "text": "Radio 单选",
-                "link": "/components/dataEntry/radio"
-            },
-            {
-                "text": "Select 选择器",
-                "link": "/components/dataEntry/select"
-            }
+                {
+                    "text": "Input 输入框",
+                    "link": "/components/dataEntry/input"
+                },
+                {
+                    "text": "Textarea 文本域",
+                    "link": "/components/dataEntry/textarea"
+                },
+                {
+                    "text": "Optfile 文件上传",
+                    "link": "/components/dataEntry/optfile"
+                },
+                {
+                    "text": "Radio 单选",
+                    "link": "/components/dataEntry/radio"
+                },
+                {
+                    "text": "Select 选择器",
+                    "link": "/components/dataEntry/select"
+                }
             ]
         },
         {
-            "text": "布局",
+            "text": "Data 数据展示",
             "items": [
-            {
-                "text": "Space 间距",
-                "link": "/components/layout/space"
-            },
+                {
+                    "text": "Carousel 轮播图",
+                    "link": "/components/universal/carousel"
+                },
+                {
+                    "text": "Table 表格",
+                    "link": "/components/layout/table"
+                }
+            ]
+        },
+        {
+            "text": "Navigation 导航",
+            "items": [
             {
                 "text": "Dropdown 下拉菜单",
                 "link": "/components/layout/dropdown"
             },
             {
-                "text": "Pagination 分页",
-                "link": "/components/layout/pagination"
-            },
-            {
-                "text": "Table 表格",
-                "link": "/components/layout/table"
+                "text": "Nav 导航",
+                "link": "/components/layout/nav"
             },
             {
                 "text": "Tree 树形控件",
                 "link": "/components/layout/tree"
-            },
-            {
-                "text": "Nav 导航",
-                "link": "/components/layout/nav"
             }
             ]
         },
         {
-            "text": "待开发",
+            "text": "Layout 布局",
+            "items": [
+                {
+                    "text": "Space 间距",
+                    "link": "/components/layout/space"
+                }
+            ]
+        },
+        {
+            "text": "Undeveloped 待开发",
             "items":[
+                {
+                    "text": "Pagination 分页",
+                    "link": "/components/layout/pagination"
+                },
                 {
                     "text": "Checkbox 多选框",
                     "link": "/components/dev/checkbox"

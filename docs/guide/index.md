@@ -1,17 +1,10 @@
 # 指引
 
-`info` : 介绍
+`contribute` : 参与贡献
 
-`start` : 快速开始
+`log` : 更新日志
 
-`question` : 问题一览
-
-`prodir` : 主题项目结构
-
-`config` : 主题配置
-
-`lang` : 国际化配置
-
+`use` :安装使用 
 ::: tip
 这里展示的是指引菜单下所有的子菜单
 :::

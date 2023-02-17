@@ -17,7 +17,8 @@ import kTable from '../../../components/table.vue'
 import kMenu from '../../../components/menu.vue'
 import kNav from '../../../components/nav.vue'
 import "./custom.scss"
-import "../../../src/style.scss"
+// import "../../../src/style.scss"
+import "../../../components/scss/style.scss"
 
 const components = [kButton,kInput,kRadio,kSelect,kSpace,kCarousel,kCarouselcard
   ,kOptfile,kTextarea,kIcon,kDialog,kDropdown,kTree,kTable,kMenu,kNav]

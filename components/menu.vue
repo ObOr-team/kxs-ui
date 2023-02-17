@@ -27,7 +27,7 @@ import { defineProps,computed,ref } from 'vue'
         return props.Perpendicular? "isPerpendicular":""
     })
     const menuRef=ref(null)
-    console.log(menuRef.value)
+    // console.log(menuRef.value)
 </script>
 
 <style lang="scss" scoped>

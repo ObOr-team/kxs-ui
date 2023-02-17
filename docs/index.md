@@ -5,25 +5,24 @@ title: Vuetom
 titleTemplate: Vite & Vue Powered Static Site Generator
 
 hero:
-  name: Vue 组件库
+  name: 面向开发者的 Vue 3组件库
   text: 
-  tagline: vitepress flat theme 
+  # tagline: vitepress flat theme 
   actions:
     - theme: brand big
       text: 快 速 开 始
       link: /guide/use
     - theme: alt big
       text: GitHub
-      link: https://github.com/5th-Youth-Training-OOT/Kxxx-UI
-
+      link: /guide/config
 
 features:
-  - title: 📦 优化的构建
-    details: 可选 “多页应用” 或 “库” 模式的预配置 Rollup 构建
-  - title: 🔩 通用的插件
-    details: 在开发和构建之间共享 Rollup-superset 插件接口。
-  - title: 🔑 完全类型化的API
-    details: 灵活的 API 和完整 TypeScript 类型。
+  - title: 📦 更快的响应
+    details: 配合vue3的composition API，实现更快的相应。
+  - title: 🔩 更强的拓展性
+    details: 给开发者几乎所有的机会来自定义组件，满足一切项目使用场景。
+  - title: 🔑 更小的体积
+    details: 组件体积小，灵活使用，可按需使用。
 ---
 
 <div class="frontpage sponsors">
