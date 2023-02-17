@@ -12,7 +12,6 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
-    "highlight.js": "^11.7.0",
     "Vite": "npm:vite@^4.1.1",
     "vite-plugin-md": "^0.22.5",
     "vitepress": "^1.0.0-alpha.46",
