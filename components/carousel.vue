@@ -68,7 +68,7 @@
         }'
         v-show="showPointer"
         >
-            <p v-for="item of imgData" :key="item.id" :class='item.id === p_index ? "p_class" : ""' @click="pEventBtn(item.id)">
+            <p v-for="item of imgData" :key="item.id" :class='item.id === index ? "p_class" : ""' @click="pEventBtn(item.id)">
             </p>
         </div>
 
@@ -142,11 +142,6 @@ let index = ref(0)
 //根据图片数量计算指示点总长度
 let pointerLength = ref(0);
 pointerLength.value = (10 + 10) * (imgData.value.length-1)
-//指示点索引
-let p_index = ref(0)
-watch(index, (new_val, old_val) => {//使用watch监听轮播图图片索引值
-    p_index.value = new_val
-})
 //轮播图相关事件区
 //右或下按钮
 const nextBtn = function () {
