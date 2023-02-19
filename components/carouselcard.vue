@@ -63,7 +63,7 @@ const props = defineProps({
 const carouselW =toRef(props,"carouselW");
 const carouselH =toRef(props,"carouselH");
 const autoplay =toRef(props,"autoplay");
-const imgData=toRef(props,"imgData")
+const imgData=ref(JSON.parse(JSON.stringify(props.imgData)))
 const showPointer=toRef(props,"showPointer")
 let imgdom:any =ref(null)
 let idArr: string[]=[]
@@ -203,8 +203,6 @@ function initialize(){
   position: relative;
   margin: 10px auto 30px;
   top: 30px;
-  content-visibility: auto;
-  contain-intrinsic-size: 300px;
   .inner {
     width: 100%;
     height: 260px;

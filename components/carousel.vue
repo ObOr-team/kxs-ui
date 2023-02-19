@@ -74,10 +74,14 @@
 
         <div class="pointerBtnVertical"
         @mousemove="mouseover" @mouseout="mouseout" 
+        :style='{
+            height: pointerLength + "px",
+            
+        }'
         v-if="isHorizontal===false"
         v-show="showPointer"
         >
-            <p v-for="item of imgData" :key="item.id" :class='item.id === p_index ? "p_class" : ""' @click="pEventBtn(item.id)">
+            <p v-for="item of imgData" :key="item.id" :class='item.id === index ? "p_class" : ""' @click="pEventBtn(item.id)">
             </p>
         </div>
     </div>
@@ -119,7 +123,7 @@ const props = defineProps({
 const carouselW =toRef(props,"carouselW");
 const carouselH =toRef(props,"carouselH");
 const autoplay =toRef(props,"autoplay");
-const imgData=toRef(props,"imgData")
+let imgData=ref(JSON.parse(JSON.stringify(props.imgData)))
 imgData.value.push(JSON.parse(JSON.stringify(imgData.value[0])))
 imgData.value[imgData.value.length-1].id=imgData.value.length-1;
 const showPointer=toRef(props,"showPointer")
@@ -153,7 +157,7 @@ const nextBtn = function () {
         index.value++
         ul_left.value = -(index.value) * carouselW.value
         ul_top.value = -(index.value) * carouselH.value
-        if(index.value==5){
+        if(index.value==imgData.value.length-1){
             ul_left.value = -(index.value) * carouselW.value
             ul_top.value = -(index.value) * carouselH.value
             index.value=0;
@@ -212,7 +216,7 @@ let ulMove =setInterval(()=>{
         index.value++
         ul_left.value = -(index.value) * carouselW.value
         ul_top.value = -(index.value) * carouselH.value
-        if(index.value==5){
+        if(index.value==imgData.value.length-1){
             ul_left.value = -(index.value) * carouselW.value
             ul_top.value = -(index.value) * carouselH.value
             index.value=0;
@@ -267,9 +271,10 @@ const mouseout=function(){
     ul {
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
+        margin: 0px auto !important;
+        padding-left: 0px;
         li {
+            margin-top: 0px;
             float: left;
         }
     }
@@ -318,7 +323,7 @@ const mouseout=function(){
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
-
+    height: 10px;
     p {
         float: left;
         width: 10px;
@@ -343,9 +348,9 @@ p:last-child{
         float: top;
         width: 10px;
         height: 10px;
-        margin-bottom: 10px;
         border-radius: 100%;
         cursor: pointer;
+        transform: translateY(-100%);
         background-color: var(--default-carouselPointer-color);
     }
 }
