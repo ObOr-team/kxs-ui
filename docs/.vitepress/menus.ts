@@ -50,7 +50,7 @@ const head: HeadConfig[] = [
       content: 'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
     }
   ],
-  ['link', { rel: 'icon', href: '/logo/vuetom-logo-m.png' }],
+  ['link', { rel: 'icon', href: '/logo/logo-blue.png' }],
   [
     'script', {}, ';(() => { })()'
   ],
