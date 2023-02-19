@@ -75,7 +75,7 @@ import { ref } from 'vue';
                 background: #fff;
                 border: 1px solid #b1b4b8;
                 border-radius: 50%;
-                margin: 3px 8px 0 0;
+                margin: 0px 15px 0 0;
                 // transition: transform .15s ease-in;
                 position: relative;
                 &::after{
@@ -86,8 +86,8 @@ import { ref } from 'vue';
                     content: "";
                     background-color: rgb(253, 250, 250);
                     position: absolute;
-                    left: 29%;
-                     top: 25%;
+                    left: 23%;
+                    top: 23%;      
                     // margin: -2px 0 0 -2px;
                     // transition: transform .15s ease-in-out;
                 }
