@@ -126,13 +126,18 @@
       {
           "text": "Nav 导航",
           "link": "/components/layout/nav"
-      },
-      {
-        "text": "Tree 树形控件",
-        "link": "/components/layout/tree"
       }
       ]
   },
+  {
+    "text": "Feedback 反馈",
+    "items": [
+        {
+            "text": "Dialog 对话框",
+            "link": "/components/universal/dialog"
+        }
+    ]
+},
   {
       "text": "Layout 布局",
       "items": [
@@ -145,6 +150,10 @@
   {
       "text": "Undeveloped 待开发",
       "items":[
+        {
+          "text": "Tree 树形控件",
+          "link": "/components/layout/tree"
+        },
           {
               "text": "Pagination 分页",
               "link": "/components/layout/pagination"

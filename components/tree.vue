@@ -12,7 +12,6 @@
             </ul>
         </li>
     </div>
-
 </template>
 
 <script lang="ts">
