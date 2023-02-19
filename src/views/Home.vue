@@ -1,0 +1,192 @@
+<script lang="ts" setup>
+    import menuList from "@/routers/routerPage/pages"
+    import { ref } from "vue"
+    import { useRouter } from "vue-router"
+    const activeIndex = ref(0)
+    let navigationPointe =ref(1)
+    const router = useRouter()
+    const switchMenu = (item:any,index:any)=>{
+        if(index<3){
+            navigationPointe.value=1;
+        }else{
+            navigationPointe.value=2;
+        }
+        activeIndex.value=index
+        router.push({
+            name:item.name
+        })
+    }
+    const changeNavigation=(value:number)=>{
+        navigationPointe.value=value;
+    }
+    const preface = menuList[0].children[0].children.slice(0, 3) //快速上手
+    const components = menuList[0].children[0].children.slice(3) //组件
+</script>
+<template>
+    <header>
+        <div class="head_container">
+            <div>
+                <img class="Kx-UI-logo" src="../assets/Kx-UI-logo.png" alt=""/>
+                <img class="Kx-UI-logo-text" src="../assets/Kx-UI-logo-text.png" alt=""/>
+            </div>
+
+            <div class="tools">
+                <a href=""            :class="navigationPointe==0? 'aisactive': '' " @click="changeNavigation(0)">首页</a>
+                <a href="javascript:" :class="navigationPointe==1? 'aisactive': '' " @click="switchMenu(menuList[0].children[0].children[0],0)">快速上手</a>
+                <a href="javascript:" :class="navigationPointe==2? 'aisactive': '' " @click="switchMenu(menuList[0].children[0].children[3],3)">组件</a>
+                <a href="https://github.com/5th-Youth-Training-OOT/Kxxx-UI/issues" :class="navigationPointe==3? 'aisactive': '' " @click="changeNavigation(3)">问题反馈</a>
+                <a href="https://github.com/5th-Youth-Training-OOT/Kxxx-UI" class="giticon"><svg t="1676355782414" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2675" width="32" height="32"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9 23.5 23.2 38.1 55.4 38.1 91v112.5c0.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z" p-id="2676"></path></svg></a>
+            </div>
+        </div>   
+    </header>
+    <!-- <hr/> -->
+    <section>
+        <div class="page_container">
+            <aside>
+                <div class="preface">
+                    <div class="title">快速上手</div>
+                    <li v-for="(item,index) in preface" :key="index"
+                    :class="{active:activeIndex==index}"
+                    @click="switchMenu(item,index)">
+                        {{ item.name }}
+                    </li>
+                </div>
+                <div class="components">
+                    <div class="title">组件</div>
+                    <li v-for="(item,index) in components" :key="index"
+                    :class="{active:activeIndex==index+preface.length}"
+                    @click="switchMenu(item,index+preface.length)">
+                        {{ item.name }}
+                    </li>
+                </div>
+            </aside>
+            <article>
+                <RouterView></RouterView> 
+            </article>
+        </div>
+    </section>
+ 
+</template>
+<style lang="scss" scoped>
+header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    left: 0;
+    top: 0;
+    z-index: 1000; //位于顶层
+    background-color: white;
+    .head_container{
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        // width: 1140px;
+        width: 86%;
+        min-width: 500px;
+        margin: auto;
+        box-shadow: 0 2px 8px rgba(230, 230, 230, 0.5);
+    }
+    .Kx-UI-logo{
+        width: 36px;
+        height: 34px;
+        margin-left: 30px;
+    }
+    .Kx-UI-logo-text{
+        width: 51px;
+        height: 20px;
+        margin-left: 17px;
+    }
+    .tools{
+        height: 50px;
+        // width: 80%;
+        padding-top: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        a {
+            margin: 10px;
+            padding: 5px;
+            text-decoration: none;
+            outline: none;	
+            color: #333;
+            font-size: 18px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0); //去除抖动
+        }
+        a:hover ,
+        a:active{
+            color: #0e80eb;
+            border-bottom: 2px solid #0e80eb;
+        }
+    } 
+}
+.aisactive{
+    display: block ;
+    border-bottom-color:#0e80eb !important;
+    color: #0e80eb !important;
+}
+
+// hr{
+//     width: 1140px;
+//     border: 1px solid var(--default-border-color);
+//     border-radius: 5px;
+//     margin-top: 90px;
+// }
+section{
+    padding-top: 40px;
+   .page_container{
+    display: flex;
+    // width: 1140px;
+    width: 92%;
+    min-width: 500px;
+    margin:auto;
+    aside{
+        width: 18%;
+        height: auto;
+        overflow-y: auto;
+        .title {
+            padding:0 10px;
+            margin: 0 0 10px 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #999;
+            line-height:40px;
+            border-bottom: 1px solid var(--default-border-color);
+        }
+        li{
+            list-style: none;
+            line-height:40px;
+            padding:0 10px;
+            box-sizing:border-box;
+            cursor: pointer;
+            font-size: 14px;
+            // font-family: "Times New Roman", Times, serif;
+            // font-family: Arial, Helvetica, sans-serif;
+            // font-family: "Lucida Console", "Courier New", monospace;
+            &.active{
+                border-right: 4px solid #0e80eb;
+                color: #0e80eb;
+                background: rgba(14, 125,235,.1);
+            }
+        }
+        li:hover {
+            color: #0e80eb;
+        }
+    }
+    article{
+        flex: 1;
+        height: auto;
+        overflow-y:auto;
+        padding: 15px 30px;
+        border-left: 2px solid var(--default-border-color);
+        box-sizing: border-box;
+    }
+}   
+}
+ .giticon{
+    padding-top: -10px;
+    margin-top: 5px !important;
+ }
+</style>

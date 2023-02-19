@@ -1,0 +1,22 @@
+<template>
+    <div>
+        <k-space wrap>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+            <k-button>Button</k-button>
+        </k-space>
+    </div>
+</template>

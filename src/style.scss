@@ -1,0 +1,139 @@
+@import url(./assets/iconfont/iconfont.css);
+@import url(./assets/bass.css);
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  /*通用颜色变量*/
+  --default:rgba(221, 204, 238, 0.877);
+  --primary:#4475a5;
+  --success:#6ba74d;
+  --info:#707276;
+  --warming:#dbaf6c;
+  --danger:#e98383;
+  /*按钮颜色变量*/
+  --btn-color-white:#fff;
+  --btn-color-gray:#9b9ea3;
+  --btn-color-default-lighter:rgba(240, 236, 245, 0.877);
+  --btn-color-primary-lighter:#c5e0fc;
+  --btn-color-success-lighter:#c8eeb6;
+  --btn-color-info-lighter:#e6e7eb;
+  --btn-color-warming-lighter:#f7e2c4;
+  --btn-color-danger-lighter:#f7cbcb;
+  /*边框颜色变量*/
+  --default-border-color:#dfd7d7;
+  --active-border-color:#3863ee;
+  /*默认字体颜色*/
+  --default-text-color:#5c5757;
+  /*轮播图按钮颜色变量*/
+  --default-carouselPointer-color:#00CCFF;
+  --active-carouselPointer-color:#3399FF;
+  /*按钮内容样式
+  .kbcontent{
+    border: solid 1px var(--default-border-color);
+    border-radius: 10px;
+  }*/
+  //*组件样式外边框*/
+  .borderBox{
+  border: solid 1px var(--default-border-color);
+  border-radius: 10px;
+  padding-top: 10px;
+}
+}
+
+
+
+body{
+  margin: 50px;
+}
+table{
+  width: 100%; 
+}
+th {
+  height: 50px;
+  background: #f4f4f4;
+}
+td {
+  height: 35px;
+  padding: 0.3em 0;
+}
+table, th, td {
+  border: 1px solid var(--default-border-color);
+  border-collapse: collapse;
+}
+table td:nth-child(1) {
+  font-weight: bold;
+}
+table tr:nth-child(odd) {
+  background: #fff;
+}
+table tr:nth-child(even) {
+  background: #F9F9F9;
+}
+code {
+  margin: 0 3px;
+  padding: 0.2em;
+  background: #f6f6f6;
+  color: #0e7ade;
+  font-family: "Consolas, 'Courier New', monospace";
+  border: 0px;
+  border-radius: 3px;
+}
+p {
+  font-size: 14px;
+}
+// 美化滚动条
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  width: 6px;
+  background: rgba(#101e1f, 0.1);
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144,147,153,.4);
+  background-clip: padding-box;
+  min-height: 28px;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border-radius: 2em;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(144,147,153,.2);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+//设置加载按钮的无限旋转
+.k-icon-jiazai{
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);/*从0度开始*/
+	}
+	100%{
+		transform: rotateZ(360deg);/*360度结束*/
+	}
+}
