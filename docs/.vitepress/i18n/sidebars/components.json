@@ -1,156 +1,164 @@
 {
-    "en-US": {
-      "langshow": {
-        "text": "Universal",
-        "items": [
-          
-        ]
-      }
-    },
     "zh-CN": [
+      {
+        "text": "快速上手",
+        "items": [
+          {
+            "text": "安装使用",
+            "link": "/guide/use"
+          },
+          {
+            "text": "参与贡献",
+            "link": "/guide/contribute"
+          },
+          {
+            "text": "更新日志",
+            "link": "/guide/log"
+          }
+        ]
+      },
+      {
+        "text": "组件介绍",
+        "link": "/components/index"
+    },
+    {
+        "text": "Basic 基础组件",
+        "items": [
         {
-            "text": "组件介绍",
-            "link": "/components/index"
+            "text": "Color 颜色",
+            "link": "/components/universal/color"
         },
         {
-            "text": "Basic 基础组件",
-            "items": [
-            {
-                "text": "Color 颜色",
-                "link": "/components/universal/color"
-            },
-            {
-                "text": "Icon 图标",
-                "link": "/components/universal/icon"
-            },
-            {
-                "text": "Button 按钮",
-                "link": "/components/universal/button"
-            }
-            ]
+            "text": "Icon 图标",
+            "link": "/components/universal/icon"
         },
         {
-            "text": "Form 表单组件",
-            "items": [
-                {
-                    "text": "Input 输入框",
-                    "link": "/components/dataEntry/input"
-                },
-                {
-                    "text": "Textarea 文本域",
-                    "link": "/components/dataEntry/textarea"
-                },
-                {
-                    "text": "Optfile 文件上传",
-                    "link": "/components/dataEntry/optfile"
-                },
-                {
-                    "text": "Radio 单选",
-                    "link": "/components/dataEntry/radio"
-                },
-                {
-                    "text": "Select 选择器",
-                    "link": "/components/dataEntry/select"
-                }
-            ]
-        },
-        {
-            "text": "Data 数据展示",
-            "items": [
-                {
-                    "text": "Carousel 轮播图",
-                    "link": "/components/universal/carousel"
-                },
-                {
-                    "text": "Table 表格",
-                    "link": "/components/layout/table"
-                }
-            ]
-        },
-        {
-            "text": "Navigation 导航",
-            "items": [
-            {
-                "text": "Dropdown 下拉菜单",
-                "link": "/components/layout/dropdown"
-            },
-            {
-                "text": "Nav 导航",
-                "link": "/components/layout/nav"
-            }
-
-            ]
-        },
-        {
-            "text": "Feedback 反馈",
-            "items": [
-                {
-                    "text": "Dialog 对话框",
-                    "link": "/components/universal/dialog"
-                }
-            ]
-        },
-        {
-            "text": "Layout 布局",
-            "items": [
-                {
-                    "text": "Space 间距",
-                    "link": "/components/layout/space"
-                }
-            ]
-        },
-        {
-            "text": "Undeveloped 待开发",
-            "items":[
-                {
-                    "text": "Tree 树形控件",
-                    "link": "/components/layout/tree"
-                },
-                {
-                    "text": "Pagination 分页",
-                    "link": "/components/layout/pagination"
-                },
-                {
-                    "text": "Checkbox 多选框",
-                    "link": "/components/dev/checkbox"
-                },
-                {
-                    "text": "Switch 开关",
-                    "link": "/components/dev/switch"
-                },
-                {
-                    "text": "Form 表单",
-                    "link": "/components/dev/form"
-                },
-                {
-                    "text": "Rate 评分",
-                    "link": "/components/dev/rate"
-                },
-                {
-                    "text": "ColorPicker 颜色选择器",
-                    "link": "/components/dev/colorPicker"
-                },
-                {
-                    "text": "Progress 进度条",
-                    "link": "/components/dev/progress"
-                },
-                {
-                    "text": "Steps 步骤条",
-                    "link": "/components/dev/steps"
-                },
-                {
-                    "text": "Result 结果",
-                    "link": "/components/dev/result"
-                },
-                {
-                    "text": "Loading 加载",
-                    "link": "/components/dev/loading"
-                },
-                {
-                    "text": "Timeline 时间线",
-                    "link": "/components/dev/timeline"
-                }
-            ]
+            "text": "Button 按钮",
+            "link": "/components/universal/button"
         }
+        ]
+    },
+    {
+        "text": "Form 表单组件",
+        "items": [
+            {
+                "text": "Input 输入框",
+                "link": "/components/dataEntry/input"
+            },
+            {
+                "text": "Textarea 文本域",
+                "link": "/components/dataEntry/textarea"
+            },
+            {
+                "text": "Optfile 文件上传",
+                "link": "/components/dataEntry/optfile"
+            },
+            {
+                "text": "Radio 单选",
+                "link": "/components/dataEntry/radio"
+            },
+            {
+                "text": "Select 选择器",
+                "link": "/components/dataEntry/select"
+            }
+        ]
+    },
+    {
+        "text": "Data 数据展示",
+        "items": [
+            {
+                "text": "Carousel 轮播图",
+                "link": "/components/universal/carousel"
+            },
+            {
+                "text": "Table 表格",
+                "link": "/components/layout/table"
+            }
+        ]
+    },
+    {
+        "text": "Navigation 导航",
+        "items": [
+        {
+            "text": "Dropdown 下拉菜单",
+            "link": "/components/layout/dropdown"
+        },
+        {
+            "text": "Nav 导航",
+            "link": "/components/layout/nav"
+        }
+        ]
+    },
+    {
+      "text": "Feedback 反馈",
+      "items": [
+          {
+              "text": "Dialog 对话框",
+              "link": "/components/universal/dialog"
+          }
+      ]
+  },
+    {
+        "text": "Layout 布局",
+        "items": [
+            {
+                "text": "Space 间距",
+                "link": "/components/layout/space"
+            }
+        ]
+    },
+    {
+        "text": "Undeveloped 待开发",
+        "items":[
+          {
+            "text": "Tree 树形控件",
+            "link": "/components/layout/tree"
+          },
+            {
+                "text": "Pagination 分页",
+                "link": "/components/layout/pagination"
+            },
+            {
+                "text": "Checkbox 多选框",
+                "link": "/components/dev/checkbox"
+            },
+            {
+                "text": "Switch 开关",
+                "link": "/components/dev/switch"
+            },
+            {
+                "text": "Form 表单",
+                "link": "/components/dev/form"
+            },
+            {
+                "text": "Rate 评分",
+                "link": "/components/dev/rate"
+            },
+            {
+                "text": "ColorPicker 颜色选择器",
+                "link": "/components/dev/colorPicker"
+            },
+            {
+                "text": "Progress 进度条",
+                "link": "/components/dev/progress"
+            },
+            {
+                "text": "Steps 步骤条",
+                "link": "/components/dev/steps"
+            },
+            {
+                "text": "Result 结果",
+                "link": "/components/dev/result"
+            },
+            {
+                "text": "Loading 加载",
+                "link": "/components/dev/loading"
+            },
+            {
+                "text": "Timeline 时间线",
+                "link": "/components/dev/timeline"
+            }
+        ]
+    }
     ]
-}
+  }

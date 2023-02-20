@@ -25,6 +25,10 @@
 
 # Dialog 对话框
 
+:::tip
+点击按钮，打开对应对话框组件。
+:::
+
 ## ● 类型
 <p>通过<code>type</code>属性来设置对话框的类型</P>
 <div class="borderBox">

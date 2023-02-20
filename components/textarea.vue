@@ -11,7 +11,6 @@
         @input="input"
         @focus="focus"
         @blur="blur"
-        :style="kStyle"
         >
     </textarea>
     <div class="max-length-inline">
@@ -68,11 +67,6 @@ import {computed,ref} from 'vue'
             'k-textarea-disabled':props.disabled
         }
     })
-    const kStyle =computed(()=>{
-        return{
-            resize:props.resize? 'auto':'none'
-        }
-    })
 </script>
 
 
@@ -84,6 +78,7 @@ import {computed,ref} from 'vue'
         position: relative;
         margin-left: 10px;
         textarea{
+            resize: none;
             width: 100%;
             outline:none;
             padding: 8px 8px;

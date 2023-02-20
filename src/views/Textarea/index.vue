@@ -34,10 +34,6 @@ import {computed,ref} from 'vue'
         readonly:Boolean,
         placeholder:String,
         maxlength:Number,
-        resize:{
-            type:Boolean,
-            default:true
-        },
         rows:{
             type:Number,
             default:5
@@ -68,11 +64,6 @@ import {computed,ref} from 'vue'
             'k-textarea-disabled':props.disabled
         }
     })
-    const kStyle =computed(()=>{
-        return{
-            resize:props.resize? 'auto':'none'
-        }
-    })
 </script>
 
 
@@ -85,6 +76,7 @@ import {computed,ref} from 'vue'
         position: relative;
         margin-left: 10px;
         textarea{
+            resize: none;
             outline:none;
             padding: 8px 8px;
             border-radius: 5px;

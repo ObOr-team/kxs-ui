@@ -24,7 +24,6 @@ features:
   - title: 🔑 更小的体积
     details: 组件体积小，灵活使用，可按需使用。
 ---
-
 <div class="frontpage sponsors">
   <h2>参与贡献</h2>
   <div class="platinum-sponsors">
@@ -53,14 +52,14 @@ const sponsors = [
     "name": "huangpeijin",
     "href": "https://github.com/Huangpeijin",
     "src": "https://github.com/Huangpeijin.png",
-    "tier": "platinum"
+    // "tier": "platinum"
   },
   {
     "id": "Neajue",
     "name": "Neajue",
     "href": "https://github.com/Neajue",
     "src": "https://github.com/Neajue.png",
-    "tier": "platinum"
+    // "tier": "platinum"
     
   },
   {
@@ -70,25 +69,24 @@ const sponsors = [
     "src": "https://github.com/EnJoy77.png"
   },
   {
+    "id": "beginnierweb2",
+    "name": "beginnierweb2",
+    "href": "https://github.com/beginnierweb2",
+    "src": "https://avatars.githubusercontent.com/u/87230594?v=4"
+  },
+    {
     "id": "zkeq",
     "name": "zkeq",
     "href": "https://github.com/zkeq",
     "src": "https://github.com/zkeq.png"
   }
-  ,
-  {
-    "id": "beginnierweb2",
-    "name": "beginnierweb2",
-    "href": "https://github.com/beginnierweb2",
-    "src": "https://avatars.githubusercontent.com/u/87230594?v=4"
-  }
    ,
-  {
-    "id": "ColdyNi",
-    "name": "ColdyNi",
-    "href": "https://github.com/ColdyNi",
-    "src": "https://github.com/ColdyNi.png"
-  }
+  // {
+  //   "id": "ColdyNi",
+  //   "name": "ColdyNi",
+  //   "href": "https://github.com/ColdyNi",
+  //   "src": "https://github.com/ColdyNi.png"
+  // }
 ]
 
 // function fetchReleaseTag() {
