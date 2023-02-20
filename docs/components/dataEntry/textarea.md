@@ -91,21 +91,6 @@
   ```
 </details>
 
-## ● 放大缩小
-<p>通过<code>resize</code>属性设置是否可以放大缩小文本域</p>
-<div class="borderBox">
-<k-textarea v-model="textVal" :resize="false"></k-textarea>
-</div>
-<details>
-<summary class="pre-code-tag">展示代码</summary>
-
-  ```vue
-<template>
-        <k-textarea v-model="textVal" :resize="false"></k-textarea>
-</template>
-
-  ```
-</details>
 
 ## ● Attributes
 |    参数     |         说明          |      类型       | 默认值 |
@@ -114,7 +99,6 @@
 | placeholder |    输入框占位字符     |     String      |   —    |
 |  disabled   |       是否禁用        |     Boolean     | false  |
 |    form     |  原生属性，所属表单   |     String      |   —    |
-|   resize    |     是否开启拉伸      |     Boolean     |  true  |
 |    rows     | textarea可见区域高度  |     Number      |   4    |
 |    cols     | textarea可见区域宽度  |     Number      |   50   |
 |  readonly   |  原生属性，是否只读   |     Boolean     | false  |
