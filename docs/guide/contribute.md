@@ -35,14 +35,6 @@ const members = [
     ]
   },
   {
-    avatar: 'https://github.com/zkeq.png',
-    name: 'zkeq',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/zkeq' }
-    ]
-  },
-  {
     avatar: 'https://github.com/beginnierweb2.png',
     name: 'beginnierweb2',
     title: 'Creator',
@@ -50,12 +42,12 @@ const members = [
       { icon: 'github', link: 'https://github.com/beginnierweb2' }
     ]
   },
-  {
-    avatar: 'https://github.com/ColdyNi.png',
-    name: 'ColdyNi',
+    {
+    avatar: 'https://github.com/zkeq.png',
+    name: 'zkeq',
     title: 'Creator',
     links: [
-      { icon: 'github', link: 'https://github.com/ColdyNi' }
+      { icon: 'github', link: 'https://github.com/zkeq' }
     ]
   },
 ]
