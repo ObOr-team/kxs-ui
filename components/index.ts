@@ -10,6 +10,7 @@ import kDialog from "./Dialog/index";
 import kCarousel from "./Carousel";
 import kTable from "./Table/index";
 import kDropdown from "./Dropdown/index";
+import './style/style.scss'
 
 
 

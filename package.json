@@ -3,9 +3,26 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/k-omponents.es.ts",
+  "main": "./dist/k-omponents.umd.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/k-omponents.es.ts",
+      "require": "./dist/k-omponents.umd.ts"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
+    "build:components":"node ./command/build.js",
+    "lib":"npm run build:components",
     "preview": "vite preview",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
