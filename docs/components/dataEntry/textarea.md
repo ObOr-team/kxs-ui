@@ -7,16 +7,16 @@
 # Textarea 文本域
 
 ## ● 默认
-<p>通过<code>v-model</code>属性设置文本域绑定值</p>
+<p>最简单的文本域</p>
 <div class="borderBox">
-<k-textarea v-model="textVal"></k-textarea>
+<k-textarea></k-textarea>
 </div>
 <details>
 <summary class="pre-code-tag">展示代码</summary>
 
   ```vue
 <template>
-        <k-textarea v-model="textVal"></k-textarea>
+        <k-textarea></k-textarea>
 </template>
 <script lang="ts" setup>
     import {ref} from 'Vue'
@@ -28,14 +28,14 @@
 ## ● 禁用
 <p>通过<code>disabled</code>属性设置禁用状态</p>
 <div class="borderBox">
- <k-textarea v-model="textVal" disabled></k-textarea>
+ <k-textarea disabled></k-textarea>
 </div>
 <details>
 <summary class="pre-code-tag">展示代码</summary>
 
   ```vue
 <template>
-        <k-textarea v-model="textVal" disabled></k-textarea>
+        <k-textarea disabled></k-textarea>
 </template>
 
   ```
@@ -45,7 +45,7 @@
 ## ● 只读
 <p>通过<code>readonly</code>属性设置只读状态</p>
 <div class="borderBox">
-    <k-textarea v-model="textVal" readonly></k-textarea>
+    <k-textarea readonly></k-textarea>
 </div>
 
 <details>
@@ -53,7 +53,7 @@
 
   ```vue
 <template>
-        <k-textarea v-model="textVal" readonly></k-textarea> 
+        <k-textarea readonly></k-textarea> 
 </template>
 
   ```
@@ -62,14 +62,14 @@
 ## ● 提示
 <p>通过<code>placeholder</code>属性设置输入框占位符</p>
 <div class="borderBox">
-<k-textarea v-model="textVal" placeholder="请输入内容......"></k-textarea>
+<k-textarea placeholder="请输入内容......"></k-textarea>
 </div>
 <details>
 <summary class="pre-code-tag">展示代码</summary>
 
   ```vue
 <template>
-        <k-textarea v-model="textVal" placeholder="请输入内容......"></k-textarea>
+        <k-textarea placeholder="请输入内容......"></k-textarea>
 </template>
 
   ```
@@ -79,14 +79,14 @@
 ## ● 字数限制
 <p>通过<code>maxlength</code>属性限制字数</p>
 <div class="borderBox">
-<k-textarea v-model="textVal" :maxlength="20"></k-textarea>
+<k-textarea :maxlength="20"></k-textarea>
 </div>
 <details>
 <summary class="pre-code-tag">展示代码</summary>
 
   ```vue
 <template>
-        <k-textarea v-model="textVal" :maxlength="20"></k-textarea>
+        <k-textarea :maxlength="20"></k-textarea>
 </template>
   ```
 </details>

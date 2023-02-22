@@ -6,7 +6,6 @@
         :disabled="disabled"
         :readonly="readonly"
         :placeholder="placeholder"
-        :value="modelValue"
         :maxlength="maxlength"
         @input="input"
         @focus="focus"
