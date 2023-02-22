@@ -11,7 +11,7 @@ export default defineConfigWithTheme<VuetomThemeConfig>({
     head,
     locales: locales.vitepressConfig,
     themeConfig: {
-      siteTitle: 'kxUi',
+      siteTitle: 'Kxs UI',
       logo: '/logo/logo-blue.png',
       nav,
       sidebar,

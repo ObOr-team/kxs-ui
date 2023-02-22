@@ -16,9 +16,9 @@ head:
 推荐使用`npm`的方式安装，也可选择`cpm`或`yarn`进行安装。
 
 ```bash
-npm install kx-ui
-cnpm install  kx-ui --save
-yarn add kx-ui
+npm install kxs-ui
+cnpm install  kxs-ui --save
+yarn add kxs-ui
 ```
 
 ## ● 使用
@@ -26,8 +26,8 @@ yarn add kx-ui
 ```ts
 import { createApp } from "vue";
 import App from "@/App.vue";
-import kx from "kx-ui";
-import "../node_modules/kx-ui/dist/style.css";
+import kxs from "kxs-ui";
+import "../node_modules/kxs-ui/dist/style.css";
 const app = createApp(App);
-app.use(kx);
+app.use(kxs);
 app.mount("#app");

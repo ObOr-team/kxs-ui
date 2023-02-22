@@ -1,23 +1,6 @@
 {
     "zh-CN": [
       {
-        "text": "快速上手",
-        "items": [
-          {
-            "text": "安装使用",
-            "link": "/guide/use"
-          },
-          {
-            "text": "参与贡献",
-            "link": "/guide/contribute"
-          },
-          {
-            "text": "更新日志",
-            "link": "/guide/log"
-          }
-        ]
-      },
-      {
         "text": "组件介绍",
         "link": "/components/index"
     },
@@ -84,7 +67,7 @@
             "link": "/components/layout/dropdown"
         },
         {
-            "text": "Nav 导航",
+            "text": "Menu 菜单",
             "link": "/components/layout/nav"
         }
         ]
