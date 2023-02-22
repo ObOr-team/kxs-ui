@@ -59,23 +59,6 @@
   ```
 </details>
 
-## ● 提示
-<p>通过<code>placeholder</code>属性设置输入框占位符</p>
-<div class="borderBox">
-<k-textarea placeholder="请输入内容......"></k-textarea>
-</div>
-<details>
-<summary class="pre-code-tag">展示代码</summary>
-
-  ```vue
-<template>
-        <k-textarea placeholder="请输入内容......"></k-textarea>
-</template>
-
-  ```
-</details>
-
-
 ## ● 字数限制
 <p>通过<code>maxlength</code>属性限制字数</p>
 <div class="borderBox">
