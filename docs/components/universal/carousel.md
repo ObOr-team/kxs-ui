@@ -33,7 +33,7 @@ let imgData = [
             :carouselH="270"
             :imgData="imgData"
             :autoplay="2000"
-            :showPointer="true"
+            :showPointer="false"
             :isHorizontal="true"
         >
         </k-carousel>   
@@ -49,7 +49,7 @@ let imgData = [
             :carouselH="270"
             :imgData="imgData"
             :autoplay="2000"
-            :showPointer="true"
+            :showPointer="false"
             :isHorizontal="true"
         >
         </k-carousel>
@@ -91,7 +91,7 @@ let imgData = [
         :carouselH="270"
         :imgData="imgData"
         :autoplay="2000"
-        :showPointer="false"
+        :showPointer="ture"
         :isHorizontal="true"
       >
       </k-carousel> 
@@ -108,7 +108,7 @@ let imgData = [
         :carouselH="270"
         :imgData="imgData"
         :autoplay="2000"
-        :showPointer="false"
+        :showPointer="ture"
         :isHorizontal="true"
       >
       </k-carousel>
