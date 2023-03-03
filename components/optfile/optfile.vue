@@ -17,13 +17,13 @@
     </div>
     </template>
     
-    <script>
+    <script lang="ts">
     export default {
         name: "kOptfile",
     }
     </script>
     
-    <script setup>
+    <script lang="ts" setup>
     import {
         ref,
         reactive,
@@ -50,17 +50,17 @@
     // console.log(props.label)
     //用emit去封装事件抛出，并且抛出的时候可以给它传数据
     const emit = defineEmits(['change', 'update:fileList'])
-    const inpRef = ref(null)
+    const inpRef:any = ref(null)
     const areaRef = ref(null)
     const activeFile = ref(false)
     const lableText = ref(props.label)
-    const fileList = reactive([])
+    const fileList:any = reactive([])
     const deleteFile = (index) => {
         fileList.splice(index, 1)
         emit('update:fileList', fileList)
     }
     const fileChange = () => {
-        inpRef.value.click()
+        inpRef.value?.click()
     }
     const inpChange = (e) => {
     
@@ -70,15 +70,15 @@
     onMounted(() => {
         if (props.drop && props.targetType == 'box') {
             // console.log(window)
-            let dropArea = areaRef.value
+            let dropArea:any = areaRef.value
             //图片拖拽放下框框后，会触发一次
-            dropArea.addEventListener('drop', (e) => {
+            dropArea?.addEventListener('drop', (e) => {
                 e.preventDefault()
                 fileList.unshift(...e.dataTransfer.files)
                 console.log(e.dataTransfer.files)
                 //拿到文件信息
                 emit('change', fileList)
-                activeFile.value = falseA
+                activeFile.value = false
             })
             //图片拖拽离开框框后，会触发一次
             dropArea.addEventListener('dragleave', (e) => {

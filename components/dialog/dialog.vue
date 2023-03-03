@@ -1,5 +1,5 @@
 <template>
-    <div class="dialog" v-if="isShow" :style="[Object.assign(sizeCss, locationCss)]">
+    <div class="dialog" v-show="isShow[props.index]" :style="[Object.assign(sizeCss, locationCss)]">
         <div class="dialog-inner">
             <!-- 标题 -->
             <div class="title" :style="[bgColorCss]">
@@ -10,7 +10,7 @@
                 <!-- 内容 -->
                 <div class="content">
                     <!-- info类型不展示图标 -->
-                    <div v-if="!(props.type === 'info')" class="icon-box">
+                    <div v-if="!(dialogtype === 'info')" class="icon-box">
                         <i :class="iconType" :style="{color:themeColor}"></i>
                     </div>
                     <div class="info" :style="[conColorCss]">{{ props.contentText }}</div>
@@ -30,7 +30,7 @@ export default {
 }
 </script>
 <script lang="ts" setup>
-    import {computed, ref} from 'vue'
+    import {computed, ref,toRef} from 'vue'
     const props = defineProps({
         type: { // 提示框类型：info（默认）、confirm、warning、error
             type: String,
@@ -95,9 +95,18 @@ export default {
         cancelClick: { // 取消按钮点击事件
             type: Function,
             default: function () {}
+        },
+        isShow:{
+            type:Array,
+            default:[]
+        },
+        index:{
+            type:Number,
+            default:-1
         }
     });
-    
+    let dialogtype=ref(JSON.parse(JSON.stringify(props.type)))
+    let isShow=toRef(props,"isShow")
     // 所有主题颜色对象
     const themeColors = {
         confirm: "#2ECC71",
@@ -108,7 +117,7 @@ export default {
     // 主题颜色
     const themeColor = computed(() => {
         if(props.themeColor === ""){
-            switch(props.type) {
+            switch(dialogtype.value) {
                 case "confirm":
                     return themeColors.confirm;
                 case "warning":
@@ -135,7 +144,7 @@ export default {
     });
     // 不同类型的提示框的图标
     const iconType = computed(() => {
-        switch(props.type) {
+        switch(dialogtype.value) {
             case "confirm":
                 return "k-icon-check_circle_line";
             case "warning":
@@ -175,26 +184,26 @@ export default {
     let confirmIcon:any = ref("");
     // 确认按钮是否异步
     let isLoading:any = ref(false);
-    //是否渲染dialog组件
-    let isShow: any = ref(true);
     // 点击确定按钮
     let confirmClick = () => {
         if(props.confirmLoading) {
             isLoading.value = true;
             confirmIcon.value = "k-icon-jiazai";
         } else {
-            
-            isShow.value = false;
+            isShow.value[props.index]=false
         }
         props.confirmClick();
     };
     // 点击取消按钮
     let cancelClick = () => {
         props.cancelClick();
-        isShow.value = false;
+        isShow.value[props.index]=false
     };
     // 点击关闭按钮
-    let closeClick = () => isShow.value = false;
+    let closeClick = () => {
+        isShow.value[props.index]=false
+    };
+  
 </script>
 <style lang="scss" scoped>
     * {

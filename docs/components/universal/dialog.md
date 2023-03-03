@@ -40,21 +40,29 @@
 <k-dialog v-if = "isShow[0]"
     titleText = "Title"
     contentText = "Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents..."
-></k-dialog>
+    :isShow="isShow"
+    :index=0
+    ></k-dialog>
 <k-dialog v-if = "isShow[1]"
     titleText = "Title"
     contentText = "Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents..."
     type="confirm"
+    :isShow="isShow"
+    :index=1
 ></k-dialog>
 <k-dialog v-if = "isShow[2]"
     titleText = "Are you sure delete this task?"
     contentText = "Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents... Some contents..."
     type="warning"
+    :isShow="isShow"
+    :index=2
 ></k-dialog>
 <k-dialog v-if = "isShow[3]"
 titleText = "A serious error has occurred here !"
 contentText = "It needs to be updated online. Please confirm that your network connection is normal and try again."
 type="error"
+:isShow="isShow"
+:index=3
 ></k-dialog>
 
 <details>
@@ -120,12 +128,16 @@ titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 width="600px"
 height="200px"
+:isShow="isShow"
+:index=4
 ></k-dialog>
 <k-dialog v-if = "isShow[5]"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 width="400px"
 height="170px"
+:isShow="isShow"
+    :index=5
 ></k-dialog>
 <details>
 <summary class="pre-code-tag">展示代码</summary>
@@ -173,6 +185,8 @@ height="170px"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 themeColor="#1ABC9C"
+:isShow="isShow"
+:index=6
 ></k-dialog>
 
 <details>
@@ -213,11 +227,15 @@ themeColor="#1ABC9C"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 location="top"
+:isShow="isShow"
+    :index=7
 ></k-dialog>
 <k-dialog v-if = "isShow[8]"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 location="center"
+:isShow="isShow"
+    :index=8
 ></k-dialog>
 
 <details>
@@ -268,21 +286,29 @@ location="center"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 :closable = false
+:isShow="isShow"
+    :index=9
 ></k-dialog>
 <k-dialog v-if = "isShow[10]"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 footerBtn="confirm"
+:isShow="isShow"
+    :index=10
 ></k-dialog>
 <k-dialog v-if = "isShow[11]"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 footerBtn="cancel"
+:isShow="isShow"
+    :index=11
 ></k-dialog>
 <k-dialog v-if = "isShow[12]"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 footerBtn="null"
+:isShow="isShow"
+    :index=12
 ></k-dialog>
 <details>
 <summary class="pre-code-tag">展示代码</summary>
@@ -339,11 +365,15 @@ footerBtn="null"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 :confirmClick="confirmClick"
+:isShow="isShow"
+    :index=13
 ></k-dialog>
 <k-dialog v-if = "isShow[14]"
 titleText = "对话框标题"
 contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
 :cancelClick="cancelClick"
+:isShow="isShow"
+    :index=14
 ></k-dialog>
 <details>
 <summary class="pre-code-tag">展示代码</summary>
@@ -401,6 +431,8 @@ contentText = "提示内容提示内容提示内容提示内容提示内容提�
     contentText = "提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容"
     :confirmLoading = true
     :confirmClick="loadingConfirm"
+    :isShow="isShow"
+    :index=15
 ></k-dialog>
 
 <details>

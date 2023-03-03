@@ -1,5 +1,5 @@
 <template>
-       <div @click="itemClick(index)"  id="huoquID">
+       <div @click="itemClick()"  id="huoquID">
             <a   
             :class="[isDisabled,isPerpendicular,isActive]" 
             :index="index" 
