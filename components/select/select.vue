@@ -139,7 +139,7 @@ export default {
         }
     }
     .k-position-box{
-        width: 100%;
+        width: 38%;
         height: auto;
         overflow: hidden;
         position: absolute;

@@ -54,15 +54,15 @@
     const areaRef = ref(null)
     const activeFile = ref(false)
     const lableText = ref(props.label)
-    const fileList:any = reactive([])
-    const deleteFile = (index:any) => {
+    const fileList = reactive([])
+    const deleteFile = (index) => {
         fileList.splice(index, 1)
         emit('update:fileList', fileList)
     }
     const fileChange = () => {
-        inpRef.value?.["click()"]
+        inpRef.value.click()
     }
-    const inpChange = (e:any) => {
+    const inpChange = (e) => {
     
         fileList.unshift(...e.target.files)
         emit('change', fileList)
@@ -70,15 +70,15 @@
     onMounted(() => {
         if (props.drop && props.targetType == 'box') {
             // console.log(window)
-            let dropArea:any = areaRef.value
+            let dropArea = areaRef.value
             //图片拖拽放下框框后，会触发一次
-            dropArea.addEventListener('drop', (e:any) => {
+            dropArea.addEventListener('drop', (e) => {
                 e.preventDefault()
                 fileList.unshift(...e.dataTransfer.files)
                 console.log(e.dataTransfer.files)
                 //拿到文件信息
                 emit('change', fileList)
-                activeFile.value = false
+                activeFile.value = falseA
             })
             //图片拖拽离开框框后，会触发一次
             dropArea.addEventListener('dragleave', (e) => {

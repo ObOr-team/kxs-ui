@@ -14,6 +14,7 @@
     --vp-button-brand-hover-bg: #096dd9;
     --vp-button-brand-active-border: #f0f9ff;
 
+
     // 代码
     --vp-c-text-code:var(--vp-c-brand-dark);
     //页面背景色
@@ -32,6 +33,9 @@
   --vp-c-second-lighter: #29e0d1;
   --vp-c-second-dark: #1a998e;
   --vp-c-second-darker: #1c6e68; 
+}
+.content {
+  font-size: 15px !important;
 }
 .dark {
     // 代码
@@ -55,6 +59,14 @@
     .curtain ::before {
         background: linear-gradient(rgba($color: var(--vp-c-bg), $alpha: 0.5), transparent 70%);
     }
+}
+
+.VPDoc{
+  padding: 32px 24px 96px;
+  width: 141% !important;
+}
+.aside{
+  max-width: 400px !important;
 }
 //页面标题1
 .VPDoc .container .vp-doc h1, .VPDoc .container .vp-doc h1 a {

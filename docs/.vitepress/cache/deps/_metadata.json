@@ -11,7 +11,7 @@
     "vitepress-theme-vuetom/docs": {
       "src": "../../../../node_modules/vitepress-theme-vuetom/dist/doc/index.js",
       "file": "vitepress-theme-vuetom_docs.js",
-      "fileHash": "1c0d4acf",
+      "fileHash": "f960bd1e",
       "needsInterop": false
     }
   },
