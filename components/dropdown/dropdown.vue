@@ -29,7 +29,7 @@ const isShow = ref(false)
 const proprs = defineProps({
     title: String,
     options: {
-        type: Array,
+        type: Array as any,
         default: () => {
             return []
         }

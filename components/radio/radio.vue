@@ -21,7 +21,7 @@ export default {
 import { ref } from 'vue';
     const props =defineProps({
         options:{
-            type:Array,
+            type:Array as any,
             default:()=>[],
         },
         column:{

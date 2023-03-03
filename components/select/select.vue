@@ -37,7 +37,7 @@ export default {
     const emit=defineEmits(['change','update:modelValue'])
     const props = defineProps({
         options:{
-            type:Array,
+            type:Array as any,
             default:()=>[]
         },
         disabled:Boolean,
@@ -139,7 +139,7 @@ export default {
         }
     }
     .k-position-box{
-        width: 100%;
+        width: 38%;
         height: auto;
         overflow: hidden;
         position: absolute;

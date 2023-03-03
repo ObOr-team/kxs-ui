@@ -5,7 +5,7 @@
 <br/>
 <br/>
 <div class="color-itembox">
-  <li style="background:var(--vp-c-brand)">
+  <li style="background:var(--vp-c-brand);height:150px">
     <span class="title">主要颜色</span>
     <span class="color">#538ce9</span>
   </li>
@@ -19,7 +19,7 @@
 <br/>
 <br/>
 <div class="color-itembox">
-  <li style="background:var(--vp-c-second)">
+  <li style="background:var(--vp-c-second);height:150px">
     <span class="title">成功状态</span>
     <span class="color">#48bdb3</span>
   </li>
@@ -33,7 +33,7 @@
 <br/>
 <br/>
 <div class="color-itembox">
-  <li style="background:#e78a8a">
+  <li style="background:#e78a8a;height:150px">
     <span class="title">危险状态</span>
     <span class="color">#e78a8a</span>
   </li>
@@ -48,7 +48,7 @@
 <br/>
 <br/>
 <div class="color-itembox">
-  <li style="background:#dbaf6c">
+  <li style="background:#dbaf6c;height:150px">
     <span class="title">警告状态</span>
     <span class="color">#dbaf6c</span>
   </li>
@@ -62,7 +62,7 @@
 <br/>
 <br/>
 <div class="color-itembox">
-  <li style="background:#7c7e83">
+  <li style="background:#7c7e83;height:150px">
     <span class="title">文本颜色</span>
     <span class="color">#7c7e83</span>
   </li>
@@ -76,7 +76,7 @@
 <br/>
 <br/>
 <div class="color-itembox">
-  <li style="border:1px solid #f0f0f0;color:#333">
+  <li style="border:1px solid #f0f0f0;color:#333;height:150px">
     <span class="title">边框颜色</span>
     <span class="color">#f0f0f0</span>
     <span>rgba(240,240,240,1)</span>
@@ -90,7 +90,7 @@
 <br/>
 <br/>
 <div class="color-itembox">
-  <li style="box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);;color:#333">
+  <li style="box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);;color:#333;height:150px">
     <span class="title">阴影颜色</span>
     <span class="color">0 2px 12px 0 rgba(0, 0, 0, 0.1)</span>
   </li>
