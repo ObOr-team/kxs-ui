@@ -17,13 +17,13 @@
     </div>
     </template>
     
-    <script>
+    <script lang="ts">
     export default {
         name: "kOptfile",
     }
     </script>
     
-    <script setup>
+    <script lang="ts" setup>
     import {
         ref,
         reactive,
@@ -54,15 +54,15 @@
     const areaRef = ref(null)
     const activeFile = ref(false)
     const lableText = ref(props.label)
-    const fileList = reactive([])
-    const deleteFile = (index) => {
+    const fileList:any = reactive([])
+    const deleteFile = (index:any) => {
         fileList.splice(index, 1)
         emit('update:fileList', fileList)
     }
     const fileChange = () => {
-        inpRef.value.click()
+        inpRef.value?.["click()"]
     }
-    const inpChange = (e) => {
+    const inpChange = (e:any) => {
     
         fileList.unshift(...e.target.files)
         emit('change', fileList)
@@ -70,15 +70,15 @@
     onMounted(() => {
         if (props.drop && props.targetType == 'box') {
             // console.log(window)
-            let dropArea = areaRef.value
+            let dropArea:any = areaRef.value
             //图片拖拽放下框框后，会触发一次
-            dropArea.addEventListener('drop', (e) => {
+            dropArea.addEventListener('drop', (e:any) => {
                 e.preventDefault()
                 fileList.unshift(...e.dataTransfer.files)
                 console.log(e.dataTransfer.files)
                 //拿到文件信息
                 emit('change', fileList)
-                activeFile.value = falseA
+                activeFile.value = false
             })
             //图片拖拽离开框框后，会触发一次
             dropArea.addEventListener('dragleave', (e) => {

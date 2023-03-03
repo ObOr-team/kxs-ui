@@ -23,7 +23,7 @@ export default {
 <script lang="ts" setup>
 const props = defineProps({
     options:{
-        type:Array,
+        type:Array as any,
         default:()=>{return []}
     }
 })
