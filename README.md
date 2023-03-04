@@ -29,25 +29,10 @@ app.mount('#app')
 ```
 
 ### 文件结构
-```
+```bash
 ├─.vscode
-├─components
-│  ├─button
-│  ├─carousel
-│  ├─dialog
-│  ├─dropdown
-│  ├─icon
-│  ├─input
-│  ├─navigation
-│  ├─optfile
-│  ├─radio
-│  ├─select
-│  ├─space
-│  ├─style
-│  ├─table
-│  ├─textarea
-│  └─tree
-├─docs
+├─components #封装的组件及其全局样式
+├─docs #文档站
 │  ├─.vitepress
 │  │  ├─cache
 │  │  │  └─deps
@@ -55,28 +40,13 @@ app.mount('#app')
 │  │  │  └─sidebars
 │  │  └─theme
 │  ├─api
-│  ├─components
-│  │  ├─dataEntry
-│  │  ├─dev
-│  │  ├─layout
-│  │  └─universal
-│  ├─feedback
-│  ├─guide
+│  ├─components #组件页面
+│  ├─feedback #反馈页面
+│  ├─guide #指引页面
 │  ├─mdshow
 │  └─public
 │      ├─imgs
 │      └─logo
 ├─kx-ui
 ├─node_modules
-└─src
-    ├─assets
-    │  └─iconfont
-    └─components
-        ├─button
-        ├─carousel
-        ├─dialog
-        ├─icon
-        ├─input
-        ├─table
-        └─textarea
 ```
