@@ -28,3 +28,55 @@ app.use(kxs)
 app.mount('#app')
 ```
 
+### 文件结构
+```
+├─.vscode
+├─components
+│  ├─button
+│  ├─carousel
+│  ├─dialog
+│  ├─dropdown
+│  ├─icon
+│  ├─input
+│  ├─navigation
+│  ├─optfile
+│  ├─radio
+│  ├─select
+│  ├─space
+│  ├─style
+│  ├─table
+│  ├─textarea
+│  └─tree
+├─docs
+│  ├─.vitepress
+│  │  ├─cache
+│  │  │  └─deps
+│  │  ├─i18n
+│  │  │  └─sidebars
+│  │  └─theme
+│  ├─api
+│  ├─components
+│  │  ├─dataEntry
+│  │  ├─dev
+│  │  ├─layout
+│  │  └─universal
+│  ├─feedback
+│  ├─guide
+│  ├─mdshow
+│  └─public
+│      ├─imgs
+│      └─logo
+├─kx-ui
+├─node_modules
+└─src
+    ├─assets
+    │  └─iconfont
+    └─components
+        ├─button
+        ├─carousel
+        ├─dialog
+        ├─icon
+        ├─input
+        ├─table
+        └─textarea
+```
