@@ -11,11 +11,11 @@ export default defineConfig({
     Markdown()
   ],
   build: {
-    outDir:"kx-ui",
+    outDir:"kxs-ui",
     lib: {
-      entry: path.resolve(__dirname, './src/components/index.ts'),
-      name: 'kx-ui',
-      fileName: (format) => `kx-ui.${format}.ts`
+      entry: path.resolve(__dirname, './components/index.ts'),
+      name: 'kxs-ui',
+      fileName: (format) => `kxs-ui.${format}.ts`
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

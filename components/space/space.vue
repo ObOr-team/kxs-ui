@@ -6,10 +6,10 @@ import {useSlots,h,ref,computed} from 'vue'
     export default {
          name:"kSpace",
          props:{
-            inline:{
-                type:Boolean,
-                default:false
-            },
+            // inline:{
+            //     type:Boolean,
+            //     default:false
+            // },
             size:{
                 type:String,
                 default:""
@@ -34,7 +34,7 @@ import {useSlots,h,ref,computed} from 'vue'
             const kStyle = computed(()=>{
                 
                 return{
-                    display:props.inline? 'inline-flex':'flex',
+                    display:'flex',
                     gap:props.size? `${props.size}`:`20px 20px`,
                     'flex-direction':props.column? 'column':'',
                     'flex-wrap':props.wrap? 'wrap':'no wrap',

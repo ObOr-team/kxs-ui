@@ -1,24 +1,16 @@
 <template>
    <div :class="[`k-table-${size}`,customClass]">
     <table>
-      <!-- <thead v-if="showHeader"> -->
         <tr>
           <th v-for="(x,n) in options.fileds" :key="n" :style="[headStyle,{'text-align':x.align}]">
-            <!-- <slot :name="'head-'+x.field" :scope="x" v-if="$slot['head-'+x.field]"></slot> -->
-            <!-- <div v-else>{{x.title}}</div> -->
             <div>{{x.title}}</div>
           </th>
         </tr>  
-      <!-- </thead> -->
-      <!-- <tbody> -->
         <tr v-for="(v,i) in options.datas" :key="i">
           <td v-for="(m,j) in options.fileds" :key="j" :style="[rowStyle,{width:options.fileds[j].width?(options.fileds[j].width):'','text-align':options.fileds[j].align}]">
-            <!-- <slot :name="options.fileds[j].field" :scope="{rowIndex:i,cellIndex:j,row:v}" v-if="$slot[options.fileds[j].field]"></slot> -->
-            <!-- <div v-else>{{options.datas[i][options.fileds[j].field]}}</div> -->
             <div>{{options.datas[i][options.fileds[j].field]}}</div>
           </td>
         </tr>
-      <!-- </tbody> -->
     </table>
   </div>
 </template>
@@ -29,7 +21,6 @@ export default {
 }
 </script>
 <script lang="ts" setup>
-import { ref, useSlots } from 'vue'
 const props = defineProps({
   options:{
     type:Object,
@@ -62,7 +53,6 @@ const props = defineProps({
   },
   customClass:String
 })
-const $slot = useSlots()
 </script>
 
 <style lang="scss" scoped>

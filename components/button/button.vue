@@ -16,6 +16,7 @@
 </script>
 <script lang="ts" setup>
 import {computed,toRef} from 'vue'
+import '../style/style.scss'
     const props = defineProps({
         type:{
             type:String,

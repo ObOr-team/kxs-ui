@@ -1,8 +1,9 @@
 {
   "name": "kxs-ui",
-  "version": "0.0.1",
-  "description": "A component library based on Vue3 ",
-  "main": "kx-ui.es.ts",
+  "version": "0.0.3",
+  "private": false, 
+  "description": "",
+  "main": "kxs-ui.es.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
